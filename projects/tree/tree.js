@@ -13,7 +13,7 @@ var vis = d3.select("#chart").append("svg")
   .append("g")
     .attr("transform", "translate(40, 0)");
 
-d3.json("js/inpho-data.json", function(json) {
+d3.json("../../data/inpho.json", function(json) {
   var nodes = tree.nodes(json);
 
   var link = vis.selectAll("path.link")
