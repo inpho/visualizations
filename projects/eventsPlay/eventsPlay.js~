@@ -1,0 +1,10 @@
+/*
+  eventsPlay.js
+*/
+
+
+//var box = d3.select("#container");
+
+var box = document.getElementById("container");
+
+box.onclick = function(){ alert("working")};

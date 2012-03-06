@@ -1,0 +1,5 @@
+#container {
+    border: solid thin red;
+    width: 120px;
+    height: 60px
+}

@@ -1,0 +1,14 @@
+div {
+    margin: 0 auto;
+    float: left;
+    
+}
+#container {
+    border: solid thick green;
+}
+
+.box {
+    border: solid medium blue;
+    width: 120px;
+    height: 60px
+}
