@@ -9,12 +9,18 @@ function rand(radius, upperBound){
 
 function updateLoc(parent, child){
 
-  var x = (parseInt(parent.attr("cx"))); // + parseInt(child.attr("cx"))) / 2;
-  var y = (parseInt(parent.attr("cy"))); // + parseInt(child.attr("cy"))) / 2;
+  var x = parent.attr("cx");// + parseInt(child.attr("cx")) / 2;
+  var y = parent.attr("cy");// + parseInt(child.attr("cy")) / 2;
 
-  child.transition().duration(1000)
+  child.style("fill", "steelblue")
+    .attr("r", 10)
+    .transition().duration(2000)
     .attr("cx", x)
     .attr("cy", y);
+
+  child.style("fill", "red")
+    .transition().duration(500)
+    .attr("r", 40);
 }
 
 function lol() {
@@ -27,8 +33,10 @@ function lol() {
 
 
   var father = d3.select("#father");
+
   var child = d3.select(".child");
   father.transition().duration(1000).attr("cx", rx).attr("cy", ry).style("fill", "steelblue");
   updateLoc(father, child);
-  t=setTimeout("lol()", 1000);
+  // t=setTimeout("lol()", 1000);
 }
+
