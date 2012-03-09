@@ -1,6 +1,7 @@
 var w = 960;
 var h = 2000;
 var root;
+var i = 0;
 
 var tree = d3.layout.tree()
   .size([h, w - 160]);
@@ -31,18 +32,25 @@ d3.json("../../data/inpho.json", function(json) {
   update(root);
 });
 
-function update(source) {
-  var nodes = tree.nodes(root).reverse(); // Why reversed?
 
+
+
+function update(source) {
+  var duration = d3.event && d3.event.altKey ? 5000 : 500;
+
+  var nodes = tree.nodes(root);//.reverse(); // Why reversed?
+
+  // draw links between nodes
   var link = vis.selectAll("path.link")
     .data(tree.links(nodes))
     .enter().append("path")
     .attr("class", "link")
     .attr("d", diagonal);
   
-  
   var node = vis.selectAll("g.node")
-    .data(nodes);
+    .data(nodes, function(d) {
+      return d.id || (d.id = ++i);
+    });
 
   // Enter in any newfound nodes.
   var nodeEnter = node.enter().append("g")
@@ -55,19 +63,28 @@ function update(source) {
       update(d);
     });
 
+
   // Draw a circle for each newly-found node.
   nodeEnter.append("circle")
     .attr("r", 4.5);
 
   // Draw a label for each newly-found node.
   nodeEnter.append("text")
-    .attr("dx", function(d) { return d.children || d._children ? -8 : 8; })
+    .attr("dx", function(d) {
+      return d.children || d._children ? -8 : 8;
+    })
     .attr("dy", 3)
-    .attr("text-anchor", function(d) { return d.children || d._children ? "end" : "start"; }) // this looks like a bug (in our json): all labels are to the left, implying that all nodes have children, even if it's the empty list.
-    .text(function(d) { return d.name; });
+    .attr("text-anchor", function(d) {
+      return d.children || d._children ? "end" : "start";
+    })
+    .text(function(d) {
+      return d.name;
+    });
 
   // remove any exiting nodes.
-  var nodeExit = node.exit().remove();
+  var nodeExit = node.exit().transition()
+    .duration(duration)
+    .remove();
 }
 
 
