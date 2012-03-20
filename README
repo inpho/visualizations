@@ -1,0 +1,24 @@
+INPHOVIS
+--------
+
+Indiana Philosophy Ontology Visualisations
+
+The means of this portion of the InPhO project is to bring graphical
+representations to the various data collections generated throughout
+the lifetime of the Ontological project.
+
+
+This project is broken up into three distinct sub-directories:
+
+The data/ directory contains json files which further contain the data
+used in generating graphical representations.
+
+The lib/ directory contains libraries for various project tasks.
+Currently, lib/ contains a library for generating and manipulating
+graphical representations of data called d3, the jquery library, and
+any additional javascript functions we create as necessary.
+
+The projects/ directory contains representations of the datasets
+contained within the data/ directory. The data should remain raw
+and thus should be able to be rendered in various different ways
+as desired.
