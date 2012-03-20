@@ -1,0 +1,14 @@
+# Autosaves #
+#############
+*.~
+
+# Archives #
+############
+*.7z
+*.dmg
+*.gz
+*.jar
+*.iso
+*.rar
+*.tar
+*.zip
