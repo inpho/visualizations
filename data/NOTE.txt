@@ -1,0 +1,4 @@
+The inpho.json file has been backed up into inpho.json.backup
+and has been modified:
+
+child properties which refer to empty arrays have been removed.
