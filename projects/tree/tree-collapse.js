@@ -85,6 +85,9 @@ function update(source) {
   var nodeExit = node.exit().transition()
     .duration(duration)
     .remove();
+  
+  // remove any exiting links
+
 }
 
 
