@@ -1,5 +1,5 @@
 var w = 960;
-var h = 2000;
+var h = 1000;
 var root;
 var i = 0;
 
@@ -18,8 +18,8 @@ var vis = d3.select("#chart").append("svg")
 d3.json("../../data/inpho.json", function(json) {
 
   root = json;
-  // Code removed
-  // Set initial x0 and y0 of root. 
+  root.x0 = h/2;
+  root.y0 = 0;
 
   function toggleAll(d) {
     if (d.children) {
@@ -28,20 +28,20 @@ d3.json("../../data/inpho.json", function(json) {
     }
   }
 
-  // Code removed.  Initialized some nodes to be expanded.
+  toggleAll(root);
   update(root);
 });
 
 
-
+var filling = function(d) { return d._children ? "lightsteelblue" : "#fff"; };
 
 function update(source) {
   var duration = d3.event && d3.event.altKey ? 5000 : 500;
-
-  var nodes = tree.nodes(root);//.reverse(); // Why reversed?
-
+  var nodes = tree.nodes(root).reverse();
   nodes.forEach(function(d) { d.y = d.depth * 180; });
-  
+
+
+  /***  NODE HANDLING  ***/
   var node = vis.selectAll("g.node")
     .data(nodes, function(d) {
       return d.id || (d.id = ++i);
@@ -51,18 +51,17 @@ function update(source) {
   var nodeEnter = node.enter().append("svg:g")
     .attr("class", "node")
     .attr("transform", function(d) {
-      return "translate(" + d.y + "," + d.x + ")";
+      return "translate(" + source.y0 + "," + source.x0 + ")";
     })
     .on("click", function(d) {
       toggle(d);
       update(d);
     });
 
-
   // Draw a circle for each newly-found node.
   nodeEnter.append("svg:circle")
     .attr("r", 4.5)
-    .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
+    .style("fill", filling);
 
   // Draw a label for each newly-found node.
   nodeEnter.append("svg:text")
@@ -82,14 +81,27 @@ function update(source) {
     .duration(duration)
     .attr("transform", function(d) { return "translate(" + d.y + "," + d.x + ")"; });
 
+  nodeUpdate.select("circle")
+    .style("fill", filling);
+
+  nodeUpdate.select("text")
+    .style("fill-opacity", 1);
+
   // remove any exiting nodes.
   var nodeExit = node.exit().transition()
     .duration(duration)
     .attr("transform", function(d) { return "translate(" + source.y + "," + source.x + ")"; })
     .remove();
+
+  nodeExit.select("circle")
+    .attr("r", 1e-6);
+
+  nodeExit.select("text")
+    .style("fill-opacity", 1e-6);
   
 
-/** Shit added today */
+
+  /***  LINK HANDLING  ***/
   var link = vis.selectAll("path.link")
     .data(tree.links(nodes), function(d) { return d.target.id; });
 
