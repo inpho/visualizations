@@ -18,9 +18,25 @@ div {
     border : solid thin black;
 }
 
+a:link {
+    color: #000000;
+}
+
+a:visited {
+    color: #000000;
+}
+
+a:hover {
+    color: #666666;
+}
+
+a:active {
+    color: #AAAAAA;
+}
+
 /*  CLASS  */
 .content {
-//    padding: 2%;
+    padding: 2%;
 }
 
 /*  ID  */
