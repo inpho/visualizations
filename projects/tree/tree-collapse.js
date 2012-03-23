@@ -40,20 +40,15 @@ function update(source) {
 
   var nodes = tree.nodes(root);//.reverse(); // Why reversed?
 
-  // draw links between nodes
-  var link = vis.selectAll("path.link")
-    .data(tree.links(nodes))
-    .enter().append("path")
-    .attr("class", "link")
-    .attr("d", diagonal);
+  nodes.forEach(function(d) { d.y = d.depth * 180; });
   
   var node = vis.selectAll("g.node")
     .data(nodes, function(d) {
       return d.id || (d.id = ++i);
     });
 
-  // Enter in any newfound nodes.
-  var nodeEnter = node.enter().append("g")
+  // Enter in any newfound nodes at parent's previous position.
+  var nodeEnter = node.enter().append("svg:g")
     .attr("class", "node")
     .attr("transform", function(d) {
       return "translate(" + d.y + "," + d.x + ")";
@@ -65,11 +60,12 @@ function update(source) {
 
 
   // Draw a circle for each newly-found node.
-  nodeEnter.append("circle")
-    .attr("r", 4.5);
+  nodeEnter.append("svg:circle")
+    .attr("r", 4.5)
+    .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
 
   // Draw a label for each newly-found node.
-  nodeEnter.append("text")
+  nodeEnter.append("svg:text")
     .attr("dx", function(d) {
       return d.children || d._children ? -8 : 8;
     })
@@ -81,13 +77,52 @@ function update(source) {
       return d.name;
     });
 
+  //Transition nodes to their new positions.
+  var nodeUpdate = node.transition()
+    .duration(duration)
+    .attr("transform", function(d) { return "translate(" + d.y + "," + d.x + ")"; });
+
   // remove any exiting nodes.
   var nodeExit = node.exit().transition()
     .duration(duration)
+    .attr("transform", function(d) { return "translate(" + source.y + "," + source.x + ")"; })
     .remove();
   
-  // remove any exiting links
 
+/** Shit added today */
+  var link = vis.selectAll("path.link")
+    .data(tree.links(nodes), function(d) { return d.target.id; });
+
+  // Enter any new links at the parent's previous position.
+  link.enter().insert("svg:path", "g")
+    .attr("class", "link")
+    .attr("d", function(d) {
+      var o = {x: source.x0, y: source.y0};
+      return diagonal({source: o, target: o});
+    })
+    .transition()
+    .duration(duration)
+    .attr("d", diagonal);
+
+  // Transition links to their new positions.
+  link.transition()
+    .duration(duration)
+    .attr("d", diagonal);
+
+  // remove any exiting links.
+  link.exit().transition()
+    .duration(duration)
+    .attr("d", function(d) {
+      var o = {x: source.x, y: source.y };
+      return diagonal({source: o, target: o});
+    })
+    .remove();
+
+  // Stash the old positions for transition.
+  nodes.forEach(function(d) {
+    d.x0 = d.x;
+    d.y0 = d.y;
+  });
 }
 
 
