@@ -18,7 +18,7 @@ var vis = d3.select("#chart").append("svg")
 d3.json("../../data/inpho.json", function(json) {
 
   root = json;
-  root.x0 = h/2;
+  root.x0 = 0;
   root.y0 = 0;
 
   function toggleAll(d) {
@@ -52,16 +52,16 @@ function update(source) {
     .attr("class", "node")
     .attr("transform", function(d) {
       return "translate(" + source.y0 + "," + source.x0 + ")";
-    })
-    .on("click", function(d) {
-      toggle(d);
-      update(d);
     });
 
   // Draw a circle for each newly-found node.
   nodeEnter.append("svg:circle")
     .attr("r", 4.5)
-    .style("fill", filling);
+    .style("fill", filling)
+    .on("click", function(d) {
+      toggle(d);
+      update(d);
+    });
 
   // Draw a label for each newly-found node.
   nodeEnter.append("svg:text")
@@ -74,6 +74,10 @@ function update(source) {
     })
     .text(function(d) {
       return d.name;
+    })
+    .on("click", function(d) {
+      alert(d.name);
+      document.location.href=("https://inpho.cogs.indiana.edu/taxonomy/" + d["ID"]);
     });
 
   //Transition nodes to their new positions.
