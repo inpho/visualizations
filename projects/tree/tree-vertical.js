@@ -51,8 +51,9 @@ function update(source) {
   // Enter in any newfound nodes at parent's previous position.
   var nodeEnter = node.enter().append("svg:g")
     .attr("class", "node")
+    .attr("_data", function(d) { return d.name; })
     .attr("transform", function(d) {
-      return "translate(" + source.y0 + "," + source.x0 + ")";
+      return "translate(" + source.x0 + "," + source.y0 + ")";
     })
     .on("click", function(d) {
       toggle(d);
@@ -80,7 +81,7 @@ function update(source) {
   //Transition nodes to their new positions.
   var nodeUpdate = node.transition()
     .duration(duration)
-    .attr("transform", function(d) { return "translate(" + d.y + "," + d.x + ")"; });
+    .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
 
   nodeUpdate.select("circle")
     .style("fill", filling);
@@ -91,7 +92,7 @@ function update(source) {
   // remove any exiting nodes.
   var nodeExit = node.exit().transition()
     .duration(duration)
-    .attr("transform", function(d) { return "translate(" + source.y + "," + source.x + ")"; })
+    .attr("transform", function(d) { return "translate(" + source.x + "," + source.y + ")"; })
     .remove();
 
   nodeExit.select("circle")
@@ -117,7 +118,7 @@ function update(source) {
     .duration(duration)
     .attr("d", diagonal);
 
-  // Transition links to their new positions.
+  // Transition unchanged links to their new positions.
   link.transition()
     .duration(duration)
     .attr("d", diagonal);
