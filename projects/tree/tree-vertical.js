@@ -4,17 +4,17 @@ var root;
 var i = 0;
 
 var tree = d3.layout.tree()
-  .size([h, w - 160]);
+  .size([w, h]);
 
 
 var diagonal = d3.svg.diagonal()
-  .projection(function(d) { return [d.y, d.x]; });
+  .projection(function(d) { return [d.x, d.y]; });
 
 var vis = d3.select("#chart").append("svg")
   .attr("width", w)
   .attr("height", h) // function() { return (tree.nodes().length + 1) * 20;})
   .append("g")
-  .attr("transform", "translate(40, 0)");
+  .attr("transform", "translate(0, 40)");
 
 d3.json("../../data/inpho.json", function(json) {
 
@@ -119,9 +119,11 @@ function update(source) {
     .attr("d", diagonal);
 
   // Transition unchanged links to their new positions.
+  
   link.transition()
     .duration(duration)
     .attr("d", diagonal);
+  
 
   // remove any exiting links.
   link.exit().transition()
