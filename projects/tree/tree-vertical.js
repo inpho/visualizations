@@ -1,5 +1,5 @@
 var margin = 20
-var w = 960;
+var w = 360;
 var h = 2000;
 var root;
 var i = 0;
@@ -15,12 +15,22 @@ d3.json("../../data/inpho.json", function(json) {
   root = json;
   root.x0 = 0;
   root.y0 = 0;
+
   update(root);
+  
 });
 
+function toggleAll(d) {
+  if (d.children) {
+    d.children.forEach(toggleAll);
+    toggle(d);
+  }
+}
+
 var vis = d3.select("#chart").append("svg")
-  .append("g")
   .attr("width", w)
+  .attr("height", h)
+  .append("g")
   .attr("transform", "translate(" + margin + "," + margin +")");
 
 var filling = function(d) { return d._children ? "lightsteelblue" : "#fff"; };
@@ -30,12 +40,12 @@ function update(source) {
   var nodes = tree.nodes(root);
 
   var xindent = 20;
-  var yindent = 12;
+  var yindent = 20;
 
   var i = 0;
   nodes.forEach(function(d) { 
-    d.x = d.depth * xindent;
-    d.y = i++ * yindent;
+    d.x = xindent * d.depth;
+    d.y = yindent * i++;
   });
 
   d3.select("svg").attr("height", function() { return margin + (nodes.length * yindent) });
