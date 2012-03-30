@@ -1,3 +1,4 @@
+var margin = 20
 var w = 960;
 var h = 2000;
 var root;
@@ -10,37 +11,34 @@ var tree = d3.layout.tree()
 var diagonal = d3.svg.diagonal()
   .projection(function(d) { return [d.x, d.y]; });
 
-var vis = d3.select("#chart").append("svg")
-  .attr("width", w)
-  .attr("height", h) // function() { return (tree.nodes().length + 1) * 20;})
-  .append("g")
-  .attr("transform", "translate(0, 40)");
-
 d3.json("../../data/inpho.json", function(json) {
-
   root = json;
   root.x0 = 0;
   root.y0 = 0;
-
-  function toggleAll(d) {
-    if (d.children) {
-      d.children.forEach(toggleAll);
-      toggle(d);
-    }
-  }
-
-  //toggleAll(root);
   update(root);
 });
 
+var vis = d3.select("#chart").append("svg")
+  .append("g")
+  .attr("width", w)
+  .attr("transform", "translate(" + margin + "," + margin +")");
 
 var filling = function(d) { return d._children ? "lightsteelblue" : "#fff"; };
 
 function update(source) {
   var duration = d3.event && d3.event.altKey ? 5000 : 500;
-  var nodes = tree.nodes(root).reverse();
-  nodes.forEach(function(d) { d.y = d.depth * 180; });
+  var nodes = tree.nodes(root);
 
+  var xindent = 20;
+  var yindent = 12;
+
+  var i = 0;
+  nodes.forEach(function(d) { 
+    d.x = d.depth * xindent;
+    d.y = i++ * yindent;
+  });
+
+  d3.select("svg").attr("height", function() { return margin + (nodes.length * yindent) });
 
   /***  NODE HANDLING  ***/
   var node = vis.selectAll("g.node")
@@ -51,31 +49,29 @@ function update(source) {
   // Enter in any newfound nodes at parent's previous position.
   var nodeEnter = node.enter().append("svg:g")
     .attr("class", "node")
-    .attr("_data", function(d) { return d.name; })
     .attr("transform", function(d) {
       return "translate(" + source.x0 + "," + source.y0 + ")";
-    })
-    .on("click", function(d) {
-      toggle(d);
-      update(d);
     });
 
   // Draw a circle for each newly-found node.
   nodeEnter.append("svg:circle")
     .attr("r", 4.5)
-    .style("fill", filling);
+    .style("fill", filling)
+    .on("click", function(d) {
+      toggle(d);
+      update(d);
+    });
 
   // Draw a label for each newly-found node.
   nodeEnter.append("svg:text")
-    .attr("dx", function(d) {
-      return d.children || d._children ? -8 : 8;
-    })
+    .attr("dx", 8)
     .attr("dy", 3)
-    .attr("text-anchor", function(d) {
-      return d.children || d._children ? "end" : "start";
-    })
+    .attr("text-anchor", "start")
     .text(function(d) {
       return d.name;
+    })
+    .on("click", function(d) {
+      alert( d.name );
     });
 
   //Transition nodes to their new positions.
