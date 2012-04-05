@@ -41,8 +41,8 @@ function update(source) {
 
   var xindent = 20;
   var yindent = 20;
-
   var i = 0;
+
   nodes.forEach(function(d) { 
     d.x = xindent * d.depth;
     d.y = yindent * i++;
@@ -110,9 +110,10 @@ function update(source) {
 
 
   /***  LINK HANDLING  ***/
-  var link = vis.selectAll("path.link")
+  var link = vis.selectAll("line.link")
     .data(tree.links(nodes), function(d) { return d.target.id; });
 
+/*
   // Enter any new links at the parent's previous position.
   link.enter().insert("svg:path", "g")
     .attr("class", "link")
@@ -123,6 +124,15 @@ function update(source) {
     .transition()
     .duration(duration)
     .attr("d", diagonal);
+*/
+
+  // Draw new lines from the new node
+  link.enter().insert("svg:line", "g")
+    .attr("class", "link")
+    .attr("x1", function(d) { return d.x - xindent; })
+    .attr("y1", function(d) { return d.y; })
+    .attr("x2", function(d) { return d.x; })
+    .attr("y2", function(d) { return d.y; });
 
   // Transition unchanged links to their new positions.
   
