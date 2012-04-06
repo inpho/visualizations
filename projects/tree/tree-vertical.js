@@ -81,7 +81,8 @@ function update(source) {
       return d.name;
     })
     .on("click", function(d) {
-      alert( d.name );
+      //alert( d.url );
+      window.location.href= "https://inpho.cogs.indiana.edu" + d.url;
     });
 
   //Transition nodes to their new positions.
