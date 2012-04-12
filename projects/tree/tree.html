@@ -1,14 +1,50 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link type="text/css" rel="stylesheet" href="tree.css"/>
+    <link type="text/css" rel="stylesheet" href="../../lib/inphovis.css" />
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-    <title>Node-Link Tree</title>
     <script type="text/javascript" src="../../lib/d3/d3.js"></script>
     <script type="text/javascript" src="../../lib/d3/d3.layout.js"></script>
-    <link type="text/css" rel="stylesheet" href="tree.css"/>
+    <title>Node-Link Tree</title>
   </head>
+
   <body>
-    <div id="chart"></div>
-    <script type="text/javascript" src="tree.js"></script>
+    <div id="header">
+      <h1>Indiana Philosophy Ontology</h1>
+    </div> <!-- header -->
+    
+    <div id="container">
+      <div class="content" id="navigation">
+        <h3>Visualisations</h3>
+        <ul>
+          <li>
+            <a href="tree.html">
+              Static Tree</a></li>
+          <li>
+            <a href="tree-collapse.html">
+              Collapsable Tree</a></li>
+          <li>
+            <a href="tree-vertical.html">
+              Vertical Tree</a></li>
+          
+        </ul>
+      </div> <!-- navigation -->
+      
+      <div class="content" id="main">
+        <h3>Vertical Taxonomy Representation</h3>
+        <div id="chart"></div>
+        <script type="text/javascript" src="tree.js"></script>
+        
+      </div> <!-- content -->
+      
+      <div id="footer">
+        <a href="https://inpho.cogs.indiana.edu/">
+          &copy; Indiana Philosophy Ontology</a>
+      </div> <!-- footer -->
+
+    </div> <!-- container -->
+
   </body>
+
 </html>
