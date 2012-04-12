@@ -1,0 +1,103 @@
+/*
+  filename: index.css
+  created : 2012 / 3 / 22
+  creator : Samuel Waggoner
+  email   : srwaggon@indiana.edu
+
+modified: 2012 / 4 / 12
+modifier: Samuel Waggoner
+email   : srwaggon@indiana.edu
+
+This file contains style data for the homepage of the
+Indiana Philosophy Ontology project's visualisations.
+*/
+
+
+/*  TAG  */
+a {
+
+}
+a:link {
+    color: #0088cc;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #0088cc;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #666666;
+}
+
+a:active {
+    color: lightsteelblue
+}
+
+body {
+    padding: 60px 0 0 0;
+}
+
+div {
+    //border : solid thin black;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*  CLASS  */
+.content {
+}
+
+/*  ID  */
+
+/* Contains the navbar main and footer */
+#container {
+    font-family: Helvetica, Arial, San-serif;
+    margin: 0 25%;
+    max-width: 800px;
+    min-width: 600px;
+}
+
+/* Main container for webpage contents */
+#main {
+    float: right;
+    width: 75%;
+}
+
+/* footer bar with credits */
+#footer {
+    float: right;
+    width: 75%;
+}
+
+/* header bar with webpage title */
+#header {
+    background-color: black;
+    clear: both;
+    color: white;
+    height: 60px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+#header h1{
+    display: block;
+    margin: 10px 25%;
+}
+
+/* Side-navigation bar */
+#navigation {
+    float: left;
+    width: 25%;
+}
+
+#navigation ul{
+
+}
