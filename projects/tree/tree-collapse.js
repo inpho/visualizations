@@ -13,7 +13,7 @@ var vis = d3.select("#chart").append("svg")
   .attr("width", w)
   .attr("height", h)
   .append("g")
-  .attr("transform", "translate(40, 0)");
+  .attr("transform", "translate(80, 0)");
 
 d3.json("../../data/inpho.json", function(json) {
 
@@ -41,11 +41,15 @@ function update(source) {
   nodes.forEach(function(d) { d.y = d.depth * 180; });
 
 
+
+
   /***  NODE HANDLING  ***/
   var node = vis.selectAll("g.node")
     .data(nodes, function(d) {
       return d.id || (d.id = ++i);
     });
+
+
 
   // Enter in any newfound nodes at parent's previous position.
   var nodeEnter = node.enter().append("svg:g")

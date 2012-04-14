@@ -11,7 +11,7 @@ var vis = d3.select("#chart").append("svg")
     .attr("width", w)
     .attr("height", h)
   .append("g")
-    .attr("transform", "translate(40, 0)");
+    .attr("transform", "translate(80, 0)");
 
 d3.json("../../data/inpho.json", function(json) {
   var nodes = tree.nodes(json);

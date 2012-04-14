@@ -120,7 +120,15 @@ function update(source) {
   var link = vis.selectAll("line.link")
     .data(tree.links(nodes), function(d) { return d.target.id; });
 
-/*
+  // Draw new lines from the new node
+  link.enter().insert("svg:line", "g")
+    .attr("class", "link")
+    .attr("x1", function(d) { return d.x; })
+    .attr("y1", function(d) { return d.y; })
+    .attr("x2", function(d) { return d.x; })
+    .attr("y2", function(d) { return d.y; });
+
+
   // Enter any new links at the parent's previous position.
   link.enter().insert("svg:path", "g")
     .attr("class", "link")
@@ -131,16 +139,10 @@ function update(source) {
     .transition()
     .duration(duration)
     .attr("d", diagonal);
-*/
 
-  // Draw new lines from the new node
-  link.enter().insert("svg:line", "g")
-    .attr("class", "link")
-    .attr("x1", function(d) { return d.x; })
-    .attr("y1", function(d) { return d.y; })
-    .attr("x2", function(d) { return d.x; })
-    .attr("y2", function(d) { return d.y; });
 
+
+/*
   // Transition unchanged links to their new positions.
   
   link.transition()
@@ -156,6 +158,7 @@ function update(source) {
       return diagonal({source: o, target: o});
     })
     .remove();
+    */
 
   // Stash the old positions for transition.
   nodes.forEach(function(d) {
