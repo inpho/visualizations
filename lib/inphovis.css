@@ -43,6 +43,10 @@ div {
     //border : solid thin black;
 }
 
+h3 {
+    font-family: none;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -58,7 +62,7 @@ ul {
 /* Contains the navbar main and footer */
 #container {
     font-family: Helvetica, Arial, San-serif;
-    margin: 0 25%;
+    margin: 0 5%;
     max-width: 800px;
     min-width: 600px;
 }
@@ -89,15 +93,32 @@ ul {
 
 #header h1{
     display: block;
-    margin: 10px 25%;
+    margin: 10px 5%;
 }
 
 /* Side-navigation bar */
 #navigation {
+    background-color: #000;
+    color: white;
     float: left;
-    width: 25%;
+    height: 450px;
+    padding: 4px;
+    width: 20%;
+}
+
+#navigation a {
+}
+
+#linksList {
+    background-color: white;
+    padding: 4px;
+    height: 85%;
+}
+
+#navigation h3 {
+    text-align: center;
 }
 
 #navigation ul{
-
+    list-style-type: circle;
 }
