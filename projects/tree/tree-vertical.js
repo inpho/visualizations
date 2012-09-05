@@ -15,7 +15,7 @@ d3.json("../../data/inpho.json", function(json) {
   root = json;
   root.x0 = 0;
   root.y0 = 0;
-
+  
   update(root);
   
 });
@@ -117,7 +117,7 @@ function update(source) {
 
 
   /***  LINK HANDLING  ***/
-  var link = vis.selectAll("line.link")
+  var link = vis.selectAll("path.link")
     .data(tree.links(nodes), function(d) { return d.target.id; });
 
   // Draw new lines from the new node
@@ -127,7 +127,6 @@ function update(source) {
     .attr("y1", function(d) { return d.y; })
     .attr("x2", function(d) { return d.x; })
     .attr("y2", function(d) { return d.y; });
-
 
   // Enter any new links at the parent's previous position.
   link.enter().insert("svg:path", "g")
@@ -142,14 +141,11 @@ function update(source) {
 
 
 
-/*
-  // Transition unchanged links to their new positions.
-  
+  // Transition unchanged links to their new positions. 
   link.transition()
     .duration(duration)
-    .attr("d", diagonal);
+    .attr("d", diagonal);  
   
-
   // remove any exiting links.
   link.exit().transition()
     .duration(duration)
@@ -158,8 +154,7 @@ function update(source) {
       return diagonal({source: o, target: o});
     })
     .remove();
-    */
-
+  
   // Stash the old positions for transition.
   nodes.forEach(function(d) {
     d.x0 = d.x;
