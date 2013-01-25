@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link type="text/css" rel="stylesheet" href="graph.css"/>
+    <link type="text/css" rel="stylesheet" href="../../../lib/inphovis.css" />
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <!-- <script type="text/javascript" src="../../../lib/d3/d3.js"></script>
+    <script type="text/javascript" src="../../../lib/d3/d3.layout.js"></script>
+-->
+    <script type="text/javascript" src="../../../lib/d3.v3.min.js"></script>
+    <style>
+      .node {
+        stroke: #666;
+        stroke-width: 1.5px;
+      }
+
+      .link {
+        stroke: #999;
+        stroke-opacity: .6;
+      }
+    </style>
+    
+    
+
+    <title>Weighted Graph | InPhO</title>
+  </head>
+
+  <body>
+    <div id="header">
+      <h1>Indiana Philosophy Ontology</h1>
+    </div> <!-- header -->
+    
+    <div id="container">
+      <div class="content" id="navigation">
+        <h3>Visualizations</h3>
+        <div id="linksList">
+          <ul>
+            <li>
+              <a href="../../tree/tree-static.html">
+                Static Tree</a></li>
+            <li>
+              <a href="../../tree/tree-collapse.html">
+                Collapsable Tree</a></li>
+            <li>
+              <a href="../../tree/tree-vertical.html">
+                Vertical Tree</a></li>
+            <li>
+              <a href="weighted-graph.html">
+                Weighted Graph</a></li>
+          </ul>
+        </div> <!-- linksList -->
+      </div> <!-- navigation -->
+      
+      <div class="content" id="main">
+        <h3>Weighted Graph</h3>
+        <div id="chart"></div>
+        <script type="text/javascript" src="weighted-graph.js"></script>
+        
+      </div> <!-- content -->
+      
+      <div id="footer">
+        <a href="https://inpho.cogs.indiana.edu/">
+          &copy; Indiana Philosophy Ontology</a>
+      </div> <!-- footer -->
+
+    </div> <!-- container -->
+
+  </body>
+
+</html>
