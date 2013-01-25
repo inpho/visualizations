@@ -13,5 +13,9 @@ def serve(port):
 
 if __name__ == "__main__":
     import sys
-    serve(int(sys.argv[1]))
+    if sys.argv[1:]:
+        port = int(sys.argv[1])
+    else:
+        port = 8080
+    serve(port)
 
