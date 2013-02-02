@@ -6,7 +6,7 @@ var force = d3.layout.force()
   .charge(-120)
   .linkDistance( function(link){ return link["weight"]; } )
   .size([width, height]);
-
+/*
 colors = {
   "Red":"red",
   "Lavender":"",
@@ -22,7 +22,7 @@ colors = {
   "Yellow":"",
   "Emerald":""
 }
-
+*/
 var svg = d3.select("#chart").append("svg")
   .attr("width", width)
   .attr("height", height);
@@ -53,7 +53,7 @@ d3.json("map.json", function(error, graph) {
 
   node.append("circle")
     .attr("r", 5)
-    .style("fill", function(d) { return colors[d.color] ); })
+    .style("fill", function(d) { return d.color/*colors[d.color])*/; })
     .call(force.drag);
 
   node.append("title")
