@@ -7,11 +7,27 @@ var force = d3.layout.force()
   .linkDistance( function(link){ return link["weight"]; } )
   .size([width, height]);
 
+colors = {
+  "Red":"red",
+  "Lavender":"",
+  "Blue":"",
+  "OliveGreen":"",
+  "Canary":"",
+  "Peach":"",
+  "Dandelion":"",
+  "Mahogany":"",
+  "SkyBlue":"",
+  "Mulberry":"",
+  "BrickRed":"",
+  "Yellow":"",
+  "Emerald":""
+}
+
 var svg = d3.select("#chart").append("svg")
   .attr("width", width)
   .attr("height", height);
 
-d3.json("data.json", function(error, graph) {
+d3.json("map.json", function(error, graph) {
   force
     .nodes(graph.nodes)
     .links(graph.links)
@@ -37,7 +53,7 @@ d3.json("data.json", function(error, graph) {
 
   node.append("circle")
     .attr("r", 5)
-    .style("fill", function(d) { return color(d.group); })
+    .style("fill", function(d) { return colors[d.color] ); })
     .call(force.drag);
 
   node.append("title")
