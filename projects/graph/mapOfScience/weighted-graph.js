@@ -5,7 +5,6 @@ var yOffset = 300;
 
 var force = d3.layout.force()
   .charge(-120)
-  //.linkDistance( function(link){ return link["weight"]; } )
   .size([width, height]);
 
 var svg = d3.select("#chart").append("svg")
@@ -38,6 +37,7 @@ d3.json("map.json", function(error, graph) {
     .append("text")
     .attr("dx", "1em")
     .attr("dy", ".5em")
+    .style("stroke", function(d) { return d.color; })
     .style("text-anchor", "start")
     .text( function(d) { return d.name; });
 
