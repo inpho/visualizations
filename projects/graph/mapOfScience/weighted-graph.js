@@ -1,4 +1,4 @@
-var width = 1600, height = 1200;
+var width = 600, height = 400;
 
 var xOffset = 300;
 var yOffset = 300;
