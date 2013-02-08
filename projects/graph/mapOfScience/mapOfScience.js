@@ -10,20 +10,20 @@ var xScale = (window.innerWidth - leftMargin) / width;
 var yScale = (window.innerHeight - topMargin) / height;
 
 var color = {
-  "Blue":"Blue",
-  "OliveGreen":"#AEB05D",
-  "Canary":"#FDB813",
-  "Peach":"#FFCC99",
-  "Dandelion":"#F0E130",
-  "Mahogany":"#670A0A",
-  "Lavender":"#E6E6FA",
-  "SkyBlue":"SkyBlue",
-  "Mulberry":"#C54B8C",
-  "BrickRed":"#841F27",
-  "Yellow":"Yellow",
-  "Emerald":"#55D43F",
-  "Red":"Red"
-};
+  "Blue":d3.rgb("#0000FF"),
+  "OliveGreen":d3.rgb("#AEB05D"),
+  "Canary":d3.rgb("#FDB813"),
+  "Peach":d3.rgb("#FFCC99"),
+  "Dandelion":d3.rgb("#F0E130"),
+  "Mahogany":d3.rgb("#670A0A"),
+  "Lavender":d3.rgb("#E6E6FA"),
+  "SkyBlue":d3.rgb("#87CEEB"),
+  "Mulberry":d3.rgb("#C54B8C"),
+  "BrickRed":d3.rgb("#841F27"),
+  "Yellow":d3.rgb("#FFFF00"),
+  "Emerald":d3.rgb("#55D43F"),
+  "Red":d3.rgb("#FF0000")
+}
 
 var force = d3.layout.force()
   .charge(-120)
@@ -61,7 +61,7 @@ d3.json("mapOfScienceData.json", function(error, graph) {
     .append("text")
     .attr("dx", "1em")
     .attr("dy", ".5em")
-    .style("stroke", function(d) { return color[d.color]; })
+    .style("stroke", function(d) { return color[d.color].darker(2); })
     .style("text-anchor", "start")
     .text( function(d) { return d.name; });
 
@@ -74,12 +74,13 @@ d3.json("mapOfScienceData.json", function(error, graph) {
     .text(function(d) { return d.name; });
 
 
-
-
   var redraw = function() {
-    xScale = window.innerWidth / width;
-    yScale = window.innerHeight / height;
-
+    xScale = (window.innerWidth - leftMargin) / width;
+    yScale = (window.innerHeight - topMargin) / height;
+    
+    svg.attr("width", width * xScale)
+      .attr("height", height * yScale);
+    
     node.attr("transform", function(d) { return "translate(" + (d.x * xScale) + "," + (d.y * yScale) + ")"; });
 
     link
@@ -88,8 +89,10 @@ d3.json("mapOfScienceData.json", function(error, graph) {
       .attr("x2", function(d) { return d.target.x * xScale; })
       .attr("y2", function(d) { return d.target.y * yScale; });
   };
-
   
+  window.onresize = function(event) {
+    redraw();
+  }
 
   force.stop();  
 });
