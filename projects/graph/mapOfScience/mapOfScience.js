@@ -28,6 +28,8 @@ var force = d3.layout.force()
   .charge(-120)
   .size([width*scale, height*scale]);
 
+
+
 var chart = d3.select("#chart")
 
 
@@ -46,49 +48,47 @@ scaleDiv.append("text").text("Scale");
 
 var filterDiv = chart.append("div").attr("id", "#filterDiv");
 
-
 var filterSlider = filterDiv.append("input")
   .attr("type", "range")
   .attr("name", "scale")
   .attr("id", "filterSlider")
   .attr("min", "0")
-  .attr("max", "500")
-  .attr("step", "5")
+  .attr("max", "5000")
+  .attr("step", "50")
   .attr("value", scale);
 filterDiv.append("text").text("Filter Weights");
 
-filterSlider.on("change", function(d) {
-  console.log(this.value);
-  
-});
-
-
-
 var svg = chart.append("svg")
-  .attr("width", width * scale)
-  .attr("height", height * scale);
+  .attr("width", width * 4)
+  .attr("height", height * 4);
+
 
 var force;
-var data;
+var graph
 
-d3.json("mapOfScienceData.json", function(error, graph) {
-  data = graph;
-  update(graph);
-});
- 
- 
-function update(graph) {
+d3.json("mapOfScienceData.json", function(error, data) {
+  graph = data
   force = force
-    .nodes(graph.nodes)
-    .links(graph.links)
+    .nodes(data.nodes)
+    .links(data.links)
     .start()
     .stop();
 
-  svg.attr("width", width * scale)
-    .attr("height", height * scale);
-  
+  update(data.nodes, data.links);
+});
+ 
+ 
+function update(nodes, links) {
+  var duration = d3.event && d3.event.altKey ? 5000 : 500;  
+
+
+
+
   var link = svg.selectAll(".link")
-    .data(graph.links);
+    .data(links, function(d) { 
+      console.log(d);
+      return "" + d.source.name + d.target.name;
+    });
 
   var linkEnter = link.enter()
     .append("line")
@@ -97,18 +97,25 @@ function update(graph) {
     .style("stroke", function(d) { if (d.source.color === d.target.color) {
       return color[d.source.color];} else { return "#ccc"; } });
 
-  var linkUpdate = link
+  var linkUpdate = link.transition()
+    .duration(duration)
     .attr("x1", function(d) { return d.source.x * scale; })
     .attr("y1", function(d) { return d.source.y * scale; })
     .attr("x2", function(d) { return d.target.x * scale; })
     .attr("y2", function(d) { return d.target.y * scale; });
   
   var linkExit = link.exit()
+    .transition()
+    .duration(duration)
     .remove();
   
+
+
   
   var node = svg.selectAll(".node")
-    .data(graph.nodes);
+    .data(nodes, function(d) {
+      return d.name;
+    });
 
   var nodeEnter = node.enter()
     .append("g")
@@ -116,13 +123,16 @@ function update(graph) {
     .attr("transform", function(d) { return "translate(" + (d.x * scale) + "," + (d.y * scale) + ")"; });
 
   var nodeUpdate = node
+    .transition()
+    .duration(duration)
     .attr("transform", function(d) { return "translate(" + (d.x * scale) + "," + (d.y * scale) + ")"; });
 
   var nodeExit = node.exit()
     .transition()
-    .duration(500)
+    .duration(duration)
     .remove();
-  
+
+  /* text label nodes */  
   node.filter( function(d) { return d.group === 1; })
     .append("text")
     .attr("dx", "1em")
@@ -141,12 +151,23 @@ function update(graph) {
 
   scaleSlider.on("change", function(event) {
     scale = this.value;
-    update(graph);
+    update(nodes, links);
   });
   
   filterSlider.on("change", function(event) {
     // Requires more thought...
-    update(node.filter(function(d) { return d.value >= this.value; }));
+    var val = filterSlider.attr("value");
+
+    var n = graph.nodes.filter(
+      function(d) {
+        return d.group === 1 || d.xfact >= val;
+      });
+
+    var l = graph.links.filter(
+      function(d) {
+        return d.source.xfact >= val && d.target.xfact >= val;
+      });
+    update(n, l);
   });
 }
 
