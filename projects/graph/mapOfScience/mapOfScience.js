@@ -85,6 +85,9 @@ var fullGraph;
 var activeNodes;
 var activeLinks;
 
+var xOffset = 0;
+var yOffset = 0;
+
 var force = d3.layout.force()
   .charge(-120)
   .size([width * getScale(), height * getScale()]);
@@ -110,6 +113,14 @@ d3.json("mapOfScienceData.json", function(error, data) {
                  setScale(scale + delta);
                  update(activeNodes, activeLinks);
                }}));
+
+  svg.call(d3.behavior.drag()
+           .on("drag", function() {
+             console.log(d3.event.sourceEvent);
+             xOffset += d3.event.sourceEvent.webkitMovementX;
+             yOffset += d3.event.sourceEvent.webkitMovementY;
+             update(activeNodes, activeLinks);
+           }));
   update(data.nodes, data.links);
 });
 
@@ -137,10 +148,10 @@ function update(nodes, links) {
 
   var linkUpdate = link.transition()
     .duration(duration)
-    .attr("x1", function(d) { return d.source.x * scale; })
-    .attr("y1", function(d) { return d.source.y * scale; })
-    .attr("x2", function(d) { return d.target.x * scale; })
-    .attr("y2", function(d) { return d.target.y * scale; });
+    .attr("x1", function(d) { return d.source.x * scale + xOffset; })
+    .attr("y1", function(d) { return d.source.y * scale + yOffset; })
+    .attr("x2", function(d) { return d.target.x * scale + xOffset; })
+    .attr("y2", function(d) { return d.target.y * scale + yOffset; });
   
   var linkExit = link.exit()
     .transition()
@@ -156,12 +167,12 @@ function update(nodes, links) {
   var nodeEnter = node.enter()
     .append("g")
     .attr("class", "node")
-    .attr("transform", function(d) { return "translate(" + (d.x * scale) + "," + (d.y * scale) + ")"; });
+    .attr("transform", function(d) { return "translate(" + (d.x * scale + xOffset) + "," + (d.y * scale + yOffset) + ")"; });
 
   var nodeUpdate = node
     .transition()
     .duration(duration)
-    .attr("transform", function(d) { return "translate(" + (d.x * scale) + "," + (d.y * scale) + ")"; });
+    .attr("transform", function(d) { return "translate(" + (d.x * scale + xOffset) + "," + (d.y * scale + yOffset) + ")"; });
 
   var nodeExit = node.exit()
     .transition()
