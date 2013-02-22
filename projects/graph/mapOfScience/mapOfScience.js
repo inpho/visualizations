@@ -29,11 +29,14 @@ var force = d3.layout.force()
   .size([width*scale, height*scale]);
 
 
-
 var chart = d3.select("#chart")
 
 
-var scaleDiv = chart.append("div").attr("id","#scaleDiv");
+var scaleDiv = chart.append("div")
+  .attr("id","#scaleDiv")
+  .attr("class", "sliderDiv")
+  .attr("float", "left")
+;
 
 var scaleSlider = scaleDiv
   .append("input")
@@ -42,21 +45,25 @@ var scaleSlider = scaleDiv
   .attr("id", "scaleSlider")
   .attr("min", "1")
   .attr("max", "4")
-  .attr("step", ".1")
+  .attr("step", ".5")
   .attr("value", scale);
 scaleDiv.append("text").text("Scale");
 
-var filterDiv = chart.append("div").attr("id", "#filterDiv");
+var filterDiv = chart.append("div")
+  .attr("id", "#filterDiv")
+  .attr("class", "sliderDiv")
+  .attr("float", "left")
+  .attr("size", 1000);
 
 var filterSlider = filterDiv.append("input")
   .attr("type", "range")
   .attr("name", "scale")
   .attr("id", "filterSlider")
-  .attr("min", "0")
-  .attr("max", "5000")
-  .attr("step", "50")
-  .attr("value", scale);
-filterDiv.append("text").text("Filter Weights");
+  .attr("min", 0)
+  .attr("max", 10)// "21") actual maximum.
+  .attr("step", 1)
+  .attr("value", 0);
+filterDiv.append("text").text("Weight");
 
 var svg = chart.append("svg")
   .attr("width", width * 4)
@@ -79,21 +86,19 @@ d3.json("mapOfScienceData.json", function(error, data) {
  
  
 function update(nodes, links) {
-  var duration = d3.event && d3.event.altKey ? 5000 : 500;  
-
+  var duration = d3.event && d3.event.altKey ? 5000 : 1000;  
 
 
 
   var link = svg.selectAll(".link")
     .data(links, function(d) { 
-      console.log(d);
       return "" + d.source.name + d.target.name;
     });
 
   var linkEnter = link.enter()
     .append("line")
     .attr("class", "link")
-    .style("stroke-width", function(d) { return Math.sqrt(d.weight)/ 4; })
+    .style("stroke-width", function(d) { return Math.sqrt(d.weight) / 3; })
     .style("stroke", function(d) { if (d.source.color === d.target.color) {
       return color[d.source.color];} else { return "#ccc"; } });
 
@@ -140,7 +145,7 @@ function update(nodes, links) {
     .style("stroke", function(d) { return color[d.color].darker(2); })
     .style("text-anchor", "start")
     .text( function(d) { return d.name; });
-  
+
   node.append("circle")
     .attr("r", function(d) { return d.xfact; })
     .style("fill", function(d) { return color[d.color]; });
@@ -149,14 +154,16 @@ function update(nodes, links) {
     .text(function(d) { return d.name; });
 
 
+
   scaleSlider.on("change", function(event) {
     scale = this.value;
     update(nodes, links);
   });
+
   
   filterSlider.on("change", function(event) {
     // Requires more thought...
-    var val = filterSlider.attr("value");
+    var val = this.value;//filterSlider.property("value");
 
     var n = graph.nodes.filter(
       function(d) {
