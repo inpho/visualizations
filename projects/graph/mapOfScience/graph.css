@@ -1,3 +1,10 @@
+.link {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 1.5px;
+}
+
+
 .node circle {
     stroke: #888;
     stroke-width: 1.5px;
@@ -11,8 +18,8 @@
     color: black;
 }
 
-.link {
-  fill: none;
-  stroke: #ccc;
-  stroke-width: 1.5px;
+
+.slider {
+    float: left;
+    width: 200px;
 }

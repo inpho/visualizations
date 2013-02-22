@@ -24,6 +24,7 @@ var color = {
   "Red":d3.rgb("#FF0000")
 }
 
+var graph;
 var force = d3.layout.force()
   .charge(-120)
   .size([width*scale, height*scale]);
@@ -31,12 +32,14 @@ var force = d3.layout.force()
 
 var chart = d3.select("#chart")
 
+var sliderDiv = chart.append("div")
+  .attr("id", "sliderDiv")
+  .style("width", "800px");
 
-var scaleDiv = chart.append("div")
-  .attr("id","#scaleDiv")
-  .attr("class", "sliderDiv")
-  .attr("float", "left")
-;
+var scaleDiv = sliderDiv.append("div")
+  .attr("id","scaleDiv")
+  .attr("class", "slider")
+  .attr("float", "left");
 
 var scaleSlider = scaleDiv
   .append("input")
@@ -49,9 +52,15 @@ var scaleSlider = scaleDiv
   .attr("value", scale);
 scaleDiv.append("text").text("Scale");
 
-var filterDiv = chart.append("div")
-  .attr("id", "#filterDiv")
-  .attr("class", "sliderDiv")
+function setScale(value) {
+  scale = value >= 1.0 && value <= 4.0 ? value : scale;
+  scaleSlider.property("value", scale);
+}
+
+
+var filterDiv = sliderDiv.append("div")
+  .attr("id", "filterDiv")
+  .attr("class", "slider")
   .attr("float", "left")
   .attr("size", 1000);
 
@@ -65,13 +74,10 @@ var filterSlider = filterDiv.append("input")
   .attr("value", 0);
 filterDiv.append("text").text("Weight");
 
+
 var svg = chart.append("svg")
   .attr("width", width * 4)
   .attr("height", height * 4);
-
-
-var force;
-var graph
 
 d3.json("mapOfScienceData.json", function(error, data) {
   graph = data
@@ -81,9 +87,24 @@ d3.json("mapOfScienceData.json", function(error, data) {
     .start()
     .stop();
 
+    svg.call(d3.behavior.zoom()
+             .on("zoom", function() {
+               if (d3.event.sourceEvent.type=='mousewheel' || d3.event.sourceEvent.type=='DOMMouseScroll') {
+                 if (d3.event.sourceEvent.wheelDelta > 0) {
+                   setScale(scale + 0.5);
+                 } else {
+                   setScale(scale - 0.5);
+                 }
+               }
+               update(graph.nodes, graph.links);
+             }));
+  
   update(data.nodes, data.links);
 });
+
  
+
+
  
 function update(nodes, links) {
   var duration = d3.event && d3.event.altKey ? 5000 : 1000;  
@@ -156,7 +177,7 @@ function update(nodes, links) {
 
 
   scaleSlider.on("change", function(event) {
-    scale = this.value;
+    setScale(this.value);
     update(nodes, links);
   });
 
