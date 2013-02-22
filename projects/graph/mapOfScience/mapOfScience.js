@@ -1,12 +1,20 @@
-
+/**
+ * mapOfScience.js
+ *
+ * Samuel Waggoner
+ * srwaggon@indiana.edu / Samuel.Waggoner@gmail.com
+ * 2/22/2013
+ *
+ * Generates Katy Borner's Map of Science using
+ * mbostock's D3js
+ *
+ */
 
 var width = 600;
 var height = 400;
 
 var topMargin = 200;
 var leftMargin = 300;
-
-var scale = (window.innerWidth - leftMargin) / width;
 
 var color = {
   "Blue":d3.rgb("#0000FF"),
@@ -23,11 +31,6 @@ var color = {
   "Emerald":d3.rgb("#55D43F"),
   "Red":d3.rgb("#FF0000")
 }
-
-var graph;
-var force = d3.layout.force()
-  .charge(-120)
-  .size([width*scale, height*scale]);
 
 
 var chart = d3.select("#chart")
@@ -49,14 +52,18 @@ var scaleSlider = scaleDiv
   .attr("min", "1")
   .attr("max", "4")
   .attr("step", ".5")
-  .attr("value", scale);
+  .attr("value", 2.5);
 scaleDiv.append("text").text("Scale");
 
-function setScale(value) {
-  scale = value >= 1.0 && value <= 4.0 ? value : scale;
-  scaleSlider.property("value", scale);
+function getScale() {
+  return parseFloat(scaleSlider.property("value"));
 }
 
+function setScale(value) {
+  // Keep Scale in the range [1.0, 4.0]
+  var scale = value >= 1.0 ? value <= 4.0 ? value : 4.0 : 1.0;
+  scaleSlider.property("value", scale);
+}
 
 var filterDiv = sliderDiv.append("div")
   .attr("id", "filterDiv")
@@ -68,19 +75,26 @@ var filterSlider = filterDiv.append("input")
   .attr("type", "range")
   .attr("name", "scale")
   .attr("id", "filterSlider")
-  .attr("min", 0)
+  .attr("min", 1)
   .attr("max", 10)// "21") actual maximum.
   .attr("step", 1)
-  .attr("value", 0);
+  .attr("value", 1);
 filterDiv.append("text").text("Weight");
 
+var fullGraph;
+var activeNodes;
+var activeLinks;
+
+var force = d3.layout.force()
+  .charge(-120)
+  .size([width * getScale(), height * getScale()]);
 
 var svg = chart.append("svg")
   .attr("width", width * 4)
   .attr("height", height * 4);
 
 d3.json("mapOfScienceData.json", function(error, data) {
-  graph = data
+  fullGraph = data
   force = force
     .nodes(data.nodes)
     .links(data.links)
@@ -90,15 +104,12 @@ d3.json("mapOfScienceData.json", function(error, data) {
     svg.call(d3.behavior.zoom()
              .on("zoom", function() {
                if (d3.event.sourceEvent.type=='mousewheel' || d3.event.sourceEvent.type=='DOMMouseScroll') {
-                 if (d3.event.sourceEvent.wheelDelta > 0) {
-                   setScale(scale + 0.5);
-                 } else {
-                   setScale(scale - 0.5);
-                 }
-               }
-               update(graph.nodes, graph.links);
-             }));
-  
+                 var scale = getScale();
+                 var wheelDelta = d3.event.sourceEvent.wheelDelta;
+                 var delta = parseInt(wheelDelta / 100) * 0.5;
+                 setScale(scale + delta);
+                 update(activeNodes, activeLinks);
+               }}));
   update(data.nodes, data.links);
 });
 
@@ -108,8 +119,9 @@ d3.json("mapOfScienceData.json", function(error, data) {
  
 function update(nodes, links) {
   var duration = d3.event && d3.event.altKey ? 5000 : 1000;  
-
-
+  var scale = getScale();
+  activeNodes = nodes;
+  activeLinks = links;
 
   var link = svg.selectAll(".link")
     .data(links, function(d) { 
@@ -135,8 +147,6 @@ function update(nodes, links) {
     .duration(duration)
     .remove();
   
-
-
   
   var node = svg.selectAll(".node")
     .data(nodes, function(d) {
@@ -175,7 +185,6 @@ function update(nodes, links) {
     .text(function(d) { return d.name; });
 
 
-
   scaleSlider.on("change", function(event) {
     setScale(this.value);
     update(nodes, links);
@@ -183,15 +192,14 @@ function update(nodes, links) {
 
   
   filterSlider.on("change", function(event) {
-    // Requires more thought...
-    var val = this.value;//filterSlider.property("value");
+    var val = this.value;
 
-    var n = graph.nodes.filter(
+    var n = fullGraph.nodes.filter(
       function(d) {
         return d.group === 1 || d.xfact >= val;
       });
 
-    var l = graph.links.filter(
+    var l = fullGraph.links.filter(
       function(d) {
         return d.source.xfact >= val && d.target.xfact >= val;
       });
