@@ -65,21 +65,21 @@ function setScale(value) {
   scaleSlider.property("value", scale);
 }
 
-var filterDiv = sliderDiv.append("div")
-  .attr("id", "filterDiv")
+var weightDiv = sliderDiv.append("div")
+  .attr("id", "weightDiv")
   .attr("class", "slider")
   .attr("float", "left")
   .attr("size", 1000);
 
-var filterSlider = filterDiv.append("input")
+var weightSlider = weightDiv.append("input")
   .attr("type", "range")
   .attr("name", "scale")
-  .attr("id", "filterSlider")
+  .attr("id", "weigzhtSlider")
   .attr("min", 1)
   .attr("max", 10)// "21") actual maximum.
   .attr("step", 1)
-  .attr("value", 1);
-filterDiv.append("text").text("Weight");
+  .attr("value", 10);
+weightDiv.append("text").text("Weight");
 
 var fullGraph;
 var activeNodes;
@@ -123,9 +123,6 @@ d3.json("mapOfScienceData.json", function(error, data) {
            }));
   update(data.nodes, data.links);
 });
-
- 
-
 
  
 function update(nodes, links) {
@@ -179,6 +176,7 @@ function update(nodes, links) {
     .duration(duration)
     .remove();
 
+
   /* text label nodes */  
   node.filter( function(d) { return d.group === 1; })
     .append("text")
@@ -201,20 +199,26 @@ function update(nodes, links) {
     update(nodes, links);
   });
 
-  
-  filterSlider.on("change", function(event) {
-    var val = this.value;
-
-    var n = fullGraph.nodes.filter(
-      function(d) {
-        return d.group === 1 || d.xfact >= val;
-      });
-
-    var l = fullGraph.links.filter(
-      function(d) {
-        return d.source.xfact >= val && d.target.xfact >= val;
-      });
-    update(n, l);
+  weightSlider.on("change", function(event) {
+    var f = function(data) {
+      return data.group === 1 | data.xfact >= weightSlider.property("max") - weightSlider.property("value");
+    };
+    applyFilter(f);
   });
 }
+
+
+function applyFilter(filter) {
+  var n = fullGraph.nodes.filter(
+    function(d) {
+      return filter(d);
+    });
+  var l = fullGraph.links.filter(
+    function(d) {
+      return filter(d.source) && filter(d.target);
+    });
+  update(n, l);
+}
+
+
 
