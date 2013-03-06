@@ -82,8 +82,6 @@ var weightSlider = weightDiv.append("input")
 weightDiv.append("text").text("Weight");
 
 var fullGraph;
-var activeNodes;
-var activeLinks;
 
 var xOffset = 0;
 var yOffset = 0;
@@ -151,10 +149,6 @@ function buildRender(graph) {
     .style("stroke", function(d) { return color[d.color].darker(2); })
     .style("text-anchor", "start")
     .text( function(d) { return d.name; });
-
-  node.append("circle")
-    .attr("r", function(d) { return d.xfact; })
-    .style("fill", function(d) { return color[d.color]; });
   
   node.append("title").text(function(d) { return d.name; });
 }
@@ -167,9 +161,6 @@ function updateData(nodes, links) {
    */
 
   var scale = getScale();
-  activeNodes = nodes;
-  activeLinks = links;
-
   /**************
    * LINKS
    *************/
@@ -215,6 +206,11 @@ function updateData(nodes, links) {
     .append("g")
     .attr("class", "node")
     .attr("transform", function(d) { return "translate(" + (d.x * scale + xOffset) + "," + (d.y * scale + yOffset) + ")"; });
+
+  nodeEnter.append("circle")
+    .attr("r", function(d) { return d.xfact; })
+    .style("fill", function(d) { return color[d.color]; });
+
   
   // update existing
   var nodeUpdate = node
