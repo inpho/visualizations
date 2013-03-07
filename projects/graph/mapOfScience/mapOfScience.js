@@ -10,11 +10,14 @@
  *
  */
 
-var width = 600;
-var height = 400;
+var width = window.innerWidth;
+var height = window.innerHeight;
 
-var topMargin = 200;
-var leftMargin = 300;
+var xScale = width / 470;
+var yScale = height / 330;
+var xOffset = -80 * xScale;
+var yOffset = -80 * yScale;
+
 
 var color = {
   "Blue":d3.rgb("#0000FF"),
@@ -39,31 +42,21 @@ var sliderDiv = chart.append("div")
   .attr("id", "sliderDiv")
   .style("width", "800px");
 
-var scaleDiv = sliderDiv.append("div")
-  .attr("id","scaleDiv")
-  .attr("class", "slider")
-  .attr("float", "left");
+// var scaleDiv = sliderDiv.append("div")
+//   .attr("id","scaleDiv")
+//   .attr("class", "slider")
+//   .attr("float", "left");
 
-var scaleSlider = scaleDiv
-  .append("input")
-  .attr("type", "range")
-  .attr("name", "scale")
-  .attr("id", "scaleSlider")
-  .attr("min", "1")
-  .attr("max", "4")
-  .attr("step", ".5")
-  .attr("value", 2.5);
-scaleDiv.append("text").text("Scale");
-
-function getScale() {
-  return parseFloat(scaleSlider.property("value"));
-}
-
-function setScale(value) {
-  // Keep Scale in the range [1.0, 4.0]
-  var scale = value >= 1.0 ? value <= 4.0 ? value : 4.0 : 1.0;
-  scaleSlider.property("value", scale);
-}
+// var scaleSlider = scaleDiv
+//   .append("input")
+//   .attr("type", "range")
+//   .attr("name", "scale")
+//   .attr("id", "scaleSlider")
+//   .attr("min", "1")
+//   .attr("max", "4")
+//   .attr("step", ".5")
+//   .attr("value", 2.5);
+// scaleDiv.append("text").text("Scale");
 
 var weightDiv = sliderDiv.append("div")
   .attr("id", "weightDiv")
@@ -83,16 +76,14 @@ weightDiv.append("text").text("Weight");
 
 var fullGraph;
 
-var xOffset = 0;
-var yOffset = 0;
 
 var force = d3.layout.force()
   .charge(0) // might be important.. 
-  .size([width * getScale(), height * getScale()]);
+  .size([width * xScale, height * yScale]);
 
 var svg = chart.append("svg")
-  .attr("width", width * 4)
-  .attr("height", height * 4);
+  .attr("width", width * .95)
+  .attr("height", height * .93);
 
 
 
@@ -107,18 +98,18 @@ d3.json("mapOfScienceData.json", function(error, data) {
     svg.call(d3.behavior.zoom()
              .on("zoom", function() {
                if (d3.event.sourceEvent.type=='mousewheel' || d3.event.sourceEvent.type=='DOMMouseScroll') {
-                 var scale = getScale();
                  var wheelDelta = d3.event.sourceEvent.wheelDelta;
                  var delta = parseInt(wheelDelta / 100) * 0.5;
-                 setScale(scale + delta);
-                 render(500, scale);
+                 xScale += delta;
+                 yScale += delta;
+                 render(500, xScale, yScale);
                }}));
 
   svg.call(d3.behavior.drag()
            .on("drag", function() {
              xOffset += d3.event.sourceEvent.webkitMovementX;
              yOffset += d3.event.sourceEvent.webkitMovementY;
-             render(0, getScale())
+             render(0, xScale, yScale);
            }));
 
   buildRender(data);
@@ -132,7 +123,6 @@ function buildRender(graph) {
    * and then add the labels.
    */
 
-  var scale = getScale();
   
   updateData(graph.nodes, graph.links);
 
@@ -160,7 +150,6 @@ function updateData(nodes, links) {
    * Called whenever the data changes. Performs a join.
    */
 
-  var scale = getScale();
   /**************
    * LINKS
    *************/
@@ -181,10 +170,10 @@ function updateData(nodes, links) {
 
   // update existing
   var linkUpdate = link
-    .attr("x1", function(d) { return d.source.x * scale + xOffset; })
-    .attr("y1", function(d) { return d.source.y * scale + yOffset; })
-    .attr("x2", function(d) { return d.target.x * scale + xOffset; })
-    .attr("y2", function(d) { return d.target.y * scale + yOffset; });
+    .attr("x1", function(d) { return d.source.x * xScale + xOffset; })
+    .attr("y1", function(d) { return d.source.y * yScale + yOffset; })
+    .attr("x2", function(d) { return d.target.x * xScale + xOffset; })
+    .attr("y2", function(d) { return d.target.y * yScale + yOffset; });
   
   // remove expiring
   var linkExit = link.exit().remove();
@@ -205,7 +194,7 @@ function updateData(nodes, links) {
   var nodeEnter = node.enter()
     .append("g")
     .attr("class", "node")
-    .attr("transform", function(d) { return "translate(" + (d.x * scale + xOffset) + "," + (d.y * scale + yOffset) + ")"; });
+    .attr("transform", function(d) { return "translate(" + (d.x * xScale + xOffset) + "," + (d.y * yScale + yOffset) + ")"; });
 
   nodeEnter.append("circle")
     .attr("r", function(d) { return d.xfact; })
@@ -214,7 +203,7 @@ function updateData(nodes, links) {
   
   // update existing
   var nodeUpdate = node
-    .attr("transform", function(d) { return "translate(" + (d.x * scale + xOffset) + "," + (d.y * scale + yOffset) + ")"; });
+    .attr("transform", function(d) { return "translate(" + (d.x * xScale + xOffset) + "," + (d.y * yScale + yOffset) + ")"; });
 
   // remove expiring
   var nodeExit = node.exit().remove();
@@ -223,28 +212,28 @@ function updateData(nodes, links) {
 
 
 
-function render(transitionDuration, scale) {
+function render(transitionDuration, xScale, yScale) {
   
   var link = svg.selectAll(".link");
   var node = svg.selectAll(".node");
   
   // update existing
   var linkUpdate = link.transition().duration(transitionDuration)
-    .attr("x1", function(d) { return d.source.x * scale + xOffset; })
-    .attr("y1", function(d) { return d.source.y * scale + yOffset; })
-    .attr("x2", function(d) { return d.target.x * scale + xOffset; })
-    .attr("y2", function(d) { return d.target.y * scale + yOffset; });
+    .attr("x1", function(d) { return d.source.x * xScale + xOffset; })
+    .attr("y1", function(d) { return d.source.y * yScale + yOffset; })
+    .attr("x2", function(d) { return d.target.x * xScale + xOffset; })
+    .attr("y2", function(d) { return d.target.y * yScale + yOffset; });
   
   // update existing
   var nodeUpdate = node.transition().duration(transitionDuration)
-    .attr("transform", function(d) { return "translate(" + (d.x * scale + xOffset) + "," + (d.y * scale + yOffset) + ")"; });
+    .attr("transform", function(d) { return "translate(" + (d.x * xScale + xOffset) + "," + (d.y * yScale + yOffset) + ")"; });
 
 }
 
-scaleSlider.on("change", function(event) {
-  setScale(this.value);
-  render(500, this.value);
-});
+// scaleSlider.on("change", function(event) {
+//   setScale(this.value);
+//   render(500, this.value);
+// });
 
 
 weightSlider.on("change", function(event) {
@@ -266,4 +255,14 @@ function applyFilter(filter) {
     });
 
   updateData(n, l);
+}
+
+window.onresize = function(event) {
+  svg.attr("width", window.innerWidth * .95)
+    .attr("height", window.innerHeight * .93);
+
+  xScale = window.innerWidth / 470;
+  yScale = window.innerHeight / 330;
+
+  render(0, xScale, yScale);
 }
