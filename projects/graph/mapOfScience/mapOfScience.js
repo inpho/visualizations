@@ -10,13 +10,17 @@
  *
  */
 
-var width = window.innerWidth;
-var height = window.innerHeight;
+// var width = window.innerWidth;
+// var height = window.innerHeight;
 
-var xScale = width / 470;
-var yScale = height / 330;
-var xOffset = -80 * xScale;
-var yOffset = -80 * yScale;
+var maxNodeX = 500; // observed from dataset
+var maxNodeY = 350; // observed from dataset
+
+var xScale = window.innerWidth / maxNodeX;
+var yScale = window.innerHeight / maxNodeY;
+
+var xOffset = 0;//-80 * xScale; // Represents the difference between the window pane's (0,0) and the graph's (0,0)
+var yOffset = 0;//-80 * yScale; 
 
 
 var color = {
@@ -42,22 +46,6 @@ var sliderDiv = chart.append("div")
   .attr("id", "sliderDiv")
   .style("width", "800px");
 
-// var scaleDiv = sliderDiv.append("div")
-//   .attr("id","scaleDiv")
-//   .attr("class", "slider")
-//   .attr("float", "left");
-
-// var scaleSlider = scaleDiv
-//   .append("input")
-//   .attr("type", "range")
-//   .attr("name", "scale")
-//   .attr("id", "scaleSlider")
-//   .attr("min", "1")
-//   .attr("max", "4")
-//   .attr("step", ".5")
-//   .attr("value", 2.5);
-// scaleDiv.append("text").text("Scale");
-
 var weightDiv = sliderDiv.append("div")
   .attr("id", "weightDiv")
   .attr("class", "slider")
@@ -79,11 +67,11 @@ var fullGraph;
 
 var force = d3.layout.force()
   .charge(0) // might be important.. 
-  .size([width * xScale, height * yScale]);
+  .size([window.innerWidth * xScale, window.innerHeight * yScale]);
 
 var svg = chart.append("svg")
-  .attr("width", width * .95)
-  .attr("height", height * .93);
+  .attr("width", window.innerWidth * .95)
+  .attr("height", window.innerHeight * .93);
 
 
 
@@ -100,15 +88,31 @@ d3.json("mapOfScienceData.json", function(error, data) {
                if (d3.event.sourceEvent.type=='mousewheel' || d3.event.sourceEvent.type=='DOMMouseScroll') {
                  var wheelDelta = d3.event.sourceEvent.wheelDelta;
                  var delta = parseInt(wheelDelta / 100) * 0.5;
-                 xScale += delta;
-                 yScale += delta;
+                 if (xScale + delta > 0 && yScale + delta > 0) {
+                   xScale += delta;
+                   yScale += delta;
+                 }
                  render(500, xScale, yScale);
                }}));
 
   svg.call(d3.behavior.drag()
            .on("drag", function() {
-             xOffset += d3.event.sourceEvent.webkitMovementX;
-             yOffset += d3.event.sourceEvent.webkitMovementY;
+             var dx = d3.event.sourceEvent.webkitMovementX;
+             var dy = d3.event.sourceEvent.webkitMovementY;
+
+             var rx = xOffset + dx;
+             var ry = yOffset + dy;
+
+             console.log("rx: " + rx);
+             console.log("ry: " + ry);
+
+             //if (rx >= -100 * xScale && rx < svg.attr("width")) {
+             xOffset = rx;
+             //}
+
+             //if (ry >= -100 * yScale && ry < svg.attr("height")) {
+             yOffset = ry;
+             //}
              render(0, xScale, yScale);
            }));
 
@@ -194,7 +198,9 @@ function updateData(nodes, links) {
   var nodeEnter = node.enter()
     .append("g")
     .attr("class", "node")
-    .attr("transform", function(d) { return "translate(" + (d.x * xScale + xOffset) + "," + (d.y * yScale + yOffset) + ")"; });
+    .attr("transform", function(d) {
+      return "translate(" + (d.x * xScale + xOffset) + "," + (d.y * yScale + yOffset) + ")";
+    });
 
   nodeEnter.append("circle")
     .attr("r", function(d) { return d.xfact; })
@@ -203,7 +209,9 @@ function updateData(nodes, links) {
   
   // update existing
   var nodeUpdate = node
-    .attr("transform", function(d) { return "translate(" + (d.x * xScale + xOffset) + "," + (d.y * yScale + yOffset) + ")"; });
+    .attr("transform", function(d) {
+      return "translate(" + (d.x * xScale + xOffset) + "," + (d.y * yScale + yOffset) + ")";
+    });
 
   // remove expiring
   var nodeExit = node.exit().remove();
@@ -230,12 +238,6 @@ function render(transitionDuration, xScale, yScale) {
 
 }
 
-// scaleSlider.on("change", function(event) {
-//   setScale(this.value);
-//   render(500, this.value);
-// });
-
-
 weightSlider.on("change", function(event) {
   applyFilter(function(data) {
     return data.group === 1 || data.xfact >= weightSlider.property("max") - weightSlider.property("value");
@@ -261,8 +263,8 @@ window.onresize = function(event) {
   svg.attr("width", window.innerWidth * .95)
     .attr("height", window.innerHeight * .93);
 
-  xScale = window.innerWidth / 470;
-  yScale = window.innerHeight / 330;
+  xScale = window.innerWidth / maxNodeX;
+  yScale = window.innerHeight / maxNodeY;
 
   render(0, xScale, yScale);
 }
