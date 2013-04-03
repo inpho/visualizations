@@ -1,9 +1,8 @@
 .link {
   fill: none;
-  stroke: #ccc;
+  stroke: #999;
   stroke-width: 1.5px;
 }
-
 
 .node circle {
     stroke: #888;
@@ -12,12 +11,13 @@
 
 .node {
   font: 12px sans-serif;
+  stroke: #666;
+  stroke-width: 1.5px;
 }
 
 .node text {
     color: black;
 }
-
 
 .slider {
     float: left;

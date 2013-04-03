@@ -1,75 +1,45 @@
 <!DOCTYPE html>
 <html>
+
   <head>
-    <!-- <link type="text/css" rel="stylesheet" href="../../../lib/inphovis.css" /> -->
-    <link type="text/css" rel="stylesheet" href="graph.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-    <!-- <script type="text/javascript" src="../../../lib/d3/d3.js"></script>
-    <script type="text/javascript" src="../../../lib/d3/d3.layout.js"></script>
--->
-    <script type="text/javascript" src="../../../lib/d3.v3.min.js"></script>
-    <style>
-      .node {
-        stroke: #666;
-        stroke-width: 1.5px;
-      }
-
-      .link {
-        stroke: #999;
-        stroke-opacity: .6;
-      }
-    </style>
+    <title>Map of Science | InPhO</title>
     
-    
+    <!-- Bootstrap -->
+    <link href="../../../lib/bootstrap/bootstrap.min.css" rel="stylesheet" media="screen">
 
-    <title>Weighted Graph | InPhO</title>
+    <!-- D3.js -->
+    <script type="text/javascript" src="../../../lib/d3.v3.min.js"></script>    
+
+    <!-- CSS / Style -->
+    <link type="text/css" rel="stylesheet" href="style.css"/>
   </head>
 
-  <!-- <body> -->
-  <!--   <div id="header"> -->
-  <!--     <h1>Indiana Philosophy Ontology</h1> -->
-  <!--   </div> <\!-- header -\-> -->
-    
-  <!--   <div id="container"> -->
-  <!--     <div class="content" id="navigation"> -->
-  <!--       <a href="../../../index.html"> -->
-  <!--         <h3>Visualizations</h3> -->
-  <!--       </a> -->
-  <!--       <div id="linksList"> -->
-  <!--         <ul> -->
-  <!--           <li> -->
-  <!--             <a href="../../tree/tree-static.html"> -->
-  <!--               Static Tree</a></li> -->
-  <!--           <li> -->
-  <!--             <a href="../../tree/tree-collapse.html"> -->
-  <!--               Collapsable Tree</a></li> -->
-  <!--           <li> -->
-  <!--             <a href="../../tree/tree-vertical.html"> -->
-  <!--               Vertical Tree</a></li> -->
-  <!--           <li> -->
-  <!--             <a href="weighted-graph.html"> -->
-  <!--               Weighted Graph</a></li> -->
+  <body>
+    <div id="chart">
+      <div id="controls" class="span9" style="margin: 0 auto;">
+        Weight: <input id="weightSlider"
+               type="range"
+               name="scale"
+               min="1"
+               max="45"
+               step="1"
+               value="10" />
 
-  <!--           <li>Map Of Science</li> -->
+        <div class="btn-group" data-toggle="buttons-radio" style="float:right;">
+          <button id="btnScience" class="btn btn-primary" type="button" >Science</button>
+          <button id="btnInPhO"   class="btn btn-primary" type="button" >InPhO</button>
+        </div>
+      </div>
+      <!-- 
+           D3 inserts a force-directed graph here.
+        -->
+    </div>
 
-  <!--         </ul> -->
-  <!--       </div> <\!-- linksList -\-> -->
-  <!--     </div> <\!-- navigation -\-> -->
-      
-      <!-- <div class="content" id="main"> -->
-      <!--   <h3>Weighted Graph</h3> -->
-      <div id="chart"></div>
-        <script type="text/javascript" src="mapOfScience.js"></script>
-        
-      </div> <!-- content -->
-      
-      <!-- <div id="footer"> -->
-      <!--   <a href="https://inpho.cogs.indiana.edu/"> -->
-      <!--     &copy; Indiana Philosophy Ontology</a> -->
-      <!-- </div> <\!-- footer -\-> -->
-
-    <!-- </div> <\!-- container -\-> -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="../../../lib/bootstrap/bootstrap.min.js"></script>
+    <script src="mapOfScience.js"></script>
 
   </body>
-
 </html>

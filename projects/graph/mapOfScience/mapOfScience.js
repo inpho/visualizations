@@ -10,18 +10,17 @@
  *
  */
 
-// var width = window.innerWidth;
-// var height = window.innerHeight;
-
-var maxNodeX = 500; // observed from dataset
-var maxNodeY = 350; // observed from dataset
+// observed from dataset
+var minNodeX = 100;
+var maxNodeX = 500;
+var minNodeY = 100;
+var maxNodeY = 350;
 
 var xScale = window.innerWidth / maxNodeX;
 var yScale = window.innerHeight / maxNodeY;
 
-var xOffset = 0;//-80 * xScale; // Represents the difference between the window pane's (0,0) and the graph's (0,0)
-var yOffset = 0;//-80 * yScale; 
-
+var xOffset = -80 * xScale; // Represents the difference between the window pane's (0,0) and the graph's (0,0)
+var yOffset = -80 * yScale; 
 
 var color = {
   "Blue":d3.rgb("#0000FF"),
@@ -40,95 +39,103 @@ var color = {
 }
 
 
+var weightSlider = d3.select("#weightSlider");
+
+weightSlider.on("change", function(event) {
+  applyFilter(function(data) {
+    return data.group === 1 || data._size >= weightSlider.property("max") - weightSlider.property("value");
+  });
+});
+
+
+$("#btnScience").click( function(event) {
+  fullGraph.nodes.forEach( function(d) {
+    d._size = d.xfact;  
+  });
+  updateNodes(fullGraph.nodes);
+  
+  redraw(0, xScale, yScale);  
+});
+
+$("#btnInPhO").click( function(event) {
+  fullGraph.nodes.forEach( function(d) {
+    d._size = d.num_areas;
+  });
+  updateNodes(fullGraph.nodes);
+  redraw(0, xScale, yScale);
+});
+
+
 var chart = d3.select("#chart")
-
-var sliderDiv = chart.append("div")
-  .attr("id", "sliderDiv")
-  .style("width", "800px");
-
-var weightDiv = sliderDiv.append("div")
-  .attr("id", "weightDiv")
-  .attr("class", "slider")
-  .attr("float", "left")
-  .attr("size", 1000);
-
-var weightSlider = weightDiv.append("input")
-  .attr("type", "range")
-  .attr("name", "scale")
-  .attr("id", "weightSlider")
-  .attr("min", 1)
-  .attr("max", 10)// "21") actual maximum.
-  .attr("step", 1)
-  .attr("value", 10);
-weightDiv.append("text").text("Weight");
-
-var fullGraph;
-
-
-var force = d3.layout.force()
-  .charge(0) // might be important.. 
-  .size([window.innerWidth * xScale, window.innerHeight * yScale]);
 
 var svg = chart.append("svg")
   .attr("width", window.innerWidth * .95)
   .attr("height", window.innerHeight * .93);
 
+var force = d3.layout.force()
+  .charge(0) // might be important.. 
+  .size([window.innerWidth * xScale, window.innerHeight * yScale]);
 
+var fullGraph;
 
 d3.json("mapOfScienceData.json", function(error, data) {
-  fullGraph = data;
+  fullGraph = data;//d3.map(data);
   force = force
     .nodes(data.nodes)
     .links(data.links)
     .start()
     .stop();
 
-    svg.call(d3.behavior.zoom()
-             .on("zoom", function() {
-               if (d3.event.sourceEvent.type=='mousewheel' || d3.event.sourceEvent.type=='DOMMouseScroll') {
-                 var wheelDelta = d3.event.sourceEvent.wheelDelta;
-                 var delta = parseInt(wheelDelta / 100) * 0.5;
-                 if (xScale + delta > 0 && yScale + delta > 0) {
-                   xScale += delta;
-                   yScale += delta;
-                 }
-                 render(500, xScale, yScale);
-               }}));
 
+  d3.csv("num_areas.csv", function(error, response) {
+    areaCount = {};
+    response.forEach( function(d) { 
+      areaCount[parseInt(d["sub_discipline_Id"])] = parseInt(d["num_areas"]);
+    });
+    fullGraph.nodes.forEach( function(d) {
+      count = areaCount[d.id]
+      d.num_areas = count
+      d._size = d.num_areas;
+    });
+    
+  });
+
+  fullGraph.nodes.forEach( function(d) {
+    d._size = d.xfact;
+    //d._size = d.num_areas;
+  });
+
+         
+  svg.call(d3.behavior.zoom()
+           .on("zoom", function() {
+             var event = d3.event.sourceEvent;
+
+             if (event.type=='mousewheel' || event.type=='DOMMouseScroll') {
+               var wheelDelta = event.wheelDelta;
+               var delta = parseInt(wheelDelta / 100) * 0.5;
+               if (xScale + delta > 0 && yScale + delta > 0) {
+                 xScale += delta;
+                 yScale += delta;
+               }
+               redraw(500, xScale, yScale);
+             }}));
+  
   svg.call(d3.behavior.drag()
            .on("drag", function() {
-             var dx = d3.event.sourceEvent.webkitMovementX;
-             var dy = d3.event.sourceEvent.webkitMovementY;
-
-             var rx = xOffset + dx;
-             var ry = yOffset + dy;
-
-             console.log("rx: " + rx);
-             console.log("ry: " + ry);
-
-             //if (rx >= -100 * xScale && rx < svg.attr("width")) {
-             xOffset = rx;
-             //}
-
-             //if (ry >= -100 * yScale && ry < svg.attr("height")) {
-             yOffset = ry;
-             //}
-             render(0, xScale, yScale);
+             xOffset += d3.event.dx;
+             yOffset += d3.event.dy;
+             redraw(0, xScale, yScale);
            }));
 
-  buildRender(data);
+  buildGraph(data);
 });
 
 
 
-function buildRender(graph) {
-  /**
-   * Perform the join, render the data,
-   * and then add the labels.
-   */
-
-  
-  updateData(graph.nodes, graph.links);
+function buildGraph(graph) {
+  /** Perform the join, render the data, and then adds labels. **/
+  updateLinks(graph.links);
+  updateNodes(graph.nodes);
 
   var node = svg.selectAll(".node")
     .data(graph.nodes, function(d) {
@@ -149,53 +156,13 @@ function buildRender(graph) {
 
 
 
-function updateData(nodes, links) {
-  /**
-   * Called whenever the data changes. Performs a join.
-   */
-
-  /**************
-   * LINKS
-   *************/
-
-  // set compare
-  var link = svg.selectAll(".link")
-    .data(links, function(d) {
-      return "" + d.source.name + d.target.name;
+function updateNodes(nodeData) {
+ var node = svg.selectAll(".node") // set comparison
+    .data(nodeData, function(d) {
+      return d.id;
     });
 
-  // introduce new
-  var linkEnter = link.enter()
-    .append("line")
-    .attr("class", "link")
-    .style("stroke-width", function(d) { return Math.sqrt(Math.sqrt(Math.sqrt(d.weight))); })
-    .style("stroke", function(d) { if (d.source.color === d.target.color) {
-      return color[d.source.color];} else { return "#ccc"; } });
-
-  // update existing
-  var linkUpdate = link
-    .attr("x1", function(d) { return d.source.x * xScale + xOffset; })
-    .attr("y1", function(d) { return d.source.y * yScale + yOffset; })
-    .attr("x2", function(d) { return d.target.x * xScale + xOffset; })
-    .attr("y2", function(d) { return d.target.y * yScale + yOffset; });
-  
-  // remove expiring
-  var linkExit = link.exit().remove();
-
-
-
-  /**************
-   * NODES
-   *************/
-
-  // set compare
-  var node = svg.selectAll(".node")
-    .data(nodes, function(d) {
-      return d.name;
-    });
-
-  // introduce new
-  var nodeEnter = node.enter()
+  var nodeEnter = node.enter()   // introduce new
     .append("g")
     .attr("class", "node")
     .attr("transform", function(d) {
@@ -203,68 +170,86 @@ function updateData(nodes, links) {
     });
 
   nodeEnter.append("circle")
-    .attr("r", function(d) { return d.xfact; })
+    .attr("r", function(d) { return d._size; })
     .style("fill", function(d) { return color[d.color]; });
 
-  
-  // update existing
-  var nodeUpdate = node
+  var nodeUpdate = node   // update existing
     .attr("transform", function(d) {
       return "translate(" + (d.x * xScale + xOffset) + "," + (d.y * yScale + yOffset) + ")";
     });
 
-  // remove expiring
-  var nodeExit = node.exit().remove();
-
+  var nodeExit = node.exit().remove();   // remove expiring
 }
 
 
 
-function render(transitionDuration, xScale, yScale) {
+function updateLinks(linkData) {
+  /** Called whenever link data changes. Performs a join. **/
+
+  var link = svg.selectAll(".link") // set comparison
+    .data(linkData, function(d) {
+      return "" + d.source.name + d.target.name;
+    });
+
+  var linkEnter = link.enter()   // introduce new
+    .append("line")
+    .attr("class", "link")
+    .style("stroke-width", function(d) { return Math.sqrt(Math.sqrt(Math.sqrt(d.weight))); })
+    .style("stroke", function(d) { if (d.source.color === d.target.color) {
+      return color[d.source.color];} else { return "#ccc"; } });
+
+  var linkUpdate = link   // update existing
+    .attr("x1", function(d) { return d.source.x * xScale + xOffset; })
+    .attr("y1", function(d) { return d.source.y * yScale + yOffset; })
+    .attr("x2", function(d) { return d.target.x * xScale + xOffset; })
+    .attr("y2", function(d) { return d.target.y * yScale + yOffset; });
+  
+  var linkExit = link.exit().remove();   // remove expiring
+}
+
+
+
+function redraw(transitionDuration, xScale, yScale) {
+  /** Called to redraw the graph. **/
   
   var link = svg.selectAll(".link");
   var node = svg.selectAll(".node");
   
-  // update existing
   var linkUpdate = link.transition().duration(transitionDuration)
     .attr("x1", function(d) { return d.source.x * xScale + xOffset; })
     .attr("y1", function(d) { return d.source.y * yScale + yOffset; })
     .attr("x2", function(d) { return d.target.x * xScale + xOffset; })
     .attr("y2", function(d) { return d.target.y * yScale + yOffset; });
   
-  // update existing
   var nodeUpdate = node.transition().duration(transitionDuration)
     .attr("transform", function(d) { return "translate(" + (d.x * xScale + xOffset) + "," + (d.y * yScale + yOffset) + ")"; });
-
 }
 
-weightSlider.on("change", function(event) {
-  applyFilter(function(data) {
-    return data.group === 1 || data.xfact >= weightSlider.property("max") - weightSlider.property("value");
-  });
-});
 
 
 function applyFilter(filter) {
-  var n = fullGraph.nodes.filter(
-    function(d) {
-      return filter(d);
-    });
-
-  var l = fullGraph.links.filter(
+  
+  updateLinks(fullGraph.links.filter(
     function(d) {
       return filter(d.source) && filter(d.target);
-    });
-
-  updateData(n, l);
+    }));
+  
+  updateNodes(fullGraph.nodes.filter(
+    function(d) {
+      return filter(d);
+    }));
 }
 
+
+/*
 window.onresize = function(event) {
+
   svg.attr("width", window.innerWidth * .95)
     .attr("height", window.innerHeight * .93);
 
   xScale = window.innerWidth / maxNodeX;
   yScale = window.innerHeight / maxNodeY;
 
-  render(0, xScale, yScale);
+  redraw(0, xScale, yScale);
 }
+*/
