@@ -8,12 +8,12 @@ colors = [
     "Dandelion",
     "Mahogany",
     "Lavender",
-    "SkyBlue",
-    "MulBerry",
-    "BrickRed",
-    "Yellow",
-    "Emerald",
-    "Red"
+    #"SkyBlue",
+    #"MulBerry",
+    #"BrickRed",
+    #"Yellow",
+    #"Emerald",
+    #"Red"
     ]
     
 

@@ -1,6 +1,3 @@
-#controls {
-    background-color: #888;
-}
 
 .link {
   fill: none;
@@ -21,9 +18,4 @@
 
 .node text {
     color: black;
-}
-
-.slider {
-    float: left;
-    width: 200px;
 }

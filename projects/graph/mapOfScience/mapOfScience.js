@@ -43,7 +43,7 @@ var weightSlider = d3.select("#weightSlider");
 
 weightSlider.on("change", function(event) {
   applyFilter(function(data) {
-    return data.group === 1 || data._size >= weightSlider.property("max") - weightSlider.property("value");
+    return data.group === 1 || data._size >= weightSlider.property("value");
   });
 });
 
