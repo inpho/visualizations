@@ -7,20 +7,21 @@ if __name__ == "__main__":
     links = []
 
     for i in range(30):
-        x = random.randint(80, 350)
-        y = random.randint(80, 350)
-        xfact = random.randint(15, 30)
-        yfact = random.randint(15, 30)
+        x = random.randint(100, 500)
+        y = random.randint(100, 350)
+        xfact = random.uniform(.1, 20)
+        yfact = random.uniform(.1, 20)
         nodes.append(node.Node(i, str(i), x, y, xfact, yfact))
         
     print nodes
 
     for i in range(30):
-        s = random.randint(0, len(nodes))
-        t = random.randint(0, len(nodes))
+        s = random.randint(0, len(nodes)-1)
+        t = random.randint(0, len(nodes)-1)
         if s == t:
             i -= 1
             continue
+
         w = random.randint(77, 200)
         print s, t
         links.append(link.Link(nodes[s], nodes[t], w))

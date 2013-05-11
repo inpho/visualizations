@@ -31,7 +31,7 @@ def findAttr(inFile, attr):
                     mini = e if e < mini else mini
                     maxi = e if e > maxi else maxi
 
-                print "Max: %.02f, Min: %.02f" % (maxi, mini)
+                print "Min: %.02f, Max: %.02f" % (mini, maxi)
 
         
     
