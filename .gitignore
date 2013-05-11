@@ -17,3 +17,7 @@
 *.rar
 *.tar
 *.zip
+
+# Compiled Pybabies #
+####################
+*.pyc
