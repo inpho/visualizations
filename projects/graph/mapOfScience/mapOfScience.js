@@ -48,22 +48,29 @@ weightSlider.on("change", function(event) {
 });
 
 
+
+
 $("#btnScience").click( function(event) {
   fullGraph.nodes.forEach( function(d) {
     d._size = d.xfact;  
   });
   updateNodes(fullGraph.nodes);
   
-  redraw(0, xScale, yScale);  
+  redraw(0, xScale, yScale);
 });
+
+
 
 $("#btnInPhO").click( function(event) {
   fullGraph.nodes.forEach( function(d) {
     d._size = d.num_areas;
   });
   updateNodes(fullGraph.nodes);
+  
   redraw(0, xScale, yScale);
 });
+
+
 
 
 var chart = d3.select("#chart")
@@ -86,7 +93,6 @@ d3.json("mapOfScienceData.json", function(error, data) {
     .start()
     .stop();
 
-
   d3.csv("num_areas.csv", function(error, response) {
     areaCount = {};
     response.forEach( function(d) { 
@@ -96,13 +102,13 @@ d3.json("mapOfScienceData.json", function(error, data) {
       count = areaCount[d.id]
       d.num_areas = count
       d._size = d.num_areas;
+      redraw(0, xscale, yscale);
     });
     
   });
 
   fullGraph.nodes.forEach( function(d) {
     d._size = d.xfact;
-    //d._size = d.num_areas;
   });
 
          
@@ -241,7 +247,7 @@ function applyFilter(filter) {
 }
 
 
-/*
+
 window.onresize = function(event) {
 
   svg.attr("width", window.innerWidth * .95)
@@ -252,4 +258,4 @@ window.onresize = function(event) {
 
   redraw(0, xScale, yScale);
 }
-*/
+
