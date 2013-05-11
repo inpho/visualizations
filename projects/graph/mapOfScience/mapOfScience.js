@@ -60,19 +60,6 @@ $("#btnScience").click( function(event) {
 });
 
 
-
-$("#btnInPhO").click( function(event) {
-  fullGraph.nodes.forEach( function(d) {
-    d._size = d.num_areas;
-  });
-  updateNodes(fullGraph.nodes);
-  
-  redraw(0, xScale, yScale);
-});
-
-
-
-
 var chart = d3.select("#chart")
 
 var svg = chart.append("svg")
@@ -96,23 +83,45 @@ d3.json("small-data.json", function(error, data) {
     .start()
     .stop();
 
+  
+  // Give each node a size based on xfact.
+  // Seems to be what Katy Borner did.
+  // TODO: Find her paper and figure out what x_fact is.
+  fullGraph.nodes.forEach( function(d) {
+    d._size = d.xfact;
+  });
+  
+  // Request additional data set with area count for each science.
+  // TODO: ask jaimie (jammurdo) what that means.
   d3.csv("num_areas.csv", function(error, response) {
     areaCount = {};
     response.forEach( function(d) { 
       areaCount[parseInt(d["sub_discipline_Id"])] = parseInt(d["num_areas"]);
     });
+
+    // Give each node a num_areas attribute.
     fullGraph.nodes.forEach( function(d) {
       count = areaCount[d.id]
       d.num_areas = count
-      d._size = d.num_areas;
-      redraw(0, xscale, yscale);
+    });
+
+    // set InPhO Button to render node sizes based on entry count per node
+    $("#btnInPhO").click( function(event) {
+      fullGraph.nodes.forEach( function(d) {
+        d._size = d.num_areas;
+      });
+      updateNodes(fullGraph.nodes);
+      redraw(0, xScale, yScale);
     });
     
+    // Lastly, enable the InPhO button (by removing disabled attribute)
+    $("#btnInPhO").removeAttr("disabled");
   });
 
-  fullGraph.nodes.forEach( function(d) {
-    d._size = d.xfact;
-  });
+  
+  
+  
+  
 
          
   svg.call(d3.behavior.zoom()
