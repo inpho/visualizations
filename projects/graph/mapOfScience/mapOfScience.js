@@ -85,6 +85,8 @@ var force = d3.layout.force()
 
 var fullGraph;
 
+
+// Must load original graph before 
 d3.json("mapOfScienceData.json", function(error, data) {
   fullGraph = data;//d3.map(data);
   force = force
