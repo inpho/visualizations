@@ -30,5 +30,3 @@ if __name__ == "__main__":
     
     with open(filename, 'w') as fout:
         fout.write(json.dumps(data))
-
-             
