@@ -41,10 +41,12 @@ var color = {
 
 var weightSlider = d3.select("#weightSlider");
 
+weightFilter = function(data) {
+  return data.group === 1 || data._size >= weightSlider.property("value");
+};
+
 weightSlider.on("change", function(event) {
-  applyFilter(function(data) {
-    return data.group === 1 || data._size >= weightSlider.property("value");
-  });
+  applyFilter(weightFilter);
 });
 
 
@@ -54,8 +56,8 @@ $("#btnScience").click( function(event) {
   fullGraph.nodes.forEach( function(d) {
     d._size = d.xfact;  
   });
+  applyFilter(weightFilter);
   updateNodes(fullGraph.nodes);
-  
   redraw(0, xScale, yScale);
 });
 
@@ -110,6 +112,7 @@ d3.json("small-data.json", function(error, data) {
       fullGraph.nodes.forEach( function(d) {
         d._size = d.num_areas;
       });
+      applyFilter(weightFilter);
       updateNodes(fullGraph.nodes);
       redraw(0, xScale, yScale);
     });
@@ -119,11 +122,8 @@ d3.json("small-data.json", function(error, data) {
   });
 
   
-  
-  
-  
-
-         
+  // Enable Scale Behaviour (mousewheel scroll)
+  // TODO: Get this to zoom centered on mouse location.
   svg.call(d3.behavior.zoom()
            .on("zoom", function() {
              var event = d3.event.sourceEvent;
@@ -138,6 +138,7 @@ d3.json("small-data.json", function(error, data) {
                redraw(500, xScale, yScale);
              }}));
   
+  // Enable drag behaviour.
   svg.call(d3.behavior.drag()
            .on("drag", function() {
              xOffset += d3.event.dx;
