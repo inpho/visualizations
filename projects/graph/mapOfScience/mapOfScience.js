@@ -103,8 +103,9 @@ d3.json("small-data.json", function(error, data) {
 
     // Give each node a num_areas attribute.
     fullGraph.nodes.forEach( function(d) {
-      count = areaCount[d.id]
-      d.num_areas = count
+      count = 0;
+      count = areaCount[d.id] || count;
+      d.num_areas = count;
     });
 
     // set InPhO Button to render node sizes based on entry count per node
