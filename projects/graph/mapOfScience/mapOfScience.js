@@ -103,8 +103,7 @@ d3.json("mapOfScienceData.json", function(error, data) {
 
     // Give each node a num_areas attribute.
     fullGraph.nodes.forEach( function(d) {
-      count = 0;
-      count = areaCount[d.id] || count;
+      count = areaCount[d.id];
       d.num_areas = count;
     });
 
@@ -194,7 +193,10 @@ function updateNodes(nodeData) {
   var nodeUpdate = node   // update existing
     .attr("transform", function(d) {
       return "translate(" + (d.x * xScale + xOffset) + "," + (d.y * yScale + yOffset) + ")";
-    });
+    })
+    .select("circle")
+      .attr("r", function(d) { return d._size; });
+
 
   var nodeExit = node.exit().remove();   // remove expiring
 }
