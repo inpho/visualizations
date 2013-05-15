@@ -49,15 +49,11 @@ weightSlider.on("change", function(event) {
   applyFilter(weightFilter);
 });
 
-
-
-
 $("#btnScience").click( function(event) {
   fullGraph.nodes.forEach( function(d) {
     d._size = d.xfact;  
   });
   applyFilter(weightFilter);
-  updateNodes(fullGraph.nodes);
   redraw(0, xScale, yScale);
 });
 
@@ -94,7 +90,7 @@ d3.json("mapOfScienceData.json", function(error, data) {
   });
   
   // Request additional data set with area count for each science.
-  // TODO: ask jaimie (jammurdo) what that means.
+
   d3.csv("num_areas.csv", function(error, response) {
     areaCount = {};
     response.forEach( function(d) { 
@@ -113,7 +109,6 @@ d3.json("mapOfScienceData.json", function(error, data) {
         d._size = d.num_areas;
       });
       applyFilter(weightFilter);
-      updateNodes(fullGraph.nodes);
       redraw(0, xScale, yScale);
     });
     
