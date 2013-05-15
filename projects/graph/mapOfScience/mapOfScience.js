@@ -76,8 +76,8 @@ var fullGraph;
 
 
 // Must load original graph before 
-//d3.json("mapOfScienceData.json", function(error, data) {
-d3.json("small-data.json", function(error, data) {
+d3.json("mapOfScienceData.json", function(error, data) {
+//d3.json("small-data.json", function(error, data) {
   fullGraph = data;//d3.map(data);
   force = force
     .nodes(data.nodes)
@@ -187,9 +187,7 @@ function updateNodes(nodeData) {
     .attr("class", "node")
     .attr("transform", function(d) {
       return "translate(" + (d.x * xScale + xOffset) + "," + (d.y * yScale + yOffset) + ")";
-    });
-
-  nodeEnter.append("circle")
+    }).append("circle")
     .attr("r", function(d) { return d._size; })
     .style("fill", function(d) { return color[d.color]; });
 
@@ -212,7 +210,7 @@ function updateLinks(linkData) {
     });
 
   var linkEnter = link.enter()   // introduce new
-    .append("line")
+    .insert("line",":first-child")
     .attr("class", "link")
     .style("stroke-width", function(d) { return Math.sqrt(Math.sqrt(Math.sqrt(d.weight))); })
     .style("stroke", function(d) { if (d.source.color === d.target.color) {
@@ -258,6 +256,7 @@ function applyFilter(filter) {
     function(d) {
       return filter(d);
     }));
+  
 }
 
 
