@@ -1,0 +1,2845 @@
+*vertices
+1 "Clinical Cancer Research" 340.2555911 214.2835821 x_fact 14.79 y_fact 14.79 ic Red bc Gray50 0
+2 "Circulation" 366.4536741 174.960199 x_fact 12.41 y_fact 12.41 ic Red bc Gray50 0
+3 "Data Mining" 130.0319489 172.5024876 x_fact 20 y_fact 20 ic Lavender bc Gray50 0
+4 "Protein Science" 316.6134185 203.2238806 x_fact 9.56 y_fact 9.56 ic Emerald bc Gray50 0
+5 "Signal Processing" 143.4504792 161.4427861 x_fact 10.83 y_fact 10.83 ic Lavender bc Gray50 0
+6 "Neuroscience; Molecular & Cellular" 380.5111821 200.7661692 x_fact 10.34 y_fact 10.34 ic Dandelion bc Gray50 0
+7 "Anesthetics & Analgesics" 368.370607 187.2487562 x_fact 6.08 y_fact 6.08 ic Red bc Gray50 0
+8 "Urology" 357.5079872 229.0298507 x_fact 6.34 y_fact 6.34 ic Red bc Gray50 0
+9 "Immunology" 333.2268371 215.5124378 x_fact 7.92 y_fact 7.92 ic BrickRed bc Gray50 0
+10 "Macromolecules & Polymers" 239.9361022 144.238806 x_fact 9.74 y_fact 9.74 ic Blue bc Gray50 0
+11 "Affective Disorders" 422.6837061 184.7910448 x_fact 4.04 y_fact 4.04 ic Dandelion bc Gray50 0
+12 "Oncology" 358.1469649 217.9701493 x_fact 7.07 y_fact 7.07 ic Red bc Gray50 0
+13 "Surface Science" 181.7891374 119.6616915 x_fact 16.98 y_fact 16.98 ic Mulberry bc Gray50 0
+14 "Nonlinear Analysis" 133.8658147 143.0099502 x_fact 4.82 y_fact 4.82 ic Mulberry bc Gray50 0
+15 "Hospital Financial Management" 395.8466454 108.60199 x_fact 3.62 y_fact 3.62 ic Peach bc Gray50 0
+16 "Rheumatology" 353.0351438 195.8507463 x_fact 4.96 y_fact 4.96 ic Red bc Gray50 0
+17 "Occupational Health" 335.7827476 131.9502488 x_fact 3.27 y_fact 3.27 ic Peach bc Gray50 0
+18 "Organic Chemistry" 250.798722 118.4328358 x_fact 14.74 y_fact 14.74 ic Blue bc Gray50 0
+19 "Leukemia" 343.4504792 210.5970149 x_fact 6.14 y_fact 6.14 ic Red bc Gray50 0
+20 "Virology" 328.115016 233.9452736 x_fact 5.06 y_fact 5.06 ic BrickRed bc Gray50 0
+21 "Plant Physiology" 291.0543131 260.9800995 x_fact 4.85 y_fact 4.85 ic OliveGreen bc Gray50 0
+22 "Allergy & Clinical Immunology" 353.0351438 208.1393035 x_fact 3.52 y_fact 3.52 ic Red bc Gray50 0
+23 "Material Science" 185.6230032 129.4925373 x_fact 6.62 y_fact 6.62 ic SkyBlue bc Gray50 0
+24 "Dermatology" 353.0351438 162.6716418 x_fact 5.71 y_fact 5.71 ic Red bc Gray50 0
+25 "Kidney" 361.341853 197.079602 x_fact 4.81 y_fact 4.81 ic Red bc Gray50 0
+26 "Pharmacology Science" 363.2587859 209.3681592 x_fact 4.85 y_fact 4.85 ic Red bc Gray50 0
+27 "Law" 486.5814696 251.1492537 x_fact 2.66 y_fact 2.66 ic Yellow bc Gray50 0
+28 "Medical Imaging" 372.2044728 206.9104478 x_fact 5.14 y_fact 5.14 ic Dandelion bc Gray50 0
+29 "Bacteriology" 311.5015974 230.2587065 x_fact 4.97 y_fact 4.97 ic BrickRed bc Gray50 0
+30 "Marine Biology" 257.1884984 306.4477612 x_fact 3.4 y_fact 3.4 ic OliveGreen bc Gray50 0
+31 "Developmental Biology" 349.8402556 209.3681592 x_fact 4.23 y_fact 4.23 ic Red bc Gray50 0
+32 "Digestion" 356.2300319 273.2686567 x_fact 4.87 y_fact 4.87 ic Red bc Gray50 0
+33 "Toxicology Applied Pharmacology" 333.8658147 204.4527363 x_fact 2.87 y_fact 2.87 ic Red bc Gray50 0
+34 "Transportation Research" 195.8466454 205.681592 x_fact 3.57 y_fact 3.57 ic SkyBlue bc Gray50 0
+35 "Inorganic Chemistry" 244.4089457 118.4328358 x_fact 9.42 y_fact 9.42 ic Blue bc Gray50 0
+36 "Chemical Engineering" 206.0702875 163.9004975 x_fact 5.54 y_fact 5.54 ic SkyBlue bc Gray50 0
+37 "Pharmaceutical Research" 306.3897764 129.4925373 x_fact 3.41 y_fact 3.41 ic Blue bc Gray50 0
+38 "Semiconducting Materials" 180.5111821 125.8059701 x_fact 16.38 y_fact 16.38 ic Mulberry bc Gray50 0
+39 "Diabetes Care" 349.8402556 149.1542289 x_fact 3.37 y_fact 3.37 ic Red bc Gray50 0
+40 "Clinical Neurophysiology" 411.1821086 199.5373134 x_fact 3.28 y_fact 3.28 ic Dandelion bc Gray50 0
+41 "Opthamology" 360.7028754 166.358209 x_fact 4.47 y_fact 4.47 ic Red bc Gray50 0
+42 "Nutrition" 334.5047923 173.7313433 x_fact 3.23 y_fact 3.23 ic Peach bc Gray50 0
+43 "Finance" 101.2779553 215.5124378 x_fact 2.32 y_fact 2.32 ic Yellow bc Gray50 0
+44 "Neurosurgery" 383.0670927 205.681592 x_fact 4.38 y_fact 4.38 ic Dandelion bc Gray50 0
+45 "Fertility" 342.8115016 194.6218905 x_fact 3.23 y_fact 3.23 ic Red bc Gray50 0
+46 "Applied Optics" 163.2587859 127.0348259 x_fact 8.49 y_fact 8.49 ic Lavender bc Gray50 0
+47 "Nuclear Engineering" 195.2076677 176.1890547 x_fact 3.5 y_fact 3.5 ic SkyBlue bc Gray50 0
+48 "Molecular Cell Biology" 326.1980831 216.7412935 x_fact 4.48 y_fact 4.48 ic BrickRed bc Gray50 0
+49 "Food Chemistry" 304.4728435 189.7064677 x_fact 4.67 y_fact 4.67 ic Blue bc Gray50 0
+50 "Obstetrics" 347.9233227 187.2487562 x_fact 4.97 y_fact 4.97 ic Red bc Gray50 0
+51 "Chest & Respiratory" 354.9520767 200.7661692 x_fact 4.27 y_fact 4.27 ic Red bc Gray50 0
+52 "Earthquake Engineering" 207.9872204 179.8756219 x_fact 3.53 y_fact 3.53 ic SkyBlue bc Gray50 0
+53 "Zoology" 270.6070288 316.278607 x_fact 2.41 y_fact 2.41 ic OliveGreen bc Gray50 0
+54 "Pharmaceutical Design" 301.9169329 156.5273632 x_fact 4.55 y_fact 4.55 ic Blue bc Gray50 0
+55 "AntiMicrobial Agents" 329.3929712 215.5124378 x_fact 3.77 y_fact 3.77 ic BrickRed bc Gray50 0
+56 "Systems Software" 124.2811502 181.1044776 x_fact 2.15 y_fact 2.15 ic Lavender bc Gray50 0
+57 "Decision Support Systems" 100 198.3084577 x_fact 2.64 y_fact 2.64 ic Yellow bc Gray50 0
+58 "Business Ethics" 491.6932907 205.681592 x_fact 2.88 y_fact 2.88 ic Yellow bc Gray50 0
+59 "Vascular Surgery" 369.0095847 208.1393035 x_fact 3.28 y_fact 3.28 ic Red bc Gray50 0
+60 "Pulp & Paper" 200.9584665 161.4427861 x_fact 3.14 y_fact 3.14 ic SkyBlue bc Gray50 0
+61 "Seismology" 230.3514377 312.5920398 x_fact 3.3 y_fact 3.3 ic Mahogany bc Gray50 0
+62 "Bone Joint Surgery" 377.9552716 177.4179104 x_fact 3.98 y_fact 3.98 ic Peach bc Gray50 0
+63 "Neurology" 400.3194888 200.7661692 x_fact 4.62 y_fact 4.62 ic Dandelion bc Gray50 0
+64 "Algebra" 135.7827476 140.5522388 x_fact 3.51 y_fact 3.51 ic Mulberry bc Gray50 0
+65 "Antenna" 156.8690096 136.8656716 x_fact 4.26 y_fact 4.26 ic Lavender bc Gray50 0
+66 "Circuit Systems" 150.4792332 150.3830846 x_fact 4.23 y_fact 4.23 ic Lavender bc Gray50 0
+67 "Nursing Specialists" 406.7092652 113.5174129 x_fact 3.77 y_fact 3.77 ic Peach bc Gray50 0
+68 "Retinal Surgery" 367.7316294 166.358209 x_fact 3.94 y_fact 3.94 ic Peach bc Gray50 0
+69 "Psychopharmacology" 404.7923323 199.5373134 x_fact 3.12 y_fact 3.12 ic Dandelion bc Gray50 0
+70 "Aeronautics & Astronautics" 178.5942492 167.5870647 x_fact 3.94 y_fact 3.94 ic SkyBlue bc Gray50 0
+71 "Psychoanalysis" 441.8530351 179.8756219 x_fact 1.74 y_fact 1.74 ic Peach bc Gray50 0
+72 "Oceanography" 234.8242812 294.159204 x_fact 2.42 y_fact 2.42 ic Mahogany bc Gray50 0
+73 "Sports Medicine" 384.9840256 163.9004975 x_fact 2.87 y_fact 2.87 ic Peach bc Gray50 0
+74 "Operations Research" 113.4185304 184.7910448 x_fact 2.98 y_fact 2.98 ic Yellow bc Gray50 0
+75 "Chromatography; Electrophoresis" 277.6357827 139.3233831 x_fact 4.79 y_fact 4.79 ic Blue bc Gray50 0
+76 "Pediatrics" 350.4792332 192.1641791 x_fact 4.46 y_fact 4.46 ic Red bc Gray50 0
+77 "Cardiovascular" 360.7028754 181.1044776 x_fact 3.82 y_fact 3.82 ic Red bc Gray50 0
+78 "Paleobiology" 243.1309904 316.278607 x_fact 1.78 y_fact 1.78 ic Mahogany bc Gray50 0
+79 "Economics" 498.0830671 232.7164179 x_fact 2.68 y_fact 2.68 ic Yellow bc Gray50 0
+80 "Hypertension" 364.5367412 160.2139303 x_fact 3.37 y_fact 3.37 ic Peach bc Gray50 0
+81 "Human Molecular Genetics" 359.4249201 222.8855721 x_fact 3.18 y_fact 3.18 ic Red bc Gray50 0
+82 "Clinical Endocrinology" 345.3674121 166.358209 x_fact 3.17 y_fact 3.17 ic Red bc Gray50 0
+83 "Dietetics" 347.284345 150.3830846 x_fact 2.47 y_fact 2.47 ic Red bc Gray50 0
+84 "Clinical Microbiology" 320.4472843 226.5721393 x_fact 3.13 y_fact 3.13 ic BrickRed bc Gray50 0
+85 "Hospital Pharmacy" 371.5654952 131.9502488 x_fact 5.06 y_fact 5.06 ic Peach bc Gray50 0
+86 "Gas Turbines" 190.0958466 174.960199 x_fact 2.38 y_fact 2.38 ic SkyBlue bc Gray50 0
+87 "Remote Sensing" 240.5750799 312.5920398 x_fact 3.41 y_fact 3.41 ic Mahogany bc Gray50 0
+88 "Computational Chemistry" 213.7380192 107.3731343 x_fact 7.16 y_fact 7.16 ic Blue bc Gray50 0
+89 "Surgery" 365.1757188 216.7412935 x_fact 3.54 y_fact 3.54 ic Red bc Gray50 0
+90 "Ceramics" 190.7348243 131.9502488 x_fact 6.74 y_fact 6.74 ic SkyBlue bc Gray50 0
+91 "AIDS Research" 334.5047923 215.5124378 x_fact 2.34 y_fact 2.34 ic Red bc Gray50 0
+92 "Military Aviation" 177.3162939 193.3930348 x_fact 5.35 y_fact 5.35 ic SkyBlue bc Gray50 0
+93 "Medical Records" 398.4025559 104.9154229 x_fact 1.99 y_fact 1.99 ic Peach bc Gray50 0
+94 "Statistics" 105.1118211 172.5024876 x_fact 2.66 y_fact 2.66 ic Yellow bc Gray50 0
+95 "Applied Economics" 500 229.0298507 x_fact 1.8 y_fact 1.8 ic Yellow bc Gray50 0
+96 "Automatic Control" 147.9233227 166.358209 x_fact 4.66 y_fact 4.66 ic Lavender bc Gray50 0
+97 "Atmospheric Science" 238.0191693 302.761194 x_fact 2.86 y_fact 2.86 ic Mahogany bc Gray50 0
+98 "Automotive Engineering" 179.2332268 178.6467662 x_fact 2.8 y_fact 2.8 ic SkyBlue bc Gray50 0
+99 "BioStatistics" 498.0830671 167.5870647 x_fact 1.79 y_fact 1.79 ic Yellow bc Gray50 0
+100 "Employee Health Benefit Plans" 395.8466454 102.4577114 x_fact 2.37 y_fact 2.37 ic Peach bc Gray50 0
+101 "Transplantation" 357.5079872 205.681592 x_fact 3.88 y_fact 3.88 ic Red bc Gray50 0
+102 "Alloys" 186.2619808 129.4925373 x_fact 5.47 y_fact 5.47 ic SkyBlue bc Gray50 0
+103 "Astronomy & Astrophysics" 170.9265176 138.0945274 x_fact 8 y_fact 8 ic Mulberry bc Gray50 0
+104 "Substance-abuse Treatment" 425.8785942 177.4179104 x_fact 2.08 y_fact 2.08 ic Peach bc Gray50 0
+105 "Research Policy; Technology Management" 494.8881789 203.2238806 x_fact 2.14 y_fact 2.14 ic Yellow bc Gray50 0
+106 "Drug Discovery" 365.8146965 113.5174129 x_fact 2.12 y_fact 2.12 ic Peach bc Gray50 0
+107 "Animal Science" 297.4440895 249.920398 x_fact 4.09 y_fact 4.09 ic BrickRed bc Gray50 0
+108 "Chaos Fractals & Complexity" 158.1469649 123.3482587 x_fact 5.62 y_fact 5.62 ic Mulberry bc Gray50 0
+109 "Environmental Contamination" 276.3578275 284.3283582 x_fact 2.24 y_fact 2.24 ic OliveGreen bc Gray50 0
+110 "Otolaryngology; Laryngoscope" 375.399361 194.6218905 x_fact 3.28 y_fact 3.28 ic Dandelion bc Gray50 0
+111 "Mechanical Design Engineering" 170.2875399 168.8159204 x_fact 3.09 y_fact 3.09 ic SkyBlue bc Gray50 0
+112 "Classics" 484.0255591 321.1940299 x_fact 1.67 y_fact 1.67 ic Canary bc Gray50 0
+113 "Biological Conservation" 262.9392971 301.5323383 x_fact 2.37 y_fact 2.37 ic OliveGreen bc Gray50 0
+114 "Thoracic Surgery" 365.1757188 198.3084577 x_fact 4.54 y_fact 4.54 ic Red bc Gray50 0
+115 "Phytochemistry" 294.2492013 138.0945274 x_fact 3.78 y_fact 3.78 ic Blue bc Gray50 0
+116 "Tropical Medicine" 319.1693291 260.9800995 x_fact 2.94 y_fact 2.94 ic BrickRed bc Gray50 0
+117 "Food Protection" 306.3897764 220.4278607 x_fact 2.36 y_fact 2.36 ic Emerald bc Gray50 0
+118 "Broadband Communication" 142.172524 167.5870647 x_fact 2.19 y_fact 2.19 ic Lavender bc Gray50 0
+119 "Energy Fuel" 204.7923323 189.7064677 x_fact 2.63 y_fact 2.63 ic SkyBlue bc Gray50 0
+120 "Soil Quality" 250.798722 276.9552239 x_fact 1.83 y_fact 1.83 ic SkyBlue bc Gray50 0
+121 "Integrated Circuit Design" 144.7284345 162.6716418 x_fact 2.54 y_fact 2.54 ic Lavender bc Gray50 0
+122 "Philosophy Psychology" 490.4153355 332.2537313 x_fact 2.33 y_fact 2.33 ic Canary bc Gray50 0
+123 "Construction & Project Management" 499.3610224 199.5373134 x_fact 1.74 y_fact 1.74 ic Yellow bc Gray50 0
+124 "Social Psychology" 461.6613419 194.6218905 x_fact 2.19 y_fact 2.19 ic Yellow bc Gray50 0
+125 "High Energy Physics" 169.0095847 122.119403 x_fact 7.62 y_fact 7.62 ic Mulberry bc Gray50 0
+126 "Strategic Management" 491.6932907 205.681592 x_fact 2.3 y_fact 2.3 ic Yellow bc Gray50 0
+127 "Genomics & Nucleic Acids" 315.9744409 251.1492537 x_fact 4.48 y_fact 4.48 ic Emerald bc Gray50 0
+128 "Heat Transfer" 191.3738019 162.6716418 x_fact 3.04 y_fact 3.04 ic SkyBlue bc Gray50 0
+129 "Cement & Concrete" 207.3482428 189.7064677 x_fact 2.4 y_fact 2.4 ic SkyBlue bc Gray50 0
+130 "Pathology" 350.4792332 216.7412935 x_fact 3.44 y_fact 3.44 ic Red bc Gray50 0
+131 "Pest Management Science" 289.1373802 289.2437811 x_fact 2.1 y_fact 2.1 ic OliveGreen bc Gray50 0
+132 "Corrosion" 207.3482428 114.7462687 x_fact 2.3 y_fact 2.3 ic SkyBlue bc Gray50 0
+133 "Veterinary Science" 310.2236422 245.0049751 x_fact 3.12 y_fact 3.12 ic BrickRed bc Gray50 0
+134 "Teacher Education; Evaluation" 476.3578275 206.9104478 x_fact 1.76 y_fact 1.76 ic Yellow bc Gray50 0
+135 "Stem Cells" 335.7827476 189.7064677 x_fact 2.64 y_fact 2.64 ic Red bc Gray50 0
+136 "Image Processing" 136.4217252 160.2139303 x_fact 2.66 y_fact 2.66 ic Lavender bc Gray50 0
+137 "Neural Networks" 133.2268371 171.2736318 x_fact 2.46 y_fact 2.46 ic Lavender bc Gray50 0
+138 "Nursing Education" 411.1821086 114.7462687 x_fact 1.85 y_fact 1.85 ic Peach bc Gray50 0
+139 "Intensive Care" 365.8146965 192.1641791 x_fact 3.1 y_fact 3.1 ic Red bc Gray50 0
+140 "Alternative Complementary Medicine" 372.2044728 170.0447761 x_fact 1.9 y_fact 1.9 ic Peach bc Gray50 0
+141 "Petroleum Engineering" 207.9872204 225.3432836 x_fact 1.82 y_fact 1.82 ic SkyBlue bc Gray50 0
+142 "Music & Theatre" 482.7476038 347 x_fact 2.03 y_fact 2.03 ic Canary bc Gray50 0
+143 "Memory & Cognition" 426.5175719 197.079602 x_fact 1.95 y_fact 1.95 ic Dandelion bc Gray50 0
+144 "Vision" 405.4313099 182.3333333 x_fact 2.51 y_fact 2.51 ic Dandelion bc Gray50 0
+145 "Communication Research" 487.2204473 214.2835821 x_fact 1.94 y_fact 1.94 ic Yellow bc Gray50 0
+146 "BioInformatics" 305.1118211 226.5721393 x_fact 1.96 y_fact 1.96 ic Emerald bc Gray50 0
+147 "Mechanics of Solids & Structures" 183.0670927 163.9004975 x_fact 2.65 y_fact 2.65 ic SkyBlue bc Gray50 0
+148 "Pharmacy" 354.313099 161.4427861 x_fact 2.35 y_fact 2.35 ic Red bc Gray50 0
+149 "Geomorphology" 234.8242812 306.4477612 x_fact 1.84 y_fact 1.84 ic Mahogany bc Gray50 0
+150 "Psychosis; Schizophrenia" 416.2939297 188.4776119 x_fact 2.89 y_fact 2.89 ic Dandelion bc Gray50 0
+151 "BioEthics" 392.0127796 107.3731343 x_fact 1.8 y_fact 1.8 ic Peach bc Gray50 0
+152 "Parellel Computing" 138.9776358 179.8756219 x_fact 2.09 y_fact 2.09 ic Lavender bc Gray50 0
+153 "Power Distribution" 150.4792332 156.5273632 x_fact 2.94 y_fact 2.94 ic Lavender bc Gray50 0
+154 "Gerontology" 435.4632588 171.2736318 x_fact 1.84 y_fact 1.84 ic Peach bc Gray50 0
+155 "Wood" 206.7092652 162.6716418 x_fact 1.9 y_fact 1.9 ic SkyBlue bc Gray50 0
+156 "Discrete Applied Mathematics" 130.0319489 151.6119403 x_fact 2.56 y_fact 2.56 ic Mulberry bc Gray50 0
+157 "Geology & Tectonics" 230.3514377 315.0497512 x_fact 2.63 y_fact 2.63 ic Mahogany bc Gray50 0
+158 "GeoChemistry" 228.4345048 315.0497512 x_fact 1.76 y_fact 1.76 ic Mahogany bc Gray50 0
+159 "Mobile Networks" 136.4217252 171.2736318 x_fact 1.79 y_fact 1.79 ic Lavender bc Gray50 0
+160 "Artificial Intelligence" 130.6709265 176.1890547 x_fact 1.99 y_fact 1.99 ic Lavender bc Gray50 0
+161 "Electro Analytical Chemistry" 249.5207668 118.4328358 x_fact 4.21 y_fact 4.21 ic Blue bc Gray50 0
+162 "Dental Education" 376.6773163 127.0348259 x_fact 2.06 y_fact 2.06 ic Peach bc Gray50 0
+163 "Enzyme Microbiological Techniques" 295.5271565 217.9701493 x_fact 2.27 y_fact 2.27 ic Emerald bc Gray50 0
+164 "Library Science; Infomation Retrieval" 108.9456869 192.1641791 x_fact 1.96 y_fact 1.96 ic Lavender bc Gray50 0
+165 "Biomaterials" 370.2875399 155.2985075 x_fact 3.55 y_fact 3.55 ic Peach bc Gray50 0
+166 "Quaternary Research" 232.9073482 316.278607 x_fact 1.79 y_fact 1.79 ic Mahogany bc Gray50 0
+167 "Endoscopic Surgery" 362.6198083 246.2338308 x_fact 2.44 y_fact 2.44 ic Red bc Gray50 0
+168 "Composites" 195.2076677 158.9850746 x_fact 2.38 y_fact 2.38 ic SkyBlue bc Gray50 0
+169 "Language Learning" 472.5239617 247.4626866 x_fact 1.43 y_fact 1.43 ic Yellow bc Gray50 0
+170 "American History" 485.3035144 301.5323383 x_fact 1.24 y_fact 1.24 ic Canary bc Gray50 0
+171 "Leadership & Organizational Behavior" 492.971246 201.9950249 x_fact 1.62 y_fact 1.62 ic Yellow bc Gray50 0
+172 "Agricultural Engineering" 252.715655 260.9800995 x_fact 1.81 y_fact 1.81 ic SkyBlue bc Gray50 0
+173 "Computer-Aided Process Planning" 114.057508 187.2487562 x_fact 2.55 y_fact 2.55 ic Yellow bc Gray50 0
+174 "Geriatrics" 420.1277955 190.9353234 x_fact 2.31 y_fact 2.31 ic Dandelion bc Gray50 0
+175 "Solid State Electronics" 163.8977636 136.8656716 x_fact 3.4 y_fact 3.4 ic Lavender bc Gray50 0
+176 "Optics & Lasers" 169.0095847 122.119403 x_fact 5.23 y_fact 5.23 ic Mulberry bc Gray50 0
+177 "Wool" 208.6261981 158.9850746 x_fact 1.81 y_fact 1.81 ic SkyBlue bc Gray50 0
+178 "Biomechanics" 376.6773163 170.0447761 x_fact 2.2 y_fact 2.2 ic Peach bc Gray50 0
+179 "Molecular Physics" 198.4025559 108.60199 x_fact 5.67 y_fact 5.67 ic Blue bc Gray50 0
+180 "Comparative Animal Physiology" 276.9968051 302.761194 x_fact 2.08 y_fact 2.08 ic OliveGreen bc Gray50 0
+181 "Political Science" 485.3035144 235.1741294 x_fact 1.63 y_fact 1.63 ic Yellow bc Gray50 0
+182 "Science History" 487.8594249 318.7363184 x_fact 1.42 y_fact 1.42 ic Canary bc Gray50 0
+183 "Poetry" 485.3035144 323.6517413 x_fact 1.64 y_fact 1.64 ic Canary bc Gray50 0
+184 "Nuclear Medicine" 370.2875399 231.4875622 x_fact 2.32 y_fact 2.32 ic Red bc Gray50 0
+185 "Nanotechnology" 197.1246006 122.119403 x_fact 3.81 y_fact 3.81 ic Blue bc Gray50 0
+186 "Speech Recognitation" 139.6166134 158.9850746 x_fact 3.4 y_fact 3.4 ic Lavender bc Gray50 0
+187 "Fluid Mechanics" 184.3450479 163.9004975 x_fact 2.44 y_fact 2.44 ic SkyBlue bc Gray50 0
+188 "Computer Graphics" 133.8658147 163.9004975 x_fact 1.77 y_fact 1.77 ic Lavender bc Gray50 0
+189 "Filtration Membrane" 218.2108626 157.7562189 x_fact 2.28 y_fact 2.28 ic SkyBlue bc Gray50 0
+190 "Clinical Infectious Disease" 337.0607029 219.199005 x_fact 2.86 y_fact 2.86 ic Red bc Gray50 0
+191 "Prosthetic Dentistry" 371.5654952 136.8656716 x_fact 1.95 y_fact 1.95 ic Peach bc Gray50 0
+192 "Orthodontics" 367.7316294 144.238806 x_fact 1.95 y_fact 1.95 ic Peach bc Gray50 0
+193 "Robotic Systems" 144.0894569 168.8159204 x_fact 3 y_fact 3 ic Lavender bc Gray50 0
+194 "Dental Research" 369.6485623 138.0945274 x_fact 2.24 y_fact 2.24 ic Peach bc Gray50 0
+195 "Atomic Spectrometry" 274.4408946 130.721393 x_fact 2.03 y_fact 2.03 ic Blue bc Gray50 0
+196 "Botany" 275.0798722 279.4129353 x_fact 2.04 y_fact 2.04 ic OliveGreen bc Gray50 0
+197 "Public Health Service" 371.5654952 100 x_fact 1.99 y_fact 1.99 ic Peach bc Gray50 0
+198 "Political Geography" 487.2204473 235.1741294 x_fact 1.82 y_fact 1.82 ic Yellow bc Gray50 0
+199 "Catalysis" 223.9616613 127.0348259 x_fact 4.58 y_fact 4.58 ic Blue bc Gray50 0
+200 "Radiation Protection" 376.0383387 248.6915423 x_fact 2.46 y_fact 2.46 ic Red bc Gray50 0
+201 "Machine Tools" 178.5942492 138.0945274 x_fact 2.22 y_fact 2.22 ic SkyBlue bc Gray50 0
+202 "Veterinary Medicine" 307.028754 242.5472637 x_fact 2.51 y_fact 2.51 ic BrickRed bc Gray50 0
+203 "Periodontology" 366.4536741 141.7810945 x_fact 2.13 y_fact 2.13 ic Peach bc Gray50 0
+204 "Birth Defects" 358.1469649 187.2487562 x_fact 1.8 y_fact 1.8 ic Red bc Gray50 0
+205 "Thrombosis" 358.1469649 183.5621891 x_fact 2.2 y_fact 2.2 ic Red bc Gray50 0
+206 "Freshwater Biology" 260.3833866 306.4477612 x_fact 1.49 y_fact 1.49 ic OliveGreen bc Gray50 0
+207 "Mental Health Nursing" 416.2939297 124.5771144 x_fact 2.13 y_fact 2.13 ic Peach bc Gray50 0
+208 "Artificial Evolution" 124.2811502 178.6467662 x_fact 1.83 y_fact 1.83 ic Lavender bc Gray50 0
+209 "English Literature" 484.0255591 323.6517413 x_fact 3.64 y_fact 3.64 ic Canary bc Gray50 0
+210 "Plastic Surgery" 371.5654952 172.5024876 x_fact 2.93 y_fact 2.93 ic Peach bc Gray50 0
+211 "Nursing Administration" 407.3482428 108.60199 x_fact 1.6 y_fact 1.6 ic Peach bc Gray50 0
+212 "Higher Education" 486.5814696 204.4527363 x_fact 3.06 y_fact 3.06 ic Yellow bc Gray50 0
+213 "Ecology" 271.2460064 301.5323383 x_fact 2.11 y_fact 2.11 ic OliveGreen bc Gray50 0
+214 "Modern Language" 484.0255591 323.6517413 x_fact 1.81 y_fact 1.81 ic Canary bc Gray50 0
+215 "Neurophsyiology & Neuroscience" 392.6517572 198.3084577 x_fact 4.03 y_fact 4.03 ic Dandelion bc Gray50 0
+216 "Mining" 204.1533546 206.9104478 x_fact 1.66 y_fact 1.66 ic SkyBlue bc Gray50 0
+217 "Aquaculture" 279.5527157 297.8457711 x_fact 2.31 y_fact 2.31 ic OliveGreen bc Gray50 0
+218 "Molecular Biological Evolution" 287.2204473 295.3880597 x_fact 2.13 y_fact 2.13 ic OliveGreen bc Gray50 0
+219 "Photonics" 167.0926518 122.119403 x_fact 3.31 y_fact 3.31 ic Mulberry bc Gray50 0
+220 "Urban Studies" 487.8594249 229.0298507 x_fact 1.53 y_fact 1.53 ic Yellow bc Gray50 0
+221 "Functional Analysis" 134.5047923 141.7810945 x_fact 1.9 y_fact 1.9 ic Mulberry bc Gray50 0
+222 "Linguistics" 480.1916933 306.4477612 x_fact 2.1 y_fact 2.1 ic Canary bc Gray50 0
+223 "Photo-Optics" 165.1757188 131.9502488 x_fact 2.22 y_fact 2.22 ic Lavender bc Gray50 0
+224 "Spine" 377.3162939 186.0199005 x_fact 2.61 y_fact 2.61 ic Peach bc Gray50 0
+225 "Robotics" 153.6741214 170.0447761 x_fact 1.79 y_fact 1.79 ic Lavender bc Gray50 0
+226 "Audiology" 393.9297125 200.7661692 x_fact 1.49 y_fact 1.49 ic Peach bc Gray50 0
+227 "Soil Science" 249.5207668 284.3283582 x_fact 2.58 y_fact 2.58 ic SkyBlue bc Gray50 0
+228 "Simulation" 154.313099 141.7810945 x_fact 1.73 y_fact 1.73 ic Mulberry bc Gray50 0
+229 "Nuclear Instrumentation" 170.2875399 123.3482587 x_fact 5.39 y_fact 5.39 ic Mulberry bc Gray50 0
+230 "Hispanic Studies" 484.0255591 323.6517413 x_fact 1.44 y_fact 1.44 ic Canary bc Gray50 0
+231 "Forest Science" 262.9392971 290.4726368 x_fact 2.19 y_fact 2.19 ic OliveGreen bc Gray50 0
+232 "Plasma Physics" 168.370607 127.0348259 x_fact 4.28 y_fact 4.28 ic Mulberry bc Gray50 0
+233 "Proteomics" 305.1118211 201.9950249 x_fact 2.04 y_fact 2.04 ic Emerald bc Gray50 0
+234 "Symbolic Interaction" 476.3578275 214.2835821 x_fact 1.31 y_fact 1.31 ic Yellow bc Gray50 0
+235 "Child & Adolescent Psychiatry" 438.658147 189.7064677 x_fact 1.59 y_fact 1.59 ic Dandelion bc Gray50 0
+236 "General Practice" 393.2907348 117.2039801 x_fact 1.77 y_fact 1.77 ic Peach bc Gray50 0
+237 "Environmental Management" 495.5271565 232.7164179 x_fact 1.53 y_fact 1.53 ic Yellow bc Gray50 0
+238 "Diabetes Metabolism" 352.3961661 157.7562189 x_fact 2.52 y_fact 2.52 ic Red bc Gray50 0
+239 "Geotechnical Engineering" 211.1821086 215.5124378 x_fact 2.23 y_fact 2.23 ic SkyBlue bc Gray50 0
+240 "Instrumentation" 160.0638978 134.4079602 x_fact 3.3 y_fact 3.3 ic Lavender bc Gray50 0
+241 "Clinical Chemistry" 353.0351438 190.9353234 x_fact 2.27 y_fact 2.27 ic Red bc Gray50 0
+242 "Fluid Engineering" 193.9297125 183.5621891 x_fact 1.93 y_fact 1.93 ic SkyBlue bc Gray50 0
+243 "Arthroscopy" 379.2332268 183.5621891 x_fact 2.12 y_fact 2.12 ic Peach bc Gray50 0
+244 "Eating Disorders; Sex Roles" 457.827476 190.9353234 x_fact 1.44 y_fact 1.44 ic Yellow bc Gray50 0
+245 "Water Quality & Resource Management" 227.7955272 245.0049751 x_fact 1.46 y_fact 1.46 ic SkyBlue bc Gray50 0
+246 "Ethnic Migration" 487.2204473 240.0895522 x_fact 1.32 y_fact 1.32 ic Yellow bc Gray50 0
+247 "Geriatric Psychiatry" 416.2939297 190.9353234 x_fact 1.64 y_fact 1.64 ic Dandelion bc Gray50 0
+248 "Sound & Vibration" 179.8722045 181.1044776 x_fact 2.72 y_fact 2.72 ic SkyBlue bc Gray50 0
+249 "Ore Processing" 199.0415335 178.6467662 x_fact 1.73 y_fact 1.73 ic SkyBlue bc Gray50 0
+250 "Ethnology" 485.3035144 260.9800995 x_fact 1.64 y_fact 1.64 ic Yellow bc Gray50 0
+251 "Prenatal Diagnostics" 354.9520767 195.8507463 x_fact 1.89 y_fact 1.89 ic Red bc Gray50 0
+252 "Cancer (translated)" 367.0926518 221.6567164 x_fact 2.07 y_fact 2.07 ic Red bc Gray50 0
+253 "Dialectics" 158.7859425 140.5522388 x_fact 1.7 y_fact 1.7 ic Lavender bc Gray50 0
+254 "Atmospheric GeoPhysics" 239.2971246 310.1343284 x_fact 3.46 y_fact 3.46 ic Mahogany bc Gray50 0
+255 "Flavors & Fragrance" 284.6645367 136.8656716 x_fact 1.95 y_fact 1.95 ic Blue bc Gray50 0
+256 "Numerical Methods in Engineering" 179.8722045 162.6716418 x_fact 2.32 y_fact 2.32 ic SkyBlue bc Gray50 0
+257 "EthnoPharmacology" 302.5559105 136.8656716 x_fact 2.6 y_fact 2.6 ic Blue bc Gray50 0
+258 "Electrocardiography" 362.6198083 178.6467662 x_fact 2.36 y_fact 2.36 ic Red bc Gray50 0
+259 "International Development" 496.8051118 233.9452736 x_fact 1.42 y_fact 1.42 ic Yellow bc Gray50 0
+260 "Electrochemistry" 206.7092652 124.5771144 x_fact 4.04 y_fact 4.04 ic SkyBlue bc Gray50 0
+261 "Political Studies" 485.3035144 231.4875622 x_fact 1.6 y_fact 1.6 ic Yellow bc Gray50 0
+262 "Molecular Endocrinology" 344.7284345 178.6467662 x_fact 3.03 y_fact 3.03 ic Red bc Gray50 0
+263 "Surface Coating Technology" 183.0670927 130.721393 x_fact 3.95 y_fact 3.95 ic Mulberry bc Gray50 0
+264 "Molecular Biochemical Parasitology" 310.2236422 272.039801 x_fact 1.79 y_fact 1.79 ic OliveGreen bc Gray50 0
+265 "Vocational Counseling" 469.3290735 201.9950249 x_fact 1.35 y_fact 1.35 ic Yellow bc Gray50 0
+266 "Oil & Natural Gas" 207.9872204 225.3432836 x_fact 1.87 y_fact 1.87 ic SkyBlue bc Gray50 0
+267 "International Conflict" 484.6645367 240.0895522 x_fact 1.78 y_fact 1.78 ic Yellow bc Gray50 0
+268 "Art History" 483.3865815 323.6517413 x_fact 2.26 y_fact 2.26 ic Canary bc Gray50 0
+269 "Applied Catalysis" 226.5175719 127.0348259 x_fact 1.66 y_fact 1.66 ic Blue bc Gray50 0
+270 "Agricultural Economics" 100 227.800995 x_fact 1.39 y_fact 1.39 ic Yellow bc Gray50 0
+271 "Social Work" 459.7444089 200.7661692 x_fact 1.52 y_fact 1.52 ic Yellow bc Gray50 0
+272 "Medical Insurance" 389.456869 112.2885572 x_fact 1.85 y_fact 1.85 ic Peach bc Gray50 0
+273 "Fluid Phase Equilibrium" 214.3769968 129.4925373 x_fact 2.06 y_fact 2.06 ic SkyBlue bc Gray50 0
+274 "Biotechnology Trends" 308.9456869 230.2587065 x_fact 1.56 y_fact 1.56 ic Emerald bc Gray50 0
+275 "Air Quality" 234.8242812 316.278607 x_fact 1.96 y_fact 1.96 ic Mahogany bc Gray50 0
+276 "Search Engines; Web Crawling" 112.7795527 190.9353234 x_fact 1.43 y_fact 1.43 ic Lavender bc Gray50 0
+277 "Colloid" 211.8210863 127.0348259 x_fact 2.16 y_fact 2.16 ic Blue bc Gray50 0
+278 "Applied Physiology; Muscle" 369.0095847 162.6716418 x_fact 2.51 y_fact 2.51 ic Peach bc Gray50 0
+279 "Biblical Literature" 483.3865815 323.6517413 x_fact 2.16 y_fact 2.16 ic Canary bc Gray50 0
+280 "Fault Tolerant Computing" 142.8115016 166.358209 x_fact 1.4 y_fact 1.4 ic Lavender bc Gray50 0
+281 "Third World Political Economics" 485.942492 233.9452736 x_fact 1.57 y_fact 1.57 ic Yellow bc Gray50 0
+282 "Public Hospitals" 397.1246006 103.6865672 x_fact 1.55 y_fact 1.55 ic Peach bc Gray50 0
+283 "Sociology" 483.3865815 217.9701493 x_fact 1.43 y_fact 1.43 ic Yellow bc Gray50 0
+284 "Horticulture" 268.6900958 273.2686567 x_fact 2.58 y_fact 2.58 ic OliveGreen bc Gray50 0
+285 "Bone & Osteoporosis" 360.0638978 170.0447761 x_fact 1.82 y_fact 1.82 ic Red bc Gray50 0
+286 "Radiation Therapy" 368.370607 224.1144279 x_fact 2.34 y_fact 2.34 ic Red bc Gray50 0
+287 "Water Treatment" 225.8785942 224.1144279 x_fact 1.84 y_fact 1.84 ic SkyBlue bc Gray50 0
+288 "Spyware; Malware" 138.9776358 177.4179104 x_fact 1.84 y_fact 1.84 ic Lavender bc Gray50 0
+289 "Behavioral Research Therapy" 443.1309904 193.3930348 x_fact 1.47 y_fact 1.47 ic Peach bc Gray50 0
+290 "Science Education" 475.7188498 217.9701493 x_fact 1.99 y_fact 1.99 ic Yellow bc Gray50 0
+291 "Design & Analysis of Algorithms" 125.5591054 170.0447761 x_fact 1.63 y_fact 1.63 ic Mulberry bc Gray50 0
+292 "Hospice Care" 383.0670927 145.4676617 x_fact 1.6 y_fact 1.6 ic Peach bc Gray50 0
+293 "Climatology" 239.2971246 301.5323383 x_fact 1.89 y_fact 1.89 ic Mahogany bc Gray50 0
+294 "Crop Science" 276.3578275 265.8955224 x_fact 2.37 y_fact 2.37 ic OliveGreen bc Gray50 0
+295 "Fuzzy Sets" 134.5047923 170.0447761 x_fact 2.03 y_fact 2.03 ic Lavender bc Gray50 0
+296 "Vehicle System Design" 188.8178914 194.6218905 x_fact 1.75 y_fact 1.75 ic SkyBlue bc Gray50 0
+297 "Transfusion" 340.2555911 214.2835821 x_fact 1.73 y_fact 1.73 ic Red bc Gray50 0
+298 "AIDS Treatment" 399.6805112 100 x_fact 1.45 y_fact 1.45 ic Peach bc Gray50 0
+299 "Wireless Communication" 143.4504792 157.7562189 x_fact 2.98 y_fact 2.98 ic Lavender bc Gray50 0
+300 "Atherosclerosis" 354.9520767 182.3333333 x_fact 2.16 y_fact 2.16 ic Red bc Gray50 0
+301 "Region & Medical Ethics" 392.6517572 107.3731343 x_fact 1.22 y_fact 1.22 ic Peach bc Gray50 0
+302 "Speech Language & Hearing" 428.4345048 201.9950249 x_fact 1.37 y_fact 1.37 ic Dandelion bc Gray50 0
+303 "Thoracic & Respiratory" 343.4504792 210.5970149 x_fact 1.74 y_fact 1.74 ic Red bc Gray50 0
+304 "Veterinary Microbiology" 309.5846645 238.8606965 x_fact 2.19 y_fact 2.19 ic BrickRed bc Gray50 0
+305 "Environmental Protection" 249.5207668 259.7512438 x_fact 2.23 y_fact 2.23 ic SkyBlue bc Gray50 0
+306 "Computer Systems Design" 131.9488818 179.8756219 x_fact 1.44 y_fact 1.44 ic Lavender bc Gray50 0
+307 "Environmental Pollution" 248.2428115 269.5820896 x_fact 1.74 y_fact 1.74 ic SkyBlue bc Gray50 0
+308 "Electrical Networks" 150.4792332 151.6119403 x_fact 1.92 y_fact 1.92 ic Lavender bc Gray50 0
+309 "Endoscopy" 356.2300319 273.2686567 x_fact 2.47 y_fact 2.47 ic Red bc Gray50 0
+310 "Chemistry & Material Science" 207.9872204 113.5174129 x_fact 3.41 y_fact 3.41 ic Blue bc Gray50 0
+311 "Medical Screening & Epidemiology" 352.3961661 130.721393 x_fact 1.92 y_fact 1.92 ic Peach bc Gray50 0
+312 "Child Development" 446.9648562 195.8507463 x_fact 1.6 y_fact 1.6 ic Yellow bc Gray50 0
+313 "Pain" 383.0670927 178.6467662 x_fact 1.83 y_fact 1.83 ic Peach bc Gray50 0
+314 "Public Administration" 487.8594249 217.9701493 x_fact 1.36 y_fact 1.36 ic Yellow bc Gray50 0
+315 "Soil Analysis" 264.85623 278.1840796 x_fact 1.57 y_fact 1.57 ic OliveGreen bc Gray50 0
+316 "Safety Management" 208.6261981 216.7412935 x_fact 1.55 y_fact 1.55 ic SkyBlue bc Gray50 0
+317 "Pattern Recognition" 140.2555911 162.6716418 x_fact 3.16 y_fact 3.16 ic Lavender bc Gray50 0
+318 "Mental Health Assessment" 431.629393 182.3333333 x_fact 1.71 y_fact 1.71 ic Peach bc Gray50 0
+319 "Clinical Medicine (translated)" 361.9808307 219.199005 x_fact 4.33 y_fact 4.33 ic Red bc Gray50 0
+320 "Mutation; DNA Repair" 331.9488818 227.800995 x_fact 2.06 y_fact 2.06 ic BrickRed bc Gray50 0
+321 "Human Evolution" 272.5239617 312.5920398 x_fact 1.42 y_fact 1.42 ic OliveGreen bc Gray50 0
+322 "Space Research" 163.2587859 147.9253731 x_fact 2.82 y_fact 2.82 ic Mulberry bc Gray50 0
+323 "Entomology" 282.7476038 306.4477612 x_fact 1.66 y_fact 1.66 ic OliveGreen bc Gray50 0
+324 "Epilepsy" 403.514377 199.5373134 x_fact 2.29 y_fact 2.29 ic Dandelion bc Gray50 0
+325 "Plant Ecology" 266.7731629 297.8457711 x_fact 1.82 y_fact 1.82 ic OliveGreen bc Gray50 0
+326 "Computer Aided Molecular Design" 260.3833866 113.5174129 x_fact 1.29 y_fact 1.29 ic Blue bc Gray50 0
+327 "Criminology" 461.6613419 213.0547264 x_fact 1.31 y_fact 1.31 ic Yellow bc Gray50 0
+328 "Forensic Psychiatry" 436.1022364 184.7910448 x_fact 1.22 y_fact 1.22 ic Dandelion bc Gray50 0
+329 "Personality" 455.9105431 184.7910448 x_fact 1.65 y_fact 1.65 ic Yellow bc Gray50 0
+330 "Test Equipment" 153.0351438 150.3830846 x_fact 1.54 y_fact 1.54 ic Lavender bc Gray50 0
+331 "Logic" 128.115016 156.5273632 x_fact 1.32 y_fact 1.32 ic Lavender bc Gray50 0
+332 "Pulp Paper Science" 208.6261981 149.1542289 x_fact 1.47 y_fact 1.47 ic SkyBlue bc Gray50 0
+333 "Textiles" 208.6261981 158.9850746 x_fact 1.43 y_fact 1.43 ic SkyBlue bc Gray50 0
+334 "Contemporary Philosophy" 489.1373802 328.5671642 x_fact 1.5 y_fact 1.5 ic Canary bc Gray50 0
+335 "Hydrology Soil Contamination" 224.600639 243.7761194 x_fact 1.26 y_fact 1.26 ic SkyBlue bc Gray50 0
+336 "Child Abuse" 447.6038339 195.8507463 x_fact 1.22 y_fact 1.22 ic Yellow bc Gray50 0
+337 "Mathematics Research" 138.3386581 129.4925373 x_fact 2.01 y_fact 2.01 ic Mulberry bc Gray50 0
+338 "Geology (International)" 230.3514377 315.0497512 x_fact 2.09 y_fact 2.09 ic Mahogany bc Gray50 0
+339 "Environmental Chemistry" 263.5782748 118.4328358 x_fact 1.6 y_fact 1.6 ic Blue bc Gray50 0
+340 "Parasitology" 309.5846645 285.5572139 x_fact 1.89 y_fact 1.89 ic OliveGreen bc Gray50 0
+341 "Dairy Science" 298.0830671 226.5721393 x_fact 1.61 y_fact 1.61 ic BrickRed bc Gray50 0
+342 "Water Policy" 227.1565495 246.2338308 x_fact 1.43 y_fact 1.43 ic SkyBlue bc Gray50 0
+343 "Fish Research" 257.1884984 306.4477612 x_fact 1.55 y_fact 1.55 ic OliveGreen bc Gray50 0
+344 "Printing" 197.1246006 167.5870647 x_fact 1.99 y_fact 1.99 ic SkyBlue bc Gray50 0
+345 "Genetics" 281.4696486 284.3283582 x_fact 2.05 y_fact 2.05 ic OliveGreen bc Gray50 0
+346 "Industrial Chemistry" 194.5686901 171.2736318 x_fact 3.48 y_fact 3.48 ic SkyBlue bc Gray50 0
+347 "Obesity" 362.6198083 156.5273632 x_fact 1.6 y_fact 1.6 ic Peach bc Gray50 0
+348 "Literary Criticism" 484.0255591 323.6517413 x_fact 1.17 y_fact 1.17 ic Canary bc Gray50 0
+349 "Hepatology" 345.3674121 260.9800995 x_fact 2.3 y_fact 2.3 ic Red bc Gray50 0
+350 "Physical Therapy; Brain Injury" 402.8753994 178.6467662 x_fact 1.84 y_fact 1.84 ic Dandelion bc Gray50 0
+351 "Computational Math" 149.8402556 143.0099502 x_fact 1.92 y_fact 1.92 ic Mulberry bc Gray50 0
+352 "World Health Organization" 325.5591054 246.2338308 x_fact 1.47 y_fact 1.47 ic BrickRed bc Gray50 0
+353 "Geophysical Science" 169.6485623 140.5522388 x_fact 1.64 y_fact 1.64 ic Mulberry bc Gray50 0
+354 "Forensic Medicine" 425.2396166 181.1044776 x_fact 1.4 y_fact 1.4 ic Peach bc Gray50 0
+355 "Psychiatric Services" 437.3801917 183.5621891 x_fact 1.34 y_fact 1.34 ic Peach bc Gray50 0
+356 "Software Design and Development" 130.0319489 184.7910448 x_fact 1.38 y_fact 1.38 ic Lavender bc Gray50 0
+357 "Wildlife Management" 270.6070288 302.761194 x_fact 1.38 y_fact 1.38 ic OliveGreen bc Gray50 0
+358 "Ocean Coastal Management" 219.4888179 281.8706468 x_fact 1.26 y_fact 1.26 ic SkyBlue bc Gray50 0
+359 "Database Design & Management" 124.2811502 179.8756219 x_fact 1.49 y_fact 1.49 ic Lavender bc Gray50 0
+360 "Financial Accounting" 494.8881789 230.2587065 x_fact 1.31 y_fact 1.31 ic Yellow bc Gray50 0
+361 "Microbiology Biotechnology" 290.4153355 235.1741294 x_fact 2.41 y_fact 2.41 ic Emerald bc Gray50 0
+362 "Water Utilities" 218.2108626 229.0298507 x_fact 1.79 y_fact 1.79 ic SkyBlue bc Gray50 0
+363 "Sedimentary Geology" 230.3514377 315.0497512 x_fact 1.73 y_fact 1.73 ic Mahogany bc Gray50 0
+364 "Geodesy" 230.9904153 312.5920398 x_fact 1.55 y_fact 1.55 ic Mahogany bc Gray50 0
+365 "Surfactants" 213.7380192 104.9154229 x_fact 3.03 y_fact 3.03 ic Blue bc Gray50 0
+366 "Eye" 347.9233227 168.8159204 x_fact 2.26 y_fact 2.26 ic Red bc Gray50 0
+367 "Addictive Behavior" 429.0734824 168.8159204 x_fact 1.4 y_fact 1.4 ic Peach bc Gray50 0
+368 "Naval Architecture" 178.5942492 217.9701493 x_fact 1.53 y_fact 1.53 ic SkyBlue bc Gray50 0
+369 "Environmental Microbiology" 252.0766773 299.0746269 x_fact 2.16 y_fact 2.16 ic OliveGreen bc Gray50 0
+370 "Electronic Imaging" 137.0607029 152.840796 x_fact 1.87 y_fact 1.87 ic Lavender bc Gray50 0
+371 "Functional Programing" 128.115016 183.5621891 x_fact 1.49 y_fact 1.49 ic Lavender bc Gray50 0
+372 "Applied Genetics" 289.1373802 276.9552239 x_fact 1.61 y_fact 1.61 ic OliveGreen bc Gray50 0
+373 "Plant Disease" 282.7476038 281.8706468 x_fact 1.8 y_fact 1.8 ic OliveGreen bc Gray50 0
+374 "Water Resource" 234.1853035 270.8109453 x_fact 2.44 y_fact 2.44 ic Mahogany bc Gray50 0
+375 "Developmental Economics" 100 227.800995 x_fact 1.38 y_fact 1.38 ic Yellow bc Gray50 0
+376 "Nuclear Physics" 179.2332268 130.721393 x_fact 3.3 y_fact 3.3 ic Mulberry bc Gray50 0
+377 "International Economics" 100 227.800995 x_fact 1.32 y_fact 1.32 ic Yellow bc Gray50 0
+378 "Radiology" 371.5654952 232.7164179 x_fact 2.12 y_fact 2.12 ic Red bc Gray50 0
+379 "German Studies" 486.5814696 315.0497512 x_fact 1.45 y_fact 1.45 ic Canary bc Gray50 0
+380 "Medieval History" 482.7476038 321.1940299 x_fact 1.46 y_fact 1.46 ic Canary bc Gray50 0
+381 "Philosophy of Education" 490.4153355 332.2537313 x_fact 1.55 y_fact 1.55 ic Canary bc Gray50 0
+382 "Oceanographic Instrumentation" 183.0670927 210.5970149 x_fact 1.63 y_fact 1.63 ic SkyBlue bc Gray50 0
+383 "Foreign Policy" 488.4984026 240.0895522 x_fact 1.35 y_fact 1.35 ic Yellow bc Gray50 0
+384 "Gut" 356.2300319 273.2686567 x_fact 2.56 y_fact 2.56 ic Red bc Gray50 0
+385 "Microwaves; Radio Frequencies" 158.7859425 130.721393 x_fact 2.46 y_fact 2.46 ic Lavender bc Gray50 0
+386 "School Psychology" 450.1597444 195.8507463 x_fact 1.27 y_fact 1.27 ic Yellow bc Gray50 0
+387 "Vaccines" 333.2268371 225.3432836 x_fact 2.23 y_fact 2.23 ic BrickRed bc Gray50 0
+388 "Environmental Law" 491.6932907 238.8606965 x_fact 1.27 y_fact 1.27 ic Yellow bc Gray50 0
+389 "Mass Spectrometry" 282.7476038 149.1542289 x_fact 2.19 y_fact 2.19 ic Blue bc Gray50 0
+390 "Psychiatric Nursing" 425.2396166 151.6119403 x_fact 1.77 y_fact 1.77 ic Peach bc Gray50 0
+391 "Asian Studies" 484.0255591 299.0746269 x_fact 1.09 y_fact 1.09 ic Canary bc Gray50 0
+392 "Optimization Theory" 137.6996805 134.4079602 x_fact 1.63 y_fact 1.63 ic Mulberry bc Gray50 0
+393 "Mathematical Science (Russia)" 137.6996805 139.3233831 x_fact 1.77 y_fact 1.77 ic Mulberry bc Gray50 0
+394 "Gene Therapy" 341.5335463 222.8855721 x_fact 2.14 y_fact 2.14 ic BrickRed bc Gray50 0
+395 "Security; Cryptography" 135.7827476 176.1890547 x_fact 1.28 y_fact 1.28 ic Lavender bc Gray50 0
+396 "Materials Processing" 187.5399361 131.9502488 x_fact 2.5 y_fact 2.5 ic SkyBlue bc Gray50 0
+397 "Rural Health Care" 393.2907348 112.2885572 x_fact 2.37 y_fact 2.37 ic Peach bc Gray50 0
+398 "Power Systems" 145.3674121 155.2985075 x_fact 1.6 y_fact 1.6 ic Lavender bc Gray50 0
+399 "Surgical Oncology" 360.0638978 221.6567164 x_fact 2.17 y_fact 2.17 ic Red bc Gray50 0
+400 "Chip Design & Manufacturing" 144.7284345 174.960199 x_fact 3.03 y_fact 3.03 ic Lavender bc Gray50 0
+401 "Sociobiology" 281.4696486 295.3880597 x_fact 1.68 y_fact 1.68 ic OliveGreen bc Gray50 0
+402 "Molecular Medicine" 328.7539936 127.0348259 x_fact 8.17 y_fact 8.17 ic Peach bc Gray50 0
+403 "Human Resource Management" 486.5814696 217.9701493 x_fact 4.67 y_fact 4.67 ic Yellow bc Gray50 0
+404 "Ecological Modeling" 262.3003195 294.159204 x_fact 5.92 y_fact 5.92 ic OliveGreen bc Gray50 0
+405 "Clinical Rehabilitation" 362.6198083 201.9950249 x_fact 11.78 y_fact 11.78 ic Red bc Gray50 0
+406 "Metallurgy" 189.456869 147.9253731 x_fact 7.72 y_fact 7.72 ic SkyBlue bc Gray50 0
+407 "Ethics" 484.6645367 316.278607 x_fact 1.77 y_fact 1.77 ic Canary bc Gray50 0
+408 "Marital & Family Therapy" 448.8817891 197.079602 x_fact 3.67 y_fact 3.67 ic Yellow bc Gray50 0
+409 "Aerospace" 164.5367412 171.2736318 x_fact 9.71 y_fact 9.71 ic SkyBlue bc Gray50 0
+410 "Critical Studies" 484.0255591 315.0497512 x_fact 2.19 y_fact 2.19 ic Canary bc Gray50 0
+411 "Econometrics" 498.7220447 220.4278607 x_fact 4.68 y_fact 4.68 ic Yellow bc Gray50 0
+412 "Neuroscience Methods" 415.0159744 194.6218905 x_fact 3.77 y_fact 3.77 ic Dandelion bc Gray50 0
+413 "Mineralogy" 227.1565495 301.5323383 x_fact 5.15 y_fact 5.15 ic Mahogany bc Gray50 0
+414 "Trauma" 384.3450479 178.6467662 x_fact 6.52 y_fact 6.52 ic Peach bc Gray50 0
+415 "Thermal Analysis" 261.6613419 127.0348259 x_fact 5.48 y_fact 5.48 ic Blue bc Gray50 0
+416 "Solar & Wind Power" 190.0958466 157.7562189 x_fact 6.43 y_fact 6.43 ic SkyBlue bc Gray50 0
+417 "Ocean Engineering" 208.6261981 233.9452736 x_fact 6.34 y_fact 6.34 ic SkyBlue bc Gray50 0
+418 "Educational Psychology" 463.5782748 210.5970149 x_fact 3.12 y_fact 3.12 ic Yellow bc Gray50 0
+419 "Mycology" 273.1629393 290.4726368 x_fact 3.46 y_fact 3.46 ic OliveGreen bc Gray50 0
+420 "Semiotics" 483.3865815 315.0497512 x_fact 1.57 y_fact 1.57 ic Canary bc Gray50 0
+421 "Dyes & Pigments" 220.1277955 167.5870647 x_fact 4.47 y_fact 4.47 ic SkyBlue bc Gray50 0
+422 "Drug Safety" 358.1469649 174.960199 x_fact 7.33 y_fact 7.33 ic Red bc Gray50 0
+423 "Molecular Ecology" 271.884984 302.761194 x_fact 5.17 y_fact 5.17 ic OliveGreen bc Gray50 0
+424 "Cytogentics & Genome Mapping" 342.8115016 221.6567164 x_fact 5.77 y_fact 5.77 ic BrickRed bc Gray50 0
+425 "Clinical Psychiatry" 439.2971246 187.2487562 x_fact 3.22 y_fact 3.22 ic Peach bc Gray50 0
+426 "Paleogeography" 238.0191693 308.9054726 x_fact 2.73 y_fact 2.73 ic Mahogany bc Gray50 0
+427 "Water Waste" 230.9904153 252.3781095 x_fact 3.17 y_fact 3.17 ic SkyBlue bc Gray50 0
+428 "Computer Networks" 135.14377 173.7313433 x_fact 2.84 y_fact 2.84 ic Lavender bc Gray50 0
+429 "Weed Management" 254.6325879 270.8109453 x_fact 3.86 y_fact 3.86 ic OliveGreen bc Gray50 0
+430 "User Interface Design" 135.7827476 181.1044776 x_fact 3.45 y_fact 3.45 ic Lavender bc Gray50 0
+431 "Public Policy" 487.2204473 238.8606965 x_fact 2.49 y_fact 2.49 ic Yellow bc Gray50 0
+432 "Liquid Crystals" 247.6038339 127.0348259 x_fact 4.7 y_fact 4.7 ic Blue bc Gray50 0
+433 "Control Systems" 138.9776358 160.2139303 x_fact 4.91 y_fact 4.91 ic Lavender bc Gray50 0
+434 "Environmental Policy" 489.1373802 231.4875622 x_fact 2 y_fact 2 ic Yellow bc Gray50 0
+435 "Topology" 137.6996805 139.3233831 x_fact 3.38 y_fact 3.38 ic Mulberry bc Gray50 0
+436 "Construction" 200.9584665 192.1641791 x_fact 3.77 y_fact 3.77 ic SkyBlue bc Gray50 0
+437 "Dams & Tunnels" 208.6261981 220.4278607 x_fact 4.01 y_fact 4.01 ic SkyBlue bc Gray50 0
+438 "Regional Studies" 491.0543131 230.2587065 x_fact 2.45 y_fact 2.45 ic Yellow bc Gray50 0
+439 "Electrochemical Development" 185.6230032 129.4925373 x_fact 5.97 y_fact 5.97 ic SkyBlue bc Gray50 0
+440 "Digital Printing" 200.9584665 161.4427861 x_fact 4.82 y_fact 4.82 ic SkyBlue bc Gray50 0
+441 "Peptides" 310.8626198 215.5124378 x_fact 5.1 y_fact 5.1 ic BrickRed bc Gray50 0
+442 "Applied Geophysics" 215.0159744 251.1492537 x_fact 4.31 y_fact 4.31 ic SkyBlue bc Gray50 0
+443 "Sexually Transmitted Diseases" 326.8370607 222.8855721 x_fact 3.59 y_fact 3.59 ic BrickRed bc Gray50 0
+444 "Engineering Education" 475.0798722 216.7412935 x_fact 3.37 y_fact 3.37 ic Yellow bc Gray50 0
+445 "NeuroImmunology" 390.7348243 199.5373134 x_fact 4.71 y_fact 4.71 ic Dandelion bc Gray50 0
+446 "Machine Learning" 124.2811502 181.1044776 x_fact 3.1 y_fact 3.1 ic Lavender bc Gray50 0
+447 "Geratric Nursing" 399.0415335 117.2039801 x_fact 3.28 y_fact 3.28 ic Peach bc Gray50 0
+448 "Sensors & Actuators" 191.3738019 151.6119403 x_fact 4.87 y_fact 4.87 ic SkyBlue bc Gray50 0
+449 "Systematics & Evolutionary Microbiology" 301.2779553 251.1492537 x_fact 3.15 y_fact 3.15 ic Emerald bc Gray50 0
+450 "Medical Image Processing" 143.4504792 149.1542289 x_fact 5.89 y_fact 5.89 ic Lavender bc Gray50 0
+451 "Medical Education" 378.5942492 129.4925373 x_fact 6.38 y_fact 6.38 ic Peach bc Gray50 0
+452 "Magnetic Resonance Imagery" 378.5942492 208.1393035 x_fact 4.52 y_fact 4.52 ic Dandelion bc Gray50 0
+453 "Hospital Management" 386.9009585 100 x_fact 3.26 y_fact 3.26 ic Peach bc Gray50 0
+454 "Insect Physiology" 292.971246 297.8457711 x_fact 3.75 y_fact 3.75 ic OliveGreen bc Gray50 0
+455 "Power Transmission" 150.4792332 154.0696517 x_fact 6.95 y_fact 6.95 ic Lavender bc Gray50 0
+456 "Food Engineering" 291.6932907 222.8855721 x_fact 3.31 y_fact 3.31 ic Emerald bc Gray50 0
+457 "Oral Surgery" 375.399361 156.5273632 x_fact 3.96 y_fact 3.96 ic Peach bc Gray50 0
+458 "Computer Systems Theory" 131.9488818 179.8756219 x_fact 2.31 y_fact 2.31 ic Lavender bc Gray50 0
+459 "Combustion" 194.5686901 188.4776119 x_fact 3.04 y_fact 3.04 ic SkyBlue bc Gray50 0
+460 "Dermatological Surgery" 347.9233227 176.1890547 x_fact 3.38 y_fact 3.38 ic Red bc Gray50 0
+461 "Wildlife Research" 271.884984 305.2189055 x_fact 2.3 y_fact 2.3 ic OliveGreen bc Gray50 0
+462 "Midwifery" 409.2651757 109.8308458 x_fact 2.74 y_fact 2.74 ic Peach bc Gray50 0
+463 "Physics; Current Developments" 170.9265176 119.6616915 x_fact 8.35 y_fact 8.35 ic Mulberry bc Gray50 0
+464 "Pychiatric & Behavioral Genetics" 444.4089457 199.5373134 x_fact 2.12 y_fact 2.12 ic Yellow bc Gray50 0
+465 "Fractures & Fatigue" 188.8178914 147.9253731 x_fact 3.37 y_fact 3.37 ic SkyBlue bc Gray50 0
+466 "Emergency Medicine" 384.3450479 161.4427861 x_fact 3.86 y_fact 3.86 ic Peach bc Gray50 0
+467 "Cross Disciplinary Studies" 483.3865815 323.6517413 x_fact 1.88 y_fact 1.88 ic Canary bc Gray50 0
+468 "Archeological Science" 249.5207668 321.1940299 x_fact 2.33 y_fact 2.33 ic Mahogany bc Gray50 0
+469 "Preventive Medicine" 388.8178914 127.0348259 x_fact 3.01 y_fact 3.01 ic Peach bc Gray50 0
+470 "Carbon" 221.4057508 136.8656716 x_fact 4.09 y_fact 4.09 ic Blue bc Gray50 0
+471 "Gynecology Oncology" 351.7571885 211.8258706 x_fact 3.16 y_fact 3.16 ic Red bc Gray50 0
+472 "Psychosomatic Medicine" 445.686901 186.0199005 x_fact 2.28 y_fact 2.28 ic Yellow bc Gray50 0
+473 "Pharmaco Economics" 373.4824281 138.0945274 x_fact 2.34 y_fact 2.34 ic Peach bc Gray50 0
+474 "Computer Modeling and Animation" 132.5878594 154.0696517 x_fact 2.17 y_fact 2.17 ic Lavender bc Gray50 0
+475 "Medical Practice" 387.5399361 107.3731343 x_fact 3.23 y_fact 3.23 ic Peach bc Gray50 0
+476 "Cancer Statistics" 119.8083067 167.5870647 x_fact 2.6 y_fact 2.6 ic Mulberry bc Gray50 0
+477 "Consciousness" 431.629393 195.8507463 x_fact 1.68 y_fact 1.68 ic Dandelion bc Gray50 0
+478 "Otolyngology; Head Neck" 376.0383387 195.8507463 x_fact 3.06 y_fact 3.06 ic Peach bc Gray50 0
+479 "Heart Failure; Catheters" 365.8146965 184.7910448 x_fact 3.24 y_fact 3.24 ic Red bc Gray50 0
+480 "Wood Components" 212.4600639 157.7562189 x_fact 1.83 y_fact 1.83 ic SkyBlue bc Gray50 0
+481 "Circuits" 143.4504792 161.4427861 x_fact 1.97 y_fact 1.97 ic Lavender bc Gray50 0
+482 "Friction Lubrication & Wear" 186.2619808 133.1791045 x_fact 2.73 y_fact 2.73 ic SkyBlue bc Gray50 0
+483 "Superconductor Science" 170.2875399 134.4079602 x_fact 6.18 y_fact 6.18 ic Mulberry bc Gray50 0
+484 "Antennae; Mobile Radio" 150.4792332 150.3830846 x_fact 2.74 y_fact 2.74 ic Lavender bc Gray50 0
+485 "Headache" 390.7348243 187.2487562 x_fact 2.41 y_fact 2.41 ic Dandelion bc Gray50 0
+486 "Operations Management" 499.3610224 199.5373134 x_fact 1.84 y_fact 1.84 ic Yellow bc Gray50 0
+487 "Fish Biology" 268.6900958 310.1343284 x_fact 2.19 y_fact 2.19 ic OliveGreen bc Gray50 0
+488 "Social History" 485.942492 312.5920398 x_fact 2.17 y_fact 2.17 ic Canary bc Gray50 0
+489 "Consumer Electronics" 140.2555911 166.358209 x_fact 2.54 y_fact 2.54 ic Lavender bc Gray50 0
+490 "Menopause" 346.6453674 174.960199 x_fact 1.9 y_fact 1.9 ic Red bc Gray50 0
+491 "Chemistry (Russia)" 250.798722 122.119403 x_fact 4.61 y_fact 4.61 ic Blue bc Gray50 0
+492 "GeoPolitics" 485.942492 233.9452736 x_fact 1.59 y_fact 1.59 ic Yellow bc Gray50 0
+493 "Glaciology" 235.4632588 310.1343284 x_fact 1.54 y_fact 1.54 ic Mahogany bc Gray50 0
+494 "Medical Libraries" 390.7348243 103.6865672 x_fact 2.14 y_fact 2.14 ic Peach bc Gray50 0
+495 "Opera" 483.3865815 335.9402985 x_fact 1.23 y_fact 1.23 ic Canary bc Gray50 0
+496 "Education" 473.8019169 219.199005 x_fact 1.56 y_fact 1.56 ic Yellow bc Gray50 0
+497 "Acoustics" 184.9840256 174.960199 x_fact 1.94 y_fact 1.94 ic SkyBlue bc Gray50 0
+498 "Pragmatics & Discourse" 478.2747604 285.5572139 x_fact 1.65 y_fact 1.65 ic Yellow bc Gray50 0
+499 "Reproduction Veterinary" 319.8083067 225.3432836 x_fact 2.82 y_fact 2.82 ic BrickRed bc Gray50 0
+500 "Crystallography" 250.798722 122.119403 x_fact 4.42 y_fact 4.42 ic Blue bc Gray50 0
+501 "Applied Math" 149.201278 145.4676617 x_fact 3.18 y_fact 3.18 ic Mulberry bc Gray50 0
+502 "Socio-Cultural Anthropology" 486.5814696 312.5920398 x_fact 1.61 y_fact 1.61 ic Canary bc Gray50 0
+503 "Poultry Science" 301.2779553 258.5223881 x_fact 2.31 y_fact 2.31 ic BrickRed bc Gray50 0
+504 "Artifical Organs" 365.8146965 184.7910448 x_fact 2.27 y_fact 2.27 ic Peach bc Gray50 0
+505 "Physical Therapy; Orthopedic" 381.1501597 173.7313433 x_fact 1.72 y_fact 1.72 ic Peach bc Gray50 0
+506 "Pulmonary" 349.8402556 201.9950249 x_fact 1.87 y_fact 1.87 ic Red bc Gray50 0
+507 "Waste Management" 187.5399361 200.7661692 x_fact 2.48 y_fact 2.48 ic SkyBlue bc Gray50 0
+508 "Marine Pollution" 250.798722 299.0746269 x_fact 1.96 y_fact 1.96 ic OliveGreen bc Gray50 0
+509 "Toxins" 296.8051118 167.5870647 x_fact 1.73 y_fact 1.73 ic Blue bc Gray50 0
+510 "Hearing Research" 386.2619808 208.1393035 x_fact 1.25 y_fact 1.25 ic Dandelion bc Gray50 0
+511 "Human Rights" 485.3035144 238.8606965 x_fact 1.43 y_fact 1.43 ic Yellow bc Gray50 0
+512 "Lung Cancer" 360.0638978 215.5124378 x_fact 1.99 y_fact 1.99 ic Red bc Gray50 0
+513 "Social Economics" 499.3610224 227.800995 x_fact 1.51 y_fact 1.51 ic Yellow bc Gray50 0
+514 "Carbohydrate Research" 276.9968051 199.5373134 x_fact 2.08 y_fact 2.08 ic Blue bc Gray50 0
+515 "Biotechnology Bioengineering" 302.5559105 224.1144279 x_fact 1.79 y_fact 1.79 ic Emerald bc Gray50 0
+516 "Rural Studies" 487.8594249 245.0049751 x_fact 1.29 y_fact 1.29 ic Yellow bc Gray50 0
+517 "Electronics" 160.0638978 133.1791045 x_fact 4.48 y_fact 4.48 ic Lavender bc Gray50 0
+518 "Defects & Diffusion in Materials" 186.9009585 124.5771144 x_fact 1.48 y_fact 1.48 ic SkyBlue bc Gray50 0
+519 "Forensic Science" 410.543131 176.1890547 x_fact 2.07 y_fact 2.07 ic Dandelion bc Gray50 0
+520 "Rangeland Ecology" 260.3833866 295.3880597 x_fact 1.38 y_fact 1.38 ic OliveGreen bc Gray50 0
+521 "Welding" 187.5399361 131.9502488 x_fact 1.97 y_fact 1.97 ic SkyBlue bc Gray50 0
+522 "Reliability Engineering" 112.1405751 171.2736318 x_fact 1.9 y_fact 1.9 ic Yellow bc Gray50 0
+523 "Molecular Biology Methods" 321.086262 236.4029851 x_fact 3.96 y_fact 3.96 ic BrickRed bc Gray50 0
+524 "Mammals" 273.1629393 305.2189055 x_fact 1.47 y_fact 1.47 ic OliveGreen bc Gray50 0
+525 "Impotence" 361.341853 262.2089552 x_fact 1.73 y_fact 1.73 ic Red bc Gray50 0
+526 "Fuzzy Logic" 138.9776358 160.2139303 x_fact 2.73 y_fact 2.73 ic Lavender bc Gray50 0
+527 "Tourism" 487.8594249 216.7412935 x_fact 1.64 y_fact 1.64 ic Yellow bc Gray50 0
+528 "Aquatic Disease" 278.2747604 315.0497512 x_fact 1.53 y_fact 1.53 ic OliveGreen bc Gray50 0
+529 "Geographic Information Science" 229.7124601 326.1094527 x_fact 1.78 y_fact 1.78 ic Mahogany bc Gray50 0
+530 "Hormone Research" 348.5623003 163.9004975 x_fact 1.76 y_fact 1.76 ic Red bc Gray50 0
+531 "Public Health" 365.8146965 118.4328358 x_fact 1.7 y_fact 1.7 ic Peach bc Gray50 0
+532 "Sleep" 403.514377 198.3084577 x_fact 1.66 y_fact 1.66 ic Dandelion bc Gray50 0
+533 "Neurotoxicology" 399.0415335 189.7064677 x_fact 1.45 y_fact 1.45 ic Dandelion bc Gray50 0
+534 "Pediatric Research" 352.3961661 186.0199005 x_fact 2.24 y_fact 2.24 ic Red bc Gray50 0
+535 "Education Psychological Measures" 480.8306709 179.8756219 x_fact 1.24 y_fact 1.24 ic Yellow bc Gray50 0
+536 "Marketing" 487.2204473 204.4527363 x_fact 1.64 y_fact 1.64 ic Yellow bc Gray50 0
+537 "Clinical Medicine (Romania)" 370.9265176 214.2835821 x_fact 1.71 y_fact 1.71 ic Red bc Gray50 0
+538 "Green Chemistry" 250.798722 123.3482587 x_fact 1.42 y_fact 1.42 ic Blue bc Gray50 0
+539 "Optometry" 360.7028754 152.840796 x_fact 1.58 y_fact 1.58 ic Peach bc Gray50 0
+540 "Textile Art" 216.9329073 156.5273632 x_fact 1.29 y_fact 1.29 ic SkyBlue bc Gray50 0
+541 "Italian Studies" 484.0255591 326.1094527 x_fact 1.65 y_fact 1.65 ic Canary bc Gray50 0
+542 "Perception Motor Skills" 397.1246006 163.9004975 x_fact 1.4 y_fact 1.4 ic Peach bc Gray50 0
+543 "World Trade; Law" 486.5814696 248.6915423 x_fact 1.17 y_fact 1.17 ic Yellow bc Gray50 0
+544 "Insects" 276.9968051 306.4477612 x_fact 1.4 y_fact 1.4 ic OliveGreen bc Gray50 0
+545 "Australian Ecology" 268.0511182 305.2189055 x_fact 1.2 y_fact 1.2 ic OliveGreen bc Gray50 0
+546 "Paints & Coatings" 227.7955272 119.6616915 x_fact 1.39 y_fact 1.39 ic Blue bc Gray50 0
+547 "Nursing Theory" 411.8210863 109.8308458 x_fact 1.26 y_fact 1.26 ic Peach bc Gray50 0
+548 "Crustaceans" 264.2172524 312.5920398 x_fact 1.37 y_fact 1.37 ic OliveGreen bc Gray50 0
+549 "Laser Surgery" 358.1469649 145.4676617 x_fact 1.44 y_fact 1.44 ic Peach bc Gray50 0
+550 "Bulk Solid Handling" 208.6261981 226.5721393 x_fact 1.11 y_fact 1.11 ic SkyBlue bc Gray50 0
+551 "Wetlands" 262.3003195 308.9054726 x_fact 1.05 y_fact 1.05 ic OliveGreen bc Gray50 0
+552 "GIS (non English)" 234.1853035 323.6517413 x_fact 1 y_fact 1 ic Mahogany bc Gray50 0
+553 "Hydraulics" 161.341853 178.6467662 x_fact 1 y_fact 1 ic Lavender bc Gray50 0
+554 "Agricultural Environmental Medicine" 326.1980831 224.1144279 x_fact 1.46 y_fact 1.46 ic BrickRed bc Gray50 0
+555 "Biology" 278 298 x_fact 0.1 y_fact 0.1 ic OliveGreen bc Black 1
+556 "Biotechnology" 301 236 x_fact 0.1 y_fact 0.1 ic Emerald bc Black 1
+557 "Medical Specialties" 350 183 x_fact 0.1 y_fact 0.1 ic Red bc Black 1
+558 "Chemical, Mechanical, & Civil Engineering" 217 218 x_fact 0.1 y_fact 0.1 ic SkyBlue bc Black 1
+559 "Chemistry" 250 130 x_fact 0.1 y_fact 0.1 ic Blue bc Black 1
+560 "Earth Sciences" 235 312 x_fact 0.1 y_fact 0.1 ic Mahogany bc Black 1
+561 "Electrical Engineering & Computer Science" 138 164 x_fact 0.1 y_fact 0.1 ic Lavender bc Black 1
+562 "Brain Research" 410 189 x_fact 0.1 y_fact 0.1 ic Dandelion bc Black 1
+563 "Humanities" 484 318 x_fact 0.1 y_fact 0.1 ic Canary bc Black 1
+564 "Infectious Diseases" 359 211 x_fact 0.1 y_fact 0.1 ic BrickRed bc Black 1
+565 "Math & Physics" 156 131 x_fact 0.1 y_fact 0.1 ic Mulberry bc Black 1
+566 "Health Professionals" 390 115 x_fact 0.1 y_fact 0.1 ic Peach bc Black 1
+567 "Social Sciences" 484 213 x_fact 0.1 y_fact 0.1 ic Yellow bc Black 1
+*edges
+1 6 0.772 c Gray40
+1 8 0.944 c Red
+1 12 0.987 c Red
+1 19 1.064 c Red
+1 26 0.919 c Red
+1 31 0.813 c Red
+1 81 0.864 c Red
+1 130 0.805 c Red
+1 262 0.643 c Red
+1 300 0.609 c Red
+1 394 0.391 c Gray40
+1 399 0.543 c Red
+1 424 0.611 c Gray40
+1 460 0.74 c Red
+1 471 0.709 c Red
+1 506 0.56 c Red
+1 512 0.614 c Red
+2 7 0.949 c Red
+2 59 0.695 c Red
+2 85 0.597 c Gray40
+2 140 0.368 c Gray40
+2 451 0.658 c Gray40
+2 452 0.563 c Gray40
+2 473 0.405 c Gray40
+2 485 0.42 c Gray40
+3 96 0.761 c Lavender
+3 136 0.559 c Lavender
+3 137 0.593 c Lavender
+3 159 0.456 c Lavender
+3 160 0.524 c Lavender
+3 193 0.635 c Lavender
+3 295 0.504 c Lavender
+3 317 0.529 c Lavender
+3 395 0.311 c Lavender
+3 398 0.462 c Lavender
+3 428 0.645 c Lavender
+3 430 0.717 c Lavender
+3 450 0.795 c Lavender
+3 455 0.859 c Lavender
+3 474 0.538 c Lavender
+3 481 0.526 c Lavender
+3 489 0.696 c Lavender
+4 1 0.755 c Gray40
+4 6 0.755 c Gray40
+4 9 1.015 c BrickRed
+4 20 0.861 c BrickRed
+4 26 0.612 c Gray40
+4 31 0.542 c Gray40
+4 48 0.934 c BrickRed
+4 320 0.512 c BrickRed
+4 523 0.616 c BrickRed
+5 121 0.587 c Lavender
+5 299 0.613 c Lavender
+5 308 0.637 c Lavender
+5 400 0.744 c Lavender
+5 484 0.625 c Lavender
+5 517 0.796 c Lavender
+6 40 0.711 c Dandelion
+6 63 0.871 c Dandelion
+6 69 0.698 c Dandelion
+6 150 0.782 c Dandelion
+6 215 0.778 c Dandelion
+6 313 0.33 c Gray40
+6 412 0.771 c Dandelion
+6 445 0.873 c Dandelion
+6 510 0.397 c Dandelion
+6 532 0.528 c Dandelion
+6 533 0.479 c Dandelion
+7 110 0.491 c Gray40
+7 224 0.408 c Gray40
+7 292 0.318 c Gray40
+7 313 0.33 c Gray40
+7 466 0.505 c Gray40
+7 478 0.477 c Gray40
+8 12 0.944 c Red
+8 25 0.874 c Red
+8 101 0.803 c Red
+8 252 0.622 c Red
+8 286 0.614 c Red
+8 405 0.944 c Red
+8 525 0.459 c Red
+9 1 0.677 c Gray40
+9 16 0.609 c Gray40
+9 19 0.677 c Gray40
+9 22 0.508 c Gray40
+9 26 0.612 c Gray40
+9 91 0.419 c Gray40
+9 297 0.387 c Gray40
+9 387 0.595 c BrickRed
+9 394 0.587 c BrickRed
+9 424 0.917 c BrickRed
+9 460 0.494 c Gray40
+9 506 0.373 c Gray40
+10 415 0.87 c Blue
+10 432 0.828 c Blue
+10 491 0.88 c Blue
+10 500 0.764 c Blue
+10 514 0.576 c Blue
+10 538 0.444 c Blue
+11 71 0.342 c Gray40
+11 104 0.386 c Gray40
+11 289 0.288 c Gray40
+11 318 0.378 c Gray40
+11 355 0.299 c Gray40
+11 390 0.31 c Gray40
+11 425 0.479 c Gray40
+11 472 0.408 c Gray40
+12 89 0.755 c Red
+12 184 0.734 c Red
+12 252 0.622 c Red
+12 286 0.614 c Red
+12 378 0.554 c Red
+12 399 0.543 c Red
+12 405 0.987 c Red
+12 422 0.987 c Red
+12 512 0.614 c Red
+13 23 0.614 c Gray40
+13 88 0.632 c Gray40
+13 90 0.609 c Gray40
+13 102 0.568 c Gray40
+13 179 0.611 c Gray40
+13 185 0.418 c Gray40
+13 263 0.759 c Mulberry
+13 310 0.48 c Gray40
+13 365 0.447 c Gray40
+13 518 0.295 c Gray40
+14 64 0.78 c Mulberry
+14 108 0.825 c Mulberry
+14 221 0.52 c Mulberry
+14 228 0.51 c Mulberry
+14 337 0.505 c Mulberry
+14 351 0.542 c Mulberry
+14 392 0.453 c Mulberry
+14 393 0.475 c Mulberry
+14 435 0.737 c Mulberry
+14 501 0.705 c Mulberry
+15 67 0.775 c Peach
+15 93 0.563 c Peach
+15 100 0.588 c Peach
+15 138 0.519 c Peach
+15 211 0.504 c Peach
+15 282 0.49 c Peach
+15 298 0.486 c Peach
+15 447 0.734 c Peach
+15 462 0.663 c Peach
+16 2 0.913 c Red
+16 68 0.526 c Gray40
+16 205 0.601 c Red
+16 285 0.7 c Red
+16 319 0.812 c Red
+16 422 0.913 c Red
+17 311 0.666 c Peach
+18 37 0.729 c Blue
+18 54 0.814 c Blue
+18 75 0.811 c Blue
+18 115 0.761 c Blue
+18 255 0.532 c Blue
+18 326 0.407 c Blue
+18 339 0.395 c Blue
+18 415 0.87 c Blue
+18 491 0.88 c Blue
+18 500 0.764 c Blue
+18 514 0.576 c Blue
+18 538 0.444 c Blue
+19 12 0.987 c Red
+19 16 0.913 c Red
+19 130 0.805 c Red
+19 205 0.601 c Red
+19 241 0.643 c Red
+20 1 0.574 c Gray40
+20 9 0.861 c BrickRed
+20 19 0.574 c Gray40
+20 55 0.772 c BrickRed
+20 297 0.387 c Gray40
+20 349 0.527 c Gray40
+20 387 0.595 c BrickRed
+20 394 0.587 c BrickRed
+20 424 0.861 c BrickRed
+21 4 0.559 c Gray40
+21 29 0.559 c Gray40
+21 48 0.559 c Gray40
+21 233 0.309 c Gray40
+21 274 0.326 c Gray40
+21 441 0.559 c Gray40
+21 449 0.477 c Gray40
+21 523 0.411 c Gray40
+22 51 0.763 c Red
+22 110 0.491 c Gray40
+22 478 0.477 c Gray40
+23 90 0.913 c SkyBlue
+23 102 0.853 c SkyBlue
+23 396 0.644 c SkyBlue
+23 406 0.921 c SkyBlue
+23 465 0.732 c SkyBlue
+23 482 0.662 c SkyBlue
+23 518 0.443 c SkyBlue
+23 521 0.593 c SkyBlue
+24 68 0.526 c Gray40
+24 203 0.384 c Gray40
+24 549 0.31 c Gray40
+25 2 0.874 c Red
+25 504 0.411 c Gray40
+26 6 0.612 c Gray40
+26 69 0.465 c Gray40
+26 215 0.519 c Gray40
+26 533 0.319 c Gray40
+27 79 0.606 c Yellow
+27 360 0.344 c Yellow
+27 388 0.396 c Yellow
+27 543 0.383 c Yellow
+28 44 0.809 c Dandelion
+28 62 0.527 c Gray40
+28 224 0.408 c Gray40
+28 243 0.353 c Gray40
+28 452 0.844 c Dandelion
+29 1 0.585 c Gray40
+29 4 0.877 c BrickRed
+29 9 0.877 c BrickRed
+29 20 0.861 c BrickRed
+29 55 0.772 c BrickRed
+29 127 0.539 c Gray40
+29 190 0.463 c Gray40
+29 320 0.512 c BrickRed
+29 387 0.595 c BrickRed
+30 113 0.583 c OliveGreen
+30 419 0.723 c OliveGreen
+30 423 0.723 c OliveGreen
+30 461 0.597 c OliveGreen
+30 487 0.571 c OliveGreen
+30 524 0.473 c OliveGreen
+30 548 0.359 c OliveGreen
+30 551 0.291 c OliveGreen
+31 6 0.542 c Gray40
+31 81 0.813 c Red
+31 204 0.593 c Red
+31 215 0.519 c Gray40
+32 167 0.642 c Red
+32 309 0.62 c Red
+32 384 0.847 c Red
+33 1 0.712 c Red
+33 6 0.475 c Gray40
+33 17 0.475 c Gray40
+33 26 0.712 c Red
+33 262 0.643 c Red
+33 533 0.319 c Gray40
+34 239 0.514 c SkyBlue
+34 436 0.698 c SkyBlue
+34 437 0.698 c SkyBlue
+35 18 1.062 c Blue
+35 161 0.726 c Blue
+35 326 0.407 c Blue
+35 415 0.87 c Blue
+35 491 0.88 c Blue
+35 500 0.764 c Blue
+35 538 0.444 c Blue
+36 189 0.596 c SkyBlue
+36 199 0.496 c Gray40
+36 260 0.761 c SkyBlue
+36 269 0.309 c Gray40
+36 273 0.572 c SkyBlue
+36 287 0.435 c SkyBlue
+36 480 0.565 c SkyBlue
+37 4 0.486 c Gray40
+37 402 0.486 c Gray40
+37 460 0.486 c Gray40
+38 13 1.334 c Mulberry
+38 23 0.614 c Gray40
+38 90 0.609 c Gray40
+38 102 0.568 c Gray40
+38 179 0.611 c Gray40
+38 185 0.418 c Gray40
+38 260 0.507 c Gray40
+38 263 0.759 c Mulberry
+38 310 0.48 c Gray40
+38 416 0.622 c Gray40
+38 439 0.627 c Gray40
+38 448 0.527 c Gray40
+38 518 0.295 c Gray40
+39 148 0.625 c Red
+39 238 0.72 c Red
+39 347 0.343 c Gray40
+40 143 0.54 c Dandelion
+40 150 0.711 c Dandelion
+40 247 0.501 c Dandelion
+40 302 0.416 c Dandelion
+40 412 0.711 c Dandelion
+40 477 0.519 c Dandelion
+41 68 0.526 c Gray40
+41 110 0.491 c Gray40
+42 83 0.421 c Gray40
+42 311 0.666 c Peach
+42 347 0.515 c Peach
+42 405 0.48 c Gray40
+42 530 0.329 c Gray40
+43 94 0.557 c Yellow
+43 476 0.371 c Gray40
+44 63 0.809 c Dandelion
+44 324 0.618 c Dandelion
+44 445 0.809 c Dandelion
+44 485 0.631 c Dandelion
+45 50 0.717 c Red
+45 204 0.593 c Red
+45 251 0.561 c Red
+45 262 0.643 c Red
+45 422 0.717 c Red
+45 471 0.709 c Red
+45 490 0.536 c Red
+45 530 0.493 c Red
+45 534 0.69 c Red
+46 13 0.669 c Gray40
+46 38 0.669 c Gray40
+46 176 0.572 c Gray40
+46 219 0.421 c Gray40
+46 229 0.59 c Gray40
+46 232 0.528 c Gray40
+47 119 0.65 c SkyBlue
+47 417 0.751 c SkyBlue
+48 1 0.623 c Gray40
+48 9 0.934 c BrickRed
+48 19 0.623 c Gray40
+48 20 0.861 c BrickRed
+48 31 0.542 c Gray40
+48 320 0.512 c BrickRed
+48 366 0.565 c Gray40
+48 460 0.494 c Gray40
+49 42 0.471 c Gray40
+49 83 0.421 c Gray40
+49 117 0.396 c Gray40
+50 76 0.769 c Red
+50 204 0.593 c Red
+50 251 0.561 c Red
+50 422 0.859 c Red
+50 471 0.709 c Red
+50 534 0.69 c Red
+51 7 0.83 c Red
+51 114 0.828 c Red
+51 139 0.722 c Red
+51 258 0.621 c Red
+53 323 0.491 c OliveGreen
+53 454 0.588 c OliveGreen
+54 1 0.543 c Gray40
+54 4 0.543 c Gray40
+54 9 0.543 c Gray40
+54 37 0.729 c Blue
+54 233 0.309 c Gray40
+54 402 0.543 c Gray40
+54 441 0.543 c Gray40
+55 91 0.419 c Gray40
+55 148 0.417 c Gray40
+55 190 0.463 c Gray40
+55 303 0.327 c Gray40
+55 387 0.595 c BrickRed
+55 422 0.515 c Gray40
+56 3 0.53 c Lavender
+56 188 0.451 c Lavender
+56 306 0.443 c Lavender
+56 356 0.407 c Lavender
+56 371 0.392 c Lavender
+56 428 0.53 c Lavender
+56 430 0.53 c Lavender
+56 446 0.53 c Lavender
+56 458 0.53 c Lavender
+57 56 0.353 c Gray40
+57 74 0.572 c Yellow
+57 164 0.306 c Gray40
+57 173 0.572 c Yellow
+57 276 0.315 c Gray40
+58 105 0.522 c Yellow
+58 171 0.445 c Yellow
+58 486 0.535 c Yellow
+59 28 0.464 c Gray40
+59 44 0.464 c Gray40
+59 452 0.464 c Gray40
+59 537 0.526 c Red
+60 155 0.56 c SkyBlue
+60 177 0.569 c SkyBlue
+60 332 0.452 c SkyBlue
+60 333 0.478 c SkyBlue
+60 480 0.565 c SkyBlue
+61 149 0.509 c Mahogany
+61 166 0.508 c Mahogany
+61 254 0.563 c Mahogany
+61 293 0.519 c Mahogany
+61 364 0.394 c Mahogany
+61 426 0.663 c Mahogany
+62 243 0.529 c Peach
+62 414 0.791 c Peach
+62 505 0.509 c Peach
+63 11 0.782 c Dandelion
+63 150 0.782 c Dandelion
+63 174 0.61 c Dandelion
+63 247 0.501 c Dandelion
+63 324 0.618 c Dandelion
+63 412 0.771 c Dandelion
+63 532 0.528 c Dandelion
+64 108 0.78 c Mulberry
+64 337 0.505 c Mulberry
+64 351 0.542 c Mulberry
+64 393 0.475 c Mulberry
+64 435 0.737 c Mulberry
+64 501 0.705 c Mulberry
+65 46 0.756 c Lavender
+65 223 0.528 c Lavender
+65 232 0.504 c Gray40
+65 240 0.682 c Lavender
+65 385 0.592 c Lavender
+65 517 0.756 c Lavender
+66 175 0.652 c Lavender
+66 330 0.44 c Lavender
+66 484 0.625 c Lavender
+66 517 0.741 c Lavender
+67 138 0.519 c Peach
+67 207 0.566 c Peach
+67 211 0.504 c Peach
+67 390 0.465 c Peach
+67 462 0.663 c Peach
+67 547 0.381 c Peach
+68 144 0.437 c Gray40
+69 11 0.698 c Dandelion
+69 40 0.698 c Dandelion
+69 150 0.698 c Dandelion
+69 477 0.519 c Dandelion
+70 86 0.633 c SkyBlue
+70 128 0.658 c SkyBlue
+70 187 0.621 c SkyBlue
+70 242 0.587 c SkyBlue
+70 248 0.586 c SkyBlue
+70 256 0.581 c SkyBlue
+70 416 0.733 c SkyBlue
+70 448 0.733 c SkyBlue
+70 459 0.72 c SkyBlue
+70 497 0.552 c SkyBlue
+71 124 0.342 c Gray40
+71 289 0.432 c Peach
+71 312 0.297 c Gray40
+71 336 0.257 c Gray40
+72 30 0.41 c Gray40
+72 87 0.615 c Mahogany
+72 97 0.615 c Mahogany
+72 254 0.563 c Mahogany
+72 293 0.519 c Mahogany
+72 343 0.309 c Gray40
+72 369 0.308 c Gray40
+72 426 0.615 c Mahogany
+72 508 0.393 c Gray40
+73 350 0.349 c Gray40
+73 542 0.508 c Peach
+74 3 0.403 c Gray40
+74 156 0.403 c Gray40
+74 173 0.604 c Yellow
+74 208 0.318 c Gray40
+74 291 0.333 c Gray40
+74 476 0.403 c Gray40
+75 115 0.761 c Blue
+75 233 0.309 c Gray40
+75 389 0.567 c Blue
+75 509 0.527 c Blue
+76 7 0.769 c Red
+76 51 0.769 c Red
+76 204 0.593 c Red
+76 251 0.561 c Red
+76 405 0.769 c Red
+76 534 0.69 c Red
+77 2 0.798 c Red
+77 80 0.532 c Gray40
+77 114 0.798 c Red
+77 258 0.621 c Red
+77 278 0.442 c Gray40
+77 479 0.695 c Red
+78 53 0.338 c Gray40
+78 548 0.239 c Gray40
+79 95 0.537 c Yellow
+79 411 0.606 c Yellow
+79 513 0.457 c Yellow
+80 2 0.542 c Gray40
+80 451 0.813 c Peach
+80 479 0.463 c Gray40
+81 6 0.576 c Gray40
+81 63 0.576 c Gray40
+81 445 0.576 c Gray40
+82 39 0.72 c Red
+82 238 0.722 c Red
+82 285 0.7 c Red
+82 530 0.493 c Red
+83 76 0.631 c Red
+83 311 0.421 c Gray40
+83 347 0.343 c Gray40
+83 469 0.421 c Gray40
+83 530 0.493 c Red
+83 531 0.344 c Gray40
+84 55 0.702 c BrickRed
+84 91 0.419 c Gray40
+84 190 0.463 c Gray40
+84 443 0.702 c BrickRed
+84 554 0.272 c BrickRed
+85 451 0.896 c Peach
+85 475 0.753 c Peach
+86 36 0.633 c SkyBlue
+86 47 0.633 c SkyBlue
+86 119 0.633 c SkyBlue
+86 128 0.633 c SkyBlue
+86 242 0.587 c SkyBlue
+86 416 0.633 c SkyBlue
+86 448 0.633 c SkyBlue
+86 459 0.633 c SkyBlue
+87 404 0.487 c Gray40
+88 18 0.948 c Blue
+88 273 0.381 c Gray40
+88 326 0.407 c Blue
+89 7 0.755 c Red
+89 59 0.695 c Red
+89 114 0.755 c Red
+89 139 0.722 c Red
+89 537 0.526 c Red
+90 168 0.598 c SkyBlue
+90 185 0.418 c Gray40
+90 260 0.761 c SkyBlue
+91 190 0.628 c Red
+91 422 0.628 c Red
+92 70 0.733 c SkyBlue
+92 86 0.633 c SkyBlue
+92 368 0.438 c SkyBlue
+92 382 0.48 c SkyBlue
+93 67 0.563 c Peach
+93 138 0.519 c Peach
+93 211 0.504 c Peach
+94 14 0.421 c Gray40
+94 476 0.421 c Gray40
+94 522 0.531 c Yellow
+96 111 0.441 c Gray40
+96 225 0.491 c Lavender
+96 409 0.507 c Gray40
+96 455 0.761 c Lavender
+96 501 0.47 c Gray40
+96 553 0.282 c Lavender
+97 87 0.641 c Mahogany
+97 254 0.563 c Mahogany
+97 293 0.519 c Mahogany
+97 404 0.427 c Gray40
+98 34 0.698 c SkyBlue
+98 60 0.699 c SkyBlue
+98 86 0.633 c SkyBlue
+98 296 0.543 c SkyBlue
+98 344 0.6 c SkyBlue
+98 346 0.699 c SkyBlue
+98 440 0.699 c SkyBlue
+98 459 0.699 c SkyBlue
+98 507 0.676 c SkyBlue
+100 67 0.588 c Peach
+100 93 0.563 c Peach
+100 282 0.49 c Peach
+100 298 0.486 c Peach
+100 447 0.588 c Peach
+101 2 0.803 c Red
+101 25 0.803 c Red
+101 405 0.803 c Red
+101 504 0.411 c Gray40
+102 90 0.853 c SkyBlue
+102 396 0.644 c SkyBlue
+102 406 0.853 c SkyBlue
+102 465 0.732 c SkyBlue
+102 518 0.443 c SkyBlue
+102 521 0.593 c SkyBlue
+103 13 1.018 c Mulberry
+103 70 0.489 c Gray40
+103 376 0.731 c Mulberry
+104 318 0.567 c Peach
+104 327 0.272 c Gray40
+104 367 0.418 c Peach
+105 123 0.495 c Yellow
+105 486 0.522 c Yellow
+106 85 0.595 c Peach
+106 453 0.595 c Peach
+106 475 0.595 c Peach
+107 49 0.471 c Gray40
+107 133 0.733 c BrickRed
+107 202 0.637 c BrickRed
+107 304 0.557 c BrickRed
+107 341 0.49 c BrickRed
+107 503 0.608 c BrickRed
+108 13 0.848 c Mulberry
+108 125 0.848 c Mulberry
+108 176 0.848 c Mulberry
+108 179 0.565 c Gray40
+108 376 0.731 c Mulberry
+108 463 0.848 c Mulberry
+109 33 0.361 c Gray40
+109 180 0.541 c OliveGreen
+109 217 0.541 c OliveGreen
+110 44 0.737 c Dandelion
+110 226 0.305 c Gray40
+110 457 0.491 c Gray40
+110 478 0.477 c Gray40
+110 510 0.397 c Dandelion
+111 147 0.636 c SkyBlue
+111 201 0.643 c SkyBlue
+111 248 0.586 c SkyBlue
+111 256 0.581 c SkyBlue
+111 296 0.543 c SkyBlue
+112 183 0.603 c Canary
+112 209 0.564 c Canary
+112 214 0.638 c Canary
+112 379 0.614 c Canary
+112 407 0.638 c Canary
+113 213 0.583 c OliveGreen
+113 325 0.474 c OliveGreen
+113 357 0.435 c OliveGreen
+113 423 0.583 c OliveGreen
+113 461 0.583 c OliveGreen
+113 524 0.473 c OliveGreen
+113 545 0.346 c OliveGreen
+114 2 0.828 c Red
+114 28 0.552 c Gray40
+114 59 0.695 c Red
+114 479 0.695 c Red
+114 537 0.526 c Red
+115 4 0.507 c Gray40
+115 37 0.729 c Blue
+115 49 0.706 c Blue
+115 54 0.761 c Blue
+115 257 0.572 c Blue
+115 402 0.507 c Gray40
+116 20 0.676 c BrickRed
+116 55 0.676 c BrickRed
+116 190 0.451 c Gray40
+116 352 0.472 c BrickRed
+116 387 0.595 c BrickRed
+117 29 0.396 c Gray40
+117 55 0.396 c Gray40
+117 84 0.396 c Gray40
+117 133 0.396 c Gray40
+117 304 0.371 c Gray40
+118 5 0.528 c Lavender
+118 121 0.528 c Lavender
+118 299 0.528 c Lavender
+118 484 0.528 c Lavender
+119 36 0.65 c SkyBlue
+119 141 0.554 c SkyBlue
+119 266 0.57 c SkyBlue
+119 417 0.65 c SkyBlue
+119 470 0.433 c Gray40
+119 480 0.565 c SkyBlue
+119 550 0.345 c SkyBlue
+120 172 0.496 c SkyBlue
+120 284 0.33 c Gray40
+120 315 0.329 c Gray40
+120 404 0.33 c Gray40
+120 429 0.33 c Gray40
+120 520 0.292 c Gray40
+121 66 0.587 c Lavender
+121 330 0.44 c Lavender
+122 381 0.566 c Canary
+123 486 0.495 c Yellow
+124 265 0.402 c Yellow
+124 403 0.629 c Yellow
+124 418 0.629 c Yellow
+124 535 0.369 c Yellow
+124 536 0.431 c Yellow
+125 103 1.018 c Mulberry
+125 353 0.489 c Mulberry
+125 376 0.731 c Mulberry
+125 463 0.926 c Mulberry
+126 58 0.507 c Yellow
+126 105 0.507 c Yellow
+126 123 0.495 c Yellow
+126 171 0.445 c Yellow
+126 486 0.507 c Yellow
+127 1 0.539 c Gray40
+127 4 0.539 c Gray40
+127 48 0.539 c Gray40
+127 81 0.539 c Gray40
+127 320 0.341 c Gray40
+127 424 0.539 c Gray40
+127 523 0.411 c Gray40
+128 36 0.658 c SkyBlue
+128 47 0.658 c SkyBlue
+128 242 0.587 c SkyBlue
+128 448 0.658 c SkyBlue
+128 459 0.658 c SkyBlue
+129 52 0.555 c SkyBlue
+130 8 0.805 c Red
+130 12 0.805 c Red
+130 399 0.543 c Red
+130 405 0.805 c Red
+130 471 0.709 c Red
+131 21 0.571 c OliveGreen
+131 454 0.571 c OliveGreen
+132 546 0.287 c Gray40
+133 20 0.733 c BrickRed
+133 499 0.66 c BrickRed
+134 234 0.371 c Yellow
+134 283 0.447 c Yellow
+134 403 0.478 c Yellow
+134 535 0.369 c Yellow
+135 45 0.667 c Red
+135 50 0.667 c Red
+135 82 0.667 c Red
+135 262 0.643 c Red
+135 490 0.536 c Red
+136 5 0.559 c Lavender
+136 186 0.559 c Lavender
+136 317 0.529 c Lavender
+136 370 0.523 c Lavender
+136 450 0.559 c Lavender
+137 96 0.593 c Lavender
+137 136 0.559 c Lavender
+137 295 0.504 c Lavender
+137 317 0.529 c Lavender
+138 207 0.519 c Peach
+138 390 0.465 c Peach
+138 547 0.381 c Peach
+139 2 0.722 c Red
+139 7 0.722 c Red
+139 466 0.481 c Gray40
+140 313 0.495 c Peach
+141 417 0.554 c SkyBlue
+141 442 0.554 c SkyBlue
+141 550 0.345 c SkyBlue
+142 495 0.796 c Canary
+143 302 0.416 c Dandelion
+143 312 0.297 c Gray40
+143 477 0.519 c Dandelion
+144 40 0.656 c Dandelion
+144 143 0.54 c Dandelion
+144 412 0.656 c Dandelion
+144 477 0.519 c Dandelion
+145 58 0.487 c Yellow
+145 126 0.487 c Yellow
+146 127 0.541 c Emerald
+146 233 0.463 c Emerald
+146 274 0.489 c Emerald
+147 168 0.598 c SkyBlue
+147 187 0.621 c SkyBlue
+147 465 0.636 c SkyBlue
+147 497 0.552 c SkyBlue
+148 2 0.625 c Red
+148 205 0.601 c Red
+148 422 0.625 c Red
+148 451 0.417 c Gray40
+149 97 0.509 c Mahogany
+149 227 0.339 c Gray40
+149 426 0.509 c Mahogany
+150 11 0.782 c Dandelion
+150 104 0.386 c Gray40
+150 235 0.493 c Dandelion
+150 247 0.501 c Dandelion
+150 289 0.288 c Gray40
+150 318 0.378 c Gray40
+150 355 0.299 c Gray40
+150 390 0.31 c Gray40
+150 425 0.479 c Gray40
+151 15 0.51 c Peach
+151 67 0.51 c Peach
+151 100 0.51 c Peach
+151 301 0.407 c Peach
+152 5 0.513 c Lavender
+152 118 0.513 c Lavender
+153 253 0.507 c Lavender
+154 124 0.419 c Gray40
+154 329 0.372 c Gray40
+154 472 0.408 c Gray40
+155 52 0.56 c SkyBlue
+155 332 0.452 c SkyBlue
+155 480 0.56 c SkyBlue
+156 14 0.608 c Mulberry
+156 64 0.608 c Mulberry
+156 221 0.52 c Mulberry
+156 337 0.505 c Mulberry
+156 392 0.453 c Mulberry
+156 393 0.475 c Mulberry
+156 435 0.608 c Mulberry
+156 501 0.608 c Mulberry
+157 61 0.686 c Mahogany
+157 78 0.507 c Mahogany
+157 149 0.509 c Mahogany
+157 166 0.508 c Mahogany
+157 426 0.663 c Mahogany
+158 61 0.627 c Mahogany
+158 157 0.627 c Mahogany
+158 166 0.508 c Mahogany
+158 338 0.582 c Mahogany
+158 363 0.437 c Mahogany
+158 426 0.627 c Mahogany
+159 5 0.456 c Lavender
+159 118 0.456 c Lavender
+159 152 0.456 c Lavender
+159 280 0.43 c Lavender
+159 288 0.456 c Lavender
+159 299 0.456 c Lavender
+160 193 0.524 c Lavender
+160 295 0.504 c Lavender
+160 430 0.524 c Lavender
+161 18 0.726 c Blue
+161 75 0.726 c Blue
+161 195 0.519 c Blue
+161 339 0.395 c Blue
+161 389 0.567 c Blue
+162 15 0.582 c Peach
+163 29 0.391 c Gray40
+163 49 0.391 c Gray40
+163 117 0.587 c Emerald
+163 449 0.587 c Emerald
+163 515 0.506 c Emerald
+164 3 0.458 c Lavender
+164 276 0.458 c Lavender
+164 446 0.458 c Lavender
+165 62 0.681 c Peach
+165 178 0.575 c Peach
+165 191 0.563 c Peach
+165 457 0.681 c Peach
+166 78 0.507 c Mahogany
+166 149 0.508 c Mahogany
+166 426 0.508 c Mahogany
+166 468 0.508 c Mahogany
+167 59 0.642 c Red
+167 89 0.642 c Red
+167 405 0.642 c Red
+167 537 0.526 c Red
+168 177 0.569 c SkyBlue
+168 333 0.478 c SkyBlue
+168 436 0.598 c SkyBlue
+169 290 0.45 c Yellow
+169 444 0.45 c Yellow
+169 496 0.45 c Yellow
+169 498 0.414 c Yellow
+170 27 0.423 c Gray40
+170 182 0.593 c Canary
+170 379 0.614 c Canary
+170 488 0.617 c Canary
+170 502 0.656 c Canary
+171 486 0.445 c Yellow
+172 284 0.36 c Gray40
+172 429 0.36 c Gray40
+172 456 0.36 c Gray40
+173 3 0.404 c Gray40
+173 208 0.318 c Gray40
+173 430 0.404 c Gray40
+174 11 0.61 c Dandelion
+174 154 0.407 c Gray40
+175 13 0.435 c Gray40
+175 38 0.435 c Gray40
+175 229 0.435 c Gray40
+175 263 0.435 c Gray40
+175 439 0.435 c Gray40
+176 13 0.858 c Mulberry
+176 38 0.858 c Mulberry
+176 103 0.858 c Mulberry
+176 229 0.858 c Mulberry
+176 463 0.858 c Mulberry
+177 421 0.569 c SkyBlue
+177 540 0.38 c SkyBlue
+178 62 0.575 c Peach
+178 73 0.575 c Peach
+178 224 0.575 c Peach
+178 243 0.529 c Peach
+178 414 0.575 c Peach
+178 505 0.509 c Peach
+179 18 0.917 c Blue
+179 88 0.917 c Blue
+179 273 0.381 c Gray40
+179 326 0.407 c Blue
+180 217 0.604 c OliveGreen
+180 401 0.488 c OliveGreen
+180 454 0.642 c OliveGreen
+181 27 0.522 c Yellow
+181 145 0.487 c Yellow
+181 314 0.452 c Yellow
+181 431 0.522 c Yellow
+181 543 0.383 c Yellow
+182 334 0.507 c Canary
+183 334 0.507 c Canary
+183 379 0.603 c Canary
+184 28 0.489 c Gray40
+184 200 0.653 c Red
+184 378 0.554 c Red
+184 452 0.489 c Gray40
+185 88 0.627 c Blue
+185 179 0.627 c Blue
+185 277 0.591 c Blue
+185 470 0.627 c Blue
+186 5 0.688 c Lavender
+186 118 0.528 c Lavender
+186 299 0.613 c Lavender
+186 317 0.529 c Lavender
+186 450 0.688 c Lavender
+186 489 0.688 c Lavender
+187 36 0.621 c SkyBlue
+187 86 0.621 c SkyBlue
+187 128 0.621 c SkyBlue
+187 242 0.587 c SkyBlue
+187 448 0.621 c SkyBlue
+187 459 0.621 c SkyBlue
+187 497 0.552 c SkyBlue
+188 136 0.451 c Lavender
+188 193 0.451 c Lavender
+188 317 0.451 c Lavender
+188 450 0.451 c Lavender
+189 287 0.435 c SkyBlue
+189 470 0.397 c Gray40
+190 24 0.695 c Red
+190 51 0.695 c Red
+190 76 0.695 c Red
+190 303 0.49 c Red
+190 349 0.695 c Red
+190 422 0.695 c Red
+191 162 0.563 c Peach
+191 457 0.563 c Peach
+192 162 0.548 c Peach
+192 191 0.548 c Peach
+192 194 0.548 c Peach
+192 457 0.548 c Peach
+193 96 0.635 c Lavender
+193 225 0.491 c Lavender
+193 409 0.423 c Gray40
+193 455 0.635 c Lavender
+194 162 0.582 c Peach
+194 165 0.681 c Peach
+194 191 0.563 c Peach
+194 457 0.767 c Peach
+195 75 0.519 c Blue
+195 509 0.519 c Blue
+196 21 0.55 c OliveGreen
+196 294 0.55 c OliveGreen
+196 345 0.522 c OliveGreen
+197 469 0.575 c Peach
+198 220 0.494 c Yellow
+198 434 0.494 c Yellow
+198 438 0.494 c Yellow
+198 516 0.398 c Yellow
+198 527 0.4 c Yellow
+199 18 0.744 c Blue
+199 269 0.463 c Blue
+201 23 0.643 c SkyBlue
+201 90 0.643 c SkyBlue
+201 396 0.643 c SkyBlue
+201 406 0.643 c SkyBlue
+201 482 0.643 c SkyBlue
+201 521 0.593 c SkyBlue
+202 133 0.637 c BrickRed
+202 304 0.557 c BrickRed
+202 499 0.637 c BrickRed
+203 162 0.576 c Peach
+203 165 0.576 c Peach
+203 191 0.563 c Peach
+203 192 0.548 c Peach
+203 194 0.576 c Peach
+203 457 0.576 c Peach
+204 81 0.593 c Red
+204 192 0.365 c Gray40
+204 445 0.396 c Gray40
+205 2 0.601 c Red
+205 59 0.601 c Red
+205 77 0.601 c Red
+205 422 0.601 c Red
+205 473 0.401 c Gray40
+205 479 0.601 c Red
+206 113 0.443 c OliveGreen
+206 325 0.443 c OliveGreen
+206 419 0.443 c OliveGreen
+206 423 0.443 c OliveGreen
+206 487 0.443 c OliveGreen
+206 551 0.291 c OliveGreen
+207 154 0.566 c Peach
+207 390 0.465 c Peach
+208 3 0.477 c Lavender
+208 137 0.477 c Lavender
+208 160 0.477 c Lavender
+208 295 0.477 c Lavender
+208 446 0.477 c Lavender
+209 183 0.564 c Canary
+209 214 0.564 c Canary
+209 230 0.564 c Canary
+209 348 0.564 c Canary
+209 407 0.564 c Canary
+209 410 0.564 c Canary
+210 62 0.694 c Peach
+210 243 0.529 c Peach
+210 414 0.694 c Peach
+210 457 0.694 c Peach
+210 478 0.694 c Peach
+211 138 0.504 c Peach
+211 207 0.504 c Peach
+211 462 0.504 c Peach
+211 547 0.381 c Peach
+213 323 0.491 c OliveGreen
+213 401 0.488 c OliveGreen
+213 423 0.586 c OliveGreen
+213 454 0.586 c OliveGreen
+213 461 0.586 c OliveGreen
+213 524 0.473 c OliveGreen
+213 544 0.441 c OliveGreen
+214 183 0.603 c Canary
+214 407 0.702 c Canary
+215 40 0.711 c Dandelion
+215 63 0.778 c Dandelion
+215 69 0.698 c Dandelion
+215 150 0.778 c Dandelion
+215 226 0.305 c Gray40
+215 324 0.618 c Dandelion
+215 412 0.771 c Dandelion
+215 532 0.528 c Dandelion
+215 533 0.479 c Dandelion
+216 119 0.521 c SkyBlue
+216 141 0.521 c SkyBlue
+216 239 0.514 c SkyBlue
+216 266 0.521 c SkyBlue
+216 417 0.521 c SkyBlue
+216 437 0.521 c SkyBlue
+216 442 0.521 c SkyBlue
+216 550 0.345 c SkyBlue
+217 107 0.403 c Gray40
+218 127 0.347 c Gray40
+218 264 0.52 c OliveGreen
+218 372 0.466 c OliveGreen
+219 38 0.632 c Mulberry
+220 314 0.452 c Yellow
+220 388 0.396 c Yellow
+220 434 0.506 c Yellow
+220 438 0.506 c Yellow
+220 527 0.4 c Yellow
+221 64 0.52 c Mulberry
+221 337 0.505 c Mulberry
+221 351 0.52 c Mulberry
+221 393 0.475 c Mulberry
+221 435 0.52 c Mulberry
+221 501 0.52 c Mulberry
+222 380 0.447 c Canary
+222 410 0.447 c Canary
+222 420 0.447 c Canary
+223 439 0.352 c Gray40
+224 44 0.408 c Gray40
+224 62 0.612 c Peach
+224 243 0.529 c Peach
+224 313 0.495 c Peach
+224 414 0.612 c Peach
+224 452 0.408 c Gray40
+224 505 0.509 c Peach
+225 111 0.327 c Gray40
+225 409 0.327 c Gray40
+225 553 0.282 c Lavender
+226 40 0.305 c Gray40
+226 412 0.305 c Gray40
+227 113 0.389 c Gray40
+227 120 0.496 c SkyBlue
+227 172 0.54 c SkyBlue
+227 231 0.353 c Gray40
+227 315 0.329 c Gray40
+227 404 0.397 c Gray40
+227 429 0.397 c Gray40
+227 520 0.292 c Gray40
+228 108 0.51 c Mulberry
+228 187 0.34 c Gray40
+229 13 0.885 c Mulberry
+229 38 0.885 c Mulberry
+229 463 0.885 c Mulberry
+229 483 0.885 c Mulberry
+230 183 0.591 c Canary
+230 214 0.591 c Canary
+230 407 0.591 c Canary
+230 410 0.591 c Canary
+231 213 0.529 c OliveGreen
+231 315 0.494 c OliveGreen
+231 325 0.474 c OliveGreen
+231 419 0.529 c OliveGreen
+232 13 0.792 c Mulberry
+232 38 0.792 c Mulberry
+232 103 0.792 c Mulberry
+232 176 0.792 c Mulberry
+232 229 0.792 c Mulberry
+232 263 0.759 c Mulberry
+232 463 0.792 c Mulberry
+232 483 0.792 c Mulberry
+233 1 0.309 c Gray40
+233 4 0.309 c Gray40
+233 29 0.309 c Gray40
+233 48 0.309 c Gray40
+233 127 0.463 c Emerald
+233 274 0.463 c Emerald
+234 283 0.371 c Yellow
+234 403 0.371 c Yellow
+234 527 0.371 c Yellow
+235 289 0.288 c Gray40
+235 312 0.297 c Gray40
+235 336 0.257 c Gray40
+235 386 0.247 c Gray40
+235 408 0.329 c Gray40
+235 425 0.329 c Gray40
+235 464 0.329 c Gray40
+236 93 0.527 c Peach
+236 207 0.527 c Peach
+236 397 0.527 c Peach
+237 95 0.436 c Yellow
+237 411 0.436 c Yellow
+238 278 0.442 c Gray40
+239 335 0.404 c SkyBlue
+239 421 0.514 c SkyBlue
+239 442 0.514 c SkyBlue
+240 46 0.682 c Lavender
+240 201 0.429 c Gray40
+241 2 0.643 c Red
+241 205 0.601 c Red
+241 300 0.609 c Red
+242 36 0.587 c SkyBlue
+242 47 0.587 c SkyBlue
+242 417 0.587 c SkyBlue
+242 459 0.587 c SkyBlue
+243 414 0.529 c Peach
+243 505 0.509 c Peach
+244 124 0.446 c Yellow
+244 265 0.402 c Yellow
+245 172 0.37 c SkyBlue
+245 374 0.247 c Gray40
+245 427 0.37 c SkyBlue
+246 198 0.383 c Yellow
+246 220 0.383 c Yellow
+246 431 0.383 c Yellow
+246 438 0.383 c Yellow
+246 516 0.383 c Yellow
+247 11 0.501 c Dandelion
+247 154 0.334 c Gray40
+247 174 0.501 c Dandelion
+247 318 0.334 c Gray40
+248 147 0.586 c SkyBlue
+248 296 0.543 c SkyBlue
+248 497 0.552 c SkyBlue
+249 119 0.518 c SkyBlue
+249 216 0.518 c SkyBlue
+250 198 0.494 c Yellow
+250 246 0.383 c Yellow
+250 403 0.54 c Yellow
+250 431 0.54 c Yellow
+250 511 0.411 c Yellow
+250 516 0.398 c Yellow
+251 28 0.374 c Gray40
+251 204 0.561 c Red
+251 405 0.561 c Red
+252 286 0.614 c Red
+252 478 0.415 c Gray40
+252 537 0.526 c Red
+253 38 0.338 c Gray40
+253 232 0.338 c Gray40
+254 87 0.563 c Mahogany
+254 293 0.519 c Mahogany
+254 404 0.375 c Gray40
+255 49 0.532 c Blue
+255 115 0.532 c Blue
+255 257 0.532 c Blue
+256 147 0.581 c SkyBlue
+256 168 0.581 c SkyBlue
+256 187 0.581 c SkyBlue
+256 436 0.581 c SkyBlue
+256 465 0.581 c SkyBlue
+256 497 0.552 c SkyBlue
+257 49 0.572 c Blue
+257 402 0.381 c Gray40
+258 2 0.621 c Red
+258 80 0.414 c Gray40
+258 114 0.621 c Red
+258 278 0.414 c Gray40
+258 479 0.621 c Red
+259 79 0.442 c Yellow
+259 95 0.442 c Yellow
+259 411 0.442 c Yellow
+259 513 0.442 c Yellow
+260 132 0.609 c SkyBlue
+260 161 0.484 c Gray40
+260 189 0.596 c SkyBlue
+260 470 0.507 c Gray40
+261 181 0.522 c Yellow
+261 281 0.478 c Yellow
+261 314 0.452 c Yellow
+261 383 0.385 c Yellow
+261 403 0.54 c Yellow
+261 431 0.54 c Yellow
+261 492 0.54 c Yellow
+262 31 0.643 c Red
+262 82 0.643 c Red
+262 238 0.643 c Red
+262 285 0.643 c Red
+262 530 0.493 c Red
+263 23 0.506 c Gray40
+263 102 0.506 c Gray40
+263 185 0.418 c Gray40
+263 406 0.506 c Gray40
+263 416 0.506 c Gray40
+263 439 0.506 c Gray40
+263 482 0.441 c Gray40
+263 518 0.295 c Gray40
+264 9 0.348 c Gray40
+264 116 0.348 c Gray40
+264 127 0.348 c Gray40
+264 133 0.348 c Gray40
+265 403 0.402 c Yellow
+265 444 0.402 c Yellow
+266 141 0.554 c SkyBlue
+266 417 0.57 c SkyBlue
+266 442 0.57 c SkyBlue
+266 550 0.345 c SkyBlue
+267 181 0.498 c Yellow
+267 261 0.498 c Yellow
+267 281 0.478 c Yellow
+267 383 0.385 c Yellow
+267 431 0.498 c Yellow
+267 492 0.498 c Yellow
+267 511 0.411 c Yellow
+267 543 0.383 c Yellow
+268 112 0.544 c Canary
+268 209 0.544 c Canary
+268 407 0.544 c Canary
+268 410 0.544 c Canary
+268 420 0.544 c Canary
+268 541 0.458 c Canary
+269 18 0.463 c Blue
+269 35 0.463 c Blue
+270 43 0.414 c Yellow
+270 377 0.391 c Yellow
+271 403 0.459 c Yellow
+272 15 0.512 c Peach
+272 93 0.512 c Peach
+272 100 0.512 c Peach
+272 236 0.512 c Peach
+272 282 0.49 c Peach
+273 189 0.572 c SkyBlue
+273 199 0.381 c Gray40
+274 1 0.326 c Gray40
+274 4 0.326 c Gray40
+274 29 0.326 c Gray40
+274 127 0.489 c Emerald
+275 97 0.478 c Mahogany
+275 254 0.478 c Mahogany
+276 3 0.472 c Lavender
+276 359 0.424 c Lavender
+276 430 0.472 c Lavender
+276 446 0.472 c Lavender
+277 189 0.394 c Gray40
+277 365 0.591 c Blue
+278 73 0.663 c Peach
+278 505 0.509 c Peach
+279 112 0.568 c Canary
+279 209 0.564 c Canary
+279 407 0.568 c Canary
+279 420 0.568 c Canary
+279 541 0.458 c Canary
+280 5 0.43 c Lavender
+280 121 0.43 c Lavender
+280 330 0.43 c Lavender
+280 481 0.43 c Lavender
+281 383 0.385 c Yellow
+281 403 0.478 c Yellow
+281 431 0.478 c Yellow
+282 67 0.49 c Peach
+282 93 0.49 c Peach
+282 211 0.49 c Peach
+282 447 0.49 c Peach
+283 126 0.447 c Yellow
+283 145 0.447 c Yellow
+283 181 0.447 c Yellow
+283 220 0.447 c Yellow
+283 261 0.447 c Yellow
+283 403 0.447 c Yellow
+284 21 0.559 c OliveGreen
+284 196 0.55 c OliveGreen
+284 294 0.559 c OliveGreen
+284 373 0.525 c OliveGreen
+285 165 0.454 c Gray40
+285 178 0.383 c Gray40
+285 224 0.408 c Gray40
+286 28 0.409 c Gray40
+286 44 0.409 c Gray40
+286 110 0.409 c Gray40
+286 184 0.614 c Red
+286 200 0.614 c Red
+286 378 0.554 c Red
+287 245 0.37 c SkyBlue
+287 305 0.435 c SkyBlue
+287 307 0.435 c SkyBlue
+287 342 0.372 c SkyBlue
+287 427 0.435 c SkyBlue
+288 5 0.562 c Lavender
+288 118 0.528 c Lavender
+288 400 0.562 c Lavender
+288 489 0.562 c Lavender
+289 124 0.288 c Gray40
+289 336 0.257 c Gray40
+289 418 0.288 c Gray40
+289 472 0.288 c Gray40
+290 134 0.478 c Yellow
+290 212 0.518 c Yellow
+290 234 0.371 c Yellow
+290 403 0.518 c Yellow
+291 156 0.5 c Mulberry
+291 159 0.304 c Gray40
+291 331 0.266 c Gray40
+291 428 0.333 c Gray40
+292 447 0.477 c Peach
+293 87 0.519 c Mahogany
+293 404 0.346 c Gray40
+294 21 0.589 c OliveGreen
+294 345 0.522 c OliveGreen
+294 372 0.466 c OliveGreen
+294 373 0.525 c OliveGreen
+294 514 0.384 c Gray40
+295 96 0.504 c Lavender
+295 193 0.504 c Lavender
+295 433 0.504 c Lavender
+295 526 0.504 c Lavender
+296 34 0.543 c SkyBlue
+296 436 0.543 c SkyBlue
+296 437 0.543 c SkyBlue
+297 19 0.58 c Red
+297 205 0.58 c Red
+297 424 0.387 c Gray40
+298 67 0.486 c Peach
+299 65 0.613 c Lavender
+299 484 0.613 c Lavender
+300 2 0.609 c Red
+300 77 0.609 c Red
+300 80 0.406 c Gray40
+300 205 0.601 c Red
+301 15 0.407 c Peach
+301 67 0.407 c Peach
+301 100 0.407 c Peach
+301 282 0.407 c Peach
+301 447 0.407 c Peach
+302 312 0.278 c Gray40
+303 16 0.49 c Red
+303 22 0.49 c Red
+303 51 0.49 c Red
+303 506 0.49 c Red
+304 20 0.557 c BrickRed
+304 29 0.557 c BrickRed
+304 133 0.557 c BrickRed
+304 499 0.557 c BrickRed
+305 109 0.301 c Gray40
+305 315 0.301 c Gray40
+306 458 0.443 c Lavender
+306 481 0.443 c Lavender
+307 109 0.346 c Gray40
+307 227 0.519 c SkyBlue
+307 305 0.451 c SkyBlue
+307 315 0.329 c Gray40
+307 508 0.346 c Gray40
+308 153 0.612 c Lavender
+308 253 0.507 c Lavender
+308 455 0.637 c Lavender
+308 484 0.625 c Lavender
+309 167 0.62 c Red
+310 18 0.719 c Blue
+310 88 0.719 c Blue
+310 199 0.719 c Blue
+310 269 0.463 c Blue
+310 277 0.591 c Blue
+310 365 0.671 c Blue
+310 470 0.719 c Blue
+311 197 0.575 c Peach
+311 469 0.666 c Peach
+311 531 0.516 c Peach
+312 124 0.445 c Yellow
+312 327 0.408 c Yellow
+312 329 0.445 c Yellow
+312 336 0.386 c Yellow
+312 386 0.371 c Yellow
+312 408 0.445 c Yellow
+312 418 0.445 c Yellow
+313 215 0.33 c Gray40
+313 292 0.477 c Peach
+313 485 0.33 c Gray40
+314 58 0.452 c Yellow
+314 126 0.452 c Yellow
+315 21 0.494 c OliveGreen
+315 213 0.494 c OliveGreen
+315 284 0.494 c OliveGreen
+315 325 0.474 c OliveGreen
+315 361 0.329 c Gray40
+316 287 0.42 c SkyBlue
+316 417 0.42 c SkyBlue
+317 193 0.529 c Lavender
+317 225 0.491 c Lavender
+317 450 0.529 c Lavender
+318 235 0.329 c Gray40
+318 289 0.432 c Peach
+318 328 0.264 c Gray40
+318 355 0.448 c Peach
+318 425 0.567 c Peach
+319 252 0.622 c Red
+319 405 0.812 c Red
+319 537 0.526 c Red
+320 1 0.341 c Gray40
+320 31 0.341 c Gray40
+320 33 0.341 c Gray40
+320 81 0.341 c Gray40
+320 424 0.512 c BrickRed
+321 218 0.52 c OliveGreen
+321 401 0.488 c OliveGreen
+321 524 0.473 c OliveGreen
+322 103 0.637 c Mulberry
+322 232 0.637 c Mulberry
+322 353 0.489 c Mulberry
+322 409 0.425 c Gray40
+323 131 0.491 c OliveGreen
+323 454 0.491 c OliveGreen
+324 11 0.618 c Dandelion
+324 40 0.618 c Dandelion
+324 150 0.618 c Dandelion
+324 412 0.618 c Dandelion
+325 213 0.474 c OliveGreen
+325 357 0.435 c OliveGreen
+325 419 0.474 c OliveGreen
+325 423 0.474 c OliveGreen
+325 461 0.474 c OliveGreen
+325 545 0.346 c OliveGreen
+326 4 0.271 c Gray40
+326 37 0.407 c Blue
+326 54 0.407 c Blue
+326 415 0.407 c Blue
+327 27 0.408 c Yellow
+327 403 0.408 c Yellow
+328 327 0.264 c Gray40
+328 336 0.257 c Gray40
+328 355 0.264 c Gray40
+328 408 0.264 c Gray40
+328 425 0.264 c Gray40
+329 124 0.558 c Yellow
+329 244 0.446 c Yellow
+329 265 0.402 c Yellow
+329 418 0.558 c Yellow
+329 535 0.369 c Yellow
+330 175 0.44 c Lavender
+330 223 0.44 c Lavender
+331 3 0.399 c Lavender
+331 64 0.266 c Gray40
+331 160 0.399 c Lavender
+332 277 0.301 c Gray40
+332 480 0.452 c SkyBlue
+333 177 0.478 c SkyBlue
+333 421 0.478 c SkyBlue
+333 540 0.38 c SkyBlue
+334 122 0.507 c Canary
+334 381 0.507 c Canary
+335 287 0.404 c SkyBlue
+335 342 0.372 c SkyBlue
+335 374 0.269 c Gray40
+335 427 0.404 c SkyBlue
+336 271 0.386 c Yellow
+336 327 0.386 c Yellow
+336 386 0.371 c Yellow
+336 408 0.386 c Yellow
+337 108 0.505 c Mulberry
+338 61 0.582 c Mahogany
+338 78 0.507 c Mahogany
+338 149 0.509 c Mahogany
+338 157 0.582 c Mahogany
+338 166 0.508 c Mahogany
+338 426 0.582 c Mahogany
+339 75 0.395 c Blue
+339 195 0.395 c Blue
+340 116 0.356 c Gray40
+340 264 0.521 c OliveGreen
+341 49 0.327 c Gray40
+341 503 0.49 c BrickRed
+342 245 0.37 c SkyBlue
+342 374 0.248 c Gray40
+342 427 0.372 c SkyBlue
+343 30 0.463 c OliveGreen
+343 113 0.463 c OliveGreen
+343 213 0.463 c OliveGreen
+343 423 0.463 c OliveGreen
+343 461 0.463 c OliveGreen
+343 487 0.463 c OliveGreen
+343 548 0.359 c OliveGreen
+344 60 0.6 c SkyBlue
+344 155 0.56 c SkyBlue
+344 440 0.6 c SkyBlue
+344 480 0.565 c SkyBlue
+345 21 0.522 c OliveGreen
+345 218 0.52 c OliveGreen
+345 372 0.466 c OliveGreen
+346 36 0.82 c SkyBlue
+346 47 0.751 c SkyBlue
+346 60 0.797 c SkyBlue
+346 344 0.6 c SkyBlue
+346 440 0.82 c SkyBlue
+347 2 0.343 c Gray40
+347 73 0.515 c Peach
+347 469 0.515 c Peach
+348 407 1.015 c Canary
+348 410 0.887 c Canary
+349 32 0.791 c Red
+349 309 0.62 c Red
+349 384 0.791 c Red
+350 412 0.523 c Dandelion
+351 70 0.362 c Gray40
+351 228 0.51 c Mulberry
+352 91 0.314 c Gray40
+353 103 0.489 c Mulberry
+353 376 0.489 c Mulberry
+354 328 0.264 c Gray40
+355 235 0.299 c Gray40
+355 271 0.299 c Gray40
+355 425 0.448 c Peach
+356 306 0.407 c Lavender
+356 428 0.407 c Lavender
+356 430 0.407 c Lavender
+356 458 0.407 c Lavender
+357 213 0.435 c OliveGreen
+357 401 0.435 c OliveGreen
+357 423 0.435 c OliveGreen
+357 461 0.435 c OliveGreen
+357 524 0.435 c OliveGreen
+358 426 0.267 c Gray40
+359 3 0.424 c Lavender
+359 160 0.424 c Lavender
+359 291 0.283 c Gray40
+359 428 0.424 c Lavender
+360 79 0.344 c Yellow
+360 95 0.344 c Yellow
+360 411 0.344 c Yellow
+361 29 0.404 c Gray40
+361 49 0.404 c Gray40
+361 117 0.594 c Emerald
+361 163 0.587 c Emerald
+361 274 0.489 c Emerald
+361 449 0.606 c Emerald
+361 515 0.506 c Emerald
+362 245 0.37 c SkyBlue
+362 287 0.435 c SkyBlue
+362 342 0.372 c SkyBlue
+362 427 0.524 c SkyBlue
+363 61 0.437 c Mahogany
+363 78 0.437 c Mahogany
+363 149 0.437 c Mahogany
+363 157 0.437 c Mahogany
+363 166 0.437 c Mahogany
+363 338 0.437 c Mahogany
+363 426 0.437 c Mahogany
+364 72 0.394 c Mahogany
+364 87 0.394 c Mahogany
+364 97 0.394 c Mahogany
+365 18 0.671 c Blue
+366 41 0.817 c Red
+366 68 0.526 c Gray40
+366 539 0.322 c Gray40
+367 235 0.279 c Gray40
+367 312 0.279 c Gray40
+367 329 0.279 c Gray40
+368 382 0.438 c SkyBlue
+369 30 0.462 c OliveGreen
+369 404 0.462 c OliveGreen
+369 419 0.462 c OliveGreen
+370 186 0.523 c Lavender
+370 317 0.523 c Lavender
+370 450 0.523 c Lavender
+371 3 0.392 c Lavender
+371 306 0.392 c Lavender
+371 356 0.392 c Lavender
+371 428 0.392 c Lavender
+371 458 0.392 c Lavender
+372 21 0.466 c OliveGreen
+372 29 0.311 c Gray40
+372 127 0.311 c Gray40
+372 449 0.311 c Gray40
+373 21 0.525 c OliveGreen
+373 131 0.525 c OliveGreen
+373 372 0.466 c OliveGreen
+373 449 0.35 c Gray40
+373 454 0.525 c OliveGreen
+374 97 0.547 c Mahogany
+374 120 0.33 c Gray40
+374 172 0.36 c Gray40
+374 227 0.365 c Gray40
+374 293 0.519 c Mahogany
+375 43 0.383 c Yellow
+375 270 0.383 c Yellow
+375 377 0.383 c Yellow
+376 13 0.731 c Mulberry
+376 47 0.487 c Gray40
+376 179 0.487 c Gray40
+377 43 0.391 c Yellow
+378 28 0.369 c Gray40
+378 200 0.554 c Red
+378 452 0.369 c Gray40
+380 112 0.495 c Canary
+380 214 0.495 c Canary
+380 230 0.495 c Canary
+380 279 0.495 c Canary
+380 407 0.495 c Canary
+380 541 0.458 c Canary
+382 417 0.48 c SkyBlue
+383 259 0.385 c Yellow
+384 167 0.642 c Red
+384 309 0.62 c Red
+385 219 0.395 c Gray40
+385 223 0.528 c Lavender
+385 240 0.592 c Lavender
+385 517 0.592 c Lavender
+386 329 0.371 c Yellow
+386 418 0.371 c Yellow
+387 22 0.396 c Gray40
+387 76 0.396 c Gray40
+387 190 0.396 c Gray40
+387 394 0.587 c BrickRed
+388 237 0.396 c Yellow
+388 411 0.396 c Yellow
+389 4 0.378 c Gray40
+389 233 0.309 c Gray40
+390 71 0.465 c Peach
+390 318 0.465 c Peach
+390 328 0.264 c Gray40
+390 355 0.448 c Peach
+390 425 0.465 c Peach
+391 112 0.561 c Canary
+391 170 0.561 c Canary
+391 250 0.36 c Gray40
+391 407 0.561 c Canary
+391 410 0.561 c Canary
+392 351 0.453 c Mulberry
+392 501 0.453 c Mulberry
+393 108 0.475 c Mulberry
+393 228 0.475 c Mulberry
+393 337 0.475 c Mulberry
+393 351 0.475 c Mulberry
+393 435 0.475 c Mulberry
+393 501 0.475 c Mulberry
+394 12 0.391 c Gray40
+394 16 0.391 c Gray40
+394 19 0.391 c Gray40
+394 424 0.587 c BrickRed
+395 5 0.311 c Lavender
+395 159 0.311 c Lavender
+395 288 0.311 c Lavender
+396 90 0.644 c SkyBlue
+396 406 0.644 c SkyBlue
+396 465 0.644 c SkyBlue
+397 15 0.582 c Peach
+397 67 0.582 c Peach
+397 282 0.49 c Peach
+397 447 0.582 c Peach
+398 66 0.462 c Lavender
+398 96 0.462 c Lavender
+398 153 0.462 c Lavender
+398 253 0.462 c Lavender
+398 308 0.462 c Lavender
+398 455 0.462 c Lavender
+399 28 0.362 c Gray40
+399 89 0.543 c Red
+399 184 0.543 c Red
+399 286 0.543 c Red
+399 405 0.543 c Red
+400 121 0.587 c Lavender
+400 153 0.612 c Lavender
+401 503 0.325 c Gray40
+402 33 0.475 c Gray40
+402 42 0.719 c Peach
+402 106 0.595 c Peach
+402 311 0.666 c Peach
+403 58 0.535 c Yellow
+403 105 0.522 c Yellow
+403 123 0.495 c Yellow
+403 126 0.507 c Yellow
+403 145 0.487 c Yellow
+403 171 0.445 c Yellow
+403 198 0.494 c Yellow
+403 220 0.506 c Yellow
+403 246 0.383 c Yellow
+403 314 0.452 c Yellow
+403 360 0.344 c Yellow
+403 411 0.864 c Yellow
+403 431 0.634 c Yellow
+403 434 0.552 c Yellow
+403 438 0.586 c Yellow
+403 486 0.535 c Yellow
+403 527 0.4 c Yellow
+403 536 0.431 c Yellow
+404 21 0.838 c OliveGreen
+404 113 0.583 c OliveGreen
+404 196 0.55 c OliveGreen
+404 213 0.586 c OliveGreen
+404 231 0.529 c OliveGreen
+404 284 0.559 c OliveGreen
+404 294 0.589 c OliveGreen
+404 315 0.494 c OliveGreen
+404 325 0.474 c OliveGreen
+404 372 0.466 c OliveGreen
+404 373 0.525 c OliveGreen
+404 419 0.752 c OliveGreen
+405 7 0.949 c Red
+405 28 0.579 c Gray40
+405 59 0.695 c Red
+405 89 0.755 c Red
+405 139 0.722 c Red
+405 252 0.622 c Red
+405 347 0.343 c Gray40
+405 466 0.505 c Gray40
+405 537 0.526 c Red
+406 90 0.913 c SkyBlue
+406 216 0.521 c SkyBlue
+406 249 0.518 c SkyBlue
+407 170 0.857 c Canary
+407 182 0.593 c Canary
+407 183 0.603 c Canary
+407 379 0.614 c Canary
+407 488 0.617 c Canary
+407 502 0.656 c Canary
+408 271 0.459 c Yellow
+408 327 0.408 c Yellow
+408 386 0.371 c Yellow
+409 70 0.733 c SkyBlue
+409 92 0.864 c SkyBlue
+409 103 0.679 c Gray40
+409 353 0.326 c Gray40
+409 382 0.48 c SkyBlue
+410 170 0.857 c Canary
+410 182 0.593 c Canary
+410 183 0.603 c Canary
+410 214 0.702 c Canary
+410 379 0.614 c Canary
+410 407 0.887 c Canary
+410 488 0.617 c Canary
+410 502 0.656 c Canary
+411 95 0.537 c Yellow
+411 513 0.457 c Yellow
+412 143 0.54 c Dandelion
+412 150 0.771 c Dandelion
+412 154 0.429 c Gray40
+412 174 0.61 c Dandelion
+412 247 0.501 c Dandelion
+412 302 0.416 c Dandelion
+412 464 0.375 c Gray40
+413 61 0.686 c Mahogany
+413 78 0.507 c Mahogany
+413 149 0.509 c Mahogany
+413 157 0.701 c Mahogany
+413 158 0.627 c Mahogany
+413 166 0.508 c Mahogany
+413 338 0.582 c Mahogany
+413 363 0.437 c Mahogany
+413 426 0.663 c Mahogany
+414 519 0.374 c Gray40
+415 54 0.814 c Blue
+415 389 0.567 c Blue
+416 47 0.751 c SkyBlue
+416 90 0.913 c SkyBlue
+416 119 0.65 c SkyBlue
+416 128 0.658 c SkyBlue
+416 242 0.587 c SkyBlue
+416 459 0.72 c SkyBlue
+417 72 0.41 c Gray40
+417 239 0.514 c SkyBlue
+417 358 0.4 c SkyBlue
+417 362 0.524 c SkyBlue
+417 442 0.782 c SkyBlue
+418 134 0.478 c Yellow
+418 169 0.45 c Yellow
+418 234 0.371 c Yellow
+418 265 0.402 c Yellow
+418 290 0.518 c Yellow
+418 444 0.649 c Yellow
+418 496 0.452 c Yellow
+419 196 0.55 c OliveGreen
+419 218 0.52 c OliveGreen
+419 294 0.589 c OliveGreen
+419 373 0.525 c OliveGreen
+419 449 0.477 c Gray40
+420 112 0.638 c Canary
+420 170 0.855 c Canary
+420 182 0.593 c Canary
+420 183 0.603 c Canary
+420 209 0.564 c Canary
+420 214 0.702 c Canary
+420 230 0.591 c Canary
+420 348 0.855 c Canary
+420 391 0.561 c Canary
+420 407 0.855 c Canary
+420 410 0.855 c Canary
+420 502 0.656 c Canary
+421 10 0.538 c Gray40
+422 2 1.003 c Red
+422 25 0.874 c Red
+422 80 0.542 c Gray40
+422 85 0.597 c Gray40
+422 106 0.397 c Gray40
+422 140 0.368 c Gray40
+422 258 0.621 c Red
+422 451 0.658 c Gray40
+422 473 0.405 c Gray40
+422 485 0.42 c Gray40
+423 180 0.642 c OliveGreen
+423 217 0.604 c OliveGreen
+423 218 0.52 c OliveGreen
+423 321 0.566 c OliveGreen
+423 345 0.522 c OliveGreen
+423 401 0.488 c OliveGreen
+423 461 0.597 c OliveGreen
+423 524 0.473 c OliveGreen
+423 544 0.441 c OliveGreen
+424 19 0.611 c Gray40
+424 31 0.542 c Gray40
+424 81 0.576 c Gray40
+424 101 0.536 c Gray40
+424 130 0.537 c Gray40
+424 204 0.396 c Gray40
+425 71 0.513 c Peach
+425 271 0.306 c Gray40
+425 289 0.432 c Peach
+425 312 0.297 c Gray40
+425 336 0.257 c Gray40
+425 386 0.247 c Gray40
+425 464 0.375 c Gray40
+425 472 0.408 c Gray40
+426 30 0.442 c Gray40
+426 78 0.507 c Mahogany
+426 206 0.295 c Gray40
+426 254 0.563 c Mahogany
+426 468 0.658 c Mahogany
+426 508 0.393 c Gray40
+427 120 0.496 c SkyBlue
+427 172 0.54 c SkyBlue
+427 227 0.596 c SkyBlue
+427 374 0.365 c Gray40
+428 5 0.645 c Lavender
+428 118 0.528 c Lavender
+428 121 0.587 c Lavender
+428 152 0.513 c Lavender
+428 159 0.456 c Lavender
+428 280 0.43 c Lavender
+428 288 0.562 c Lavender
+428 299 0.613 c Lavender
+428 395 0.311 c Lavender
+428 489 0.645 c Lavender
+429 315 0.494 c OliveGreen
+430 98 0.466 c Gray40
+431 198 0.494 c Yellow
+431 220 0.506 c Yellow
+431 259 0.442 c Yellow
+431 383 0.385 c Yellow
+432 538 0.444 c Blue
+433 96 0.761 c Lavender
+434 237 0.436 c Yellow
+434 388 0.396 c Yellow
+434 438 0.552 c Yellow
+435 108 0.737 c Mulberry
+435 228 0.51 c Mulberry
+435 337 0.505 c Mulberry
+435 351 0.542 c Mulberry
+435 501 0.705 c Mulberry
+436 52 0.703 c SkyBlue
+436 129 0.555 c SkyBlue
+436 239 0.514 c SkyBlue
+436 362 0.524 c SkyBlue
+437 239 0.514 c SkyBlue
+437 245 0.37 c SkyBlue
+437 362 0.524 c SkyBlue
+437 427 0.69 c SkyBlue
+437 550 0.345 c SkyBlue
+438 237 0.436 c Yellow
+438 388 0.396 c Yellow
+438 411 0.586 c Yellow
+438 513 0.457 c Yellow
+439 90 0.913 c SkyBlue
+439 128 0.658 c SkyBlue
+439 132 0.609 c SkyBlue
+439 260 0.761 c SkyBlue
+439 406 0.94 c SkyBlue
+439 448 0.79 c SkyBlue
+440 60 0.797 c SkyBlue
+440 155 0.56 c SkyBlue
+440 177 0.569 c SkyBlue
+440 332 0.452 c SkyBlue
+440 333 0.478 c SkyBlue
+440 480 0.565 c SkyBlue
+441 1 0.626 c Gray40
+441 4 0.938 c BrickRed
+441 48 0.934 c BrickRed
+442 374 0.365 c Gray40
+442 413 0.521 c Gray40
+443 55 0.757 c BrickRed
+443 91 0.419 c Gray40
+443 190 0.463 c Gray40
+444 134 0.478 c Yellow
+444 212 0.649 c Yellow
+444 234 0.371 c Yellow
+444 290 0.518 c Yellow
+444 403 0.649 c Yellow
+445 63 0.871 c Dandelion
+445 69 0.698 c Dandelion
+445 150 0.782 c Dandelion
+445 215 0.778 c Dandelion
+445 247 0.501 c Dandelion
+445 324 0.618 c Dandelion
+445 485 0.631 c Dandelion
+445 532 0.528 c Dandelion
+445 533 0.479 c Dandelion
+446 3 0.636 c Lavender
+446 137 0.593 c Lavender
+446 160 0.524 c Lavender
+446 295 0.504 c Lavender
+446 356 0.407 c Lavender
+446 359 0.424 c Lavender
+446 430 0.636 c Lavender
+447 67 0.734 c Peach
+447 138 0.519 c Peach
+447 207 0.566 c Peach
+447 211 0.504 c Peach
+447 298 0.486 c Peach
+447 462 0.663 c Peach
+447 547 0.381 c Peach
+448 36 0.79 c SkyBlue
+448 185 0.418 c Gray40
+448 242 0.587 c SkyBlue
+449 4 0.477 c Gray40
+449 29 0.477 c Gray40
+449 55 0.477 c Gray40
+449 84 0.468 c Gray40
+449 117 0.594 c Emerald
+449 127 0.716 c Emerald
+449 515 0.506 c Emerald
+450 46 0.795 c Lavender
+450 240 0.682 c Lavender
+451 15 0.775 c Peach
+451 151 0.51 c Peach
+451 236 0.527 c Peach
+451 272 0.512 c Peach
+451 292 0.477 c Peach
+451 301 0.407 c Peach
+451 397 0.582 c Peach
+451 466 0.758 c Peach
+451 475 0.753 c Peach
+451 494 0.594 c Peach
+452 44 0.809 c Dandelion
+452 445 0.844 c Dandelion
+452 485 0.631 c Dandelion
+453 15 0.733 c Peach
+453 93 0.563 c Peach
+453 100 0.588 c Peach
+453 282 0.49 c Peach
+453 475 0.733 c Peach
+453 494 0.594 c Peach
+454 116 0.451 c Gray40
+454 264 0.521 c OliveGreen
+454 340 0.535 c OliveGreen
+455 66 0.741 c Lavender
+455 153 0.612 c Lavender
+455 225 0.491 c Lavender
+455 253 0.507 c Lavender
+455 330 0.44 c Lavender
+455 483 0.573 c Gray40
+455 484 0.625 c Lavender
+456 42 0.48 c Gray40
+456 49 0.471 c Gray40
+456 107 0.486 c Gray40
+456 117 0.594 c Emerald
+456 163 0.587 c Emerald
+456 341 0.327 c Gray40
+457 62 0.783 c Peach
+457 162 0.582 c Peach
+457 414 0.783 c Peach
+457 478 0.715 c Peach
+458 481 0.526 c Lavender
+459 119 0.65 c SkyBlue
+459 216 0.521 c SkyBlue
+459 316 0.42 c SkyBlue
+459 437 0.72 c SkyBlue
+460 12 0.74 c Red
+460 16 0.74 c Red
+460 22 0.74 c Red
+460 24 0.74 c Red
+460 41 0.74 c Red
+460 68 0.494 c Gray40
+460 130 0.74 c Red
+460 210 0.463 c Gray40
+460 549 0.31 c Gray40
+461 180 0.597 c OliveGreen
+461 218 0.52 c OliveGreen
+461 321 0.566 c OliveGreen
+461 401 0.488 c OliveGreen
+461 524 0.473 c OliveGreen
+462 138 0.519 c Peach
+462 207 0.566 c Peach
+462 547 0.381 c Peach
+463 13 0.926 c Mulberry
+463 38 0.926 c Mulberry
+463 103 0.926 c Mulberry
+463 376 0.731 c Mulberry
+464 271 0.459 c Yellow
+464 312 0.445 c Yellow
+464 386 0.371 c Yellow
+464 408 0.562 c Yellow
+464 418 0.562 c Yellow
+465 47 0.732 c SkyBlue
+465 90 0.732 c SkyBlue
+465 168 0.598 c SkyBlue
+466 414 0.758 c Peach
+466 447 0.734 c Peach
+466 519 0.374 c Gray40
+467 112 0.638 c Canary
+467 214 0.702 c Canary
+467 348 1.015 c Canary
+467 407 1.096 c Canary
+467 410 0.887 c Canary
+467 420 0.855 c Canary
+468 321 0.377 c Gray40
+469 104 0.578 c Peach
+469 236 0.527 c Peach
+469 272 0.512 c Peach
+469 367 0.418 c Peach
+469 397 0.582 c Peach
+470 10 0.817 c Blue
+470 18 0.817 c Blue
+470 35 0.817 c Blue
+470 199 0.744 c Blue
+470 269 0.463 c Blue
+471 8 0.709 c Red
+471 12 0.709 c Red
+471 251 0.561 c Red
+471 286 0.614 c Red
+471 399 0.543 c Red
+472 124 0.613 c Yellow
+472 244 0.446 c Yellow
+472 329 0.558 c Yellow
+472 408 0.613 c Yellow
+473 236 0.527 c Peach
+473 272 0.512 c Peach
+473 292 0.477 c Peach
+473 451 0.608 c Peach
+474 188 0.451 c Lavender
+474 450 0.538 c Lavender
+475 15 0.753 c Peach
+475 93 0.563 c Peach
+475 100 0.588 c Peach
+475 151 0.51 c Peach
+475 272 0.512 c Peach
+475 282 0.49 c Peach
+475 298 0.486 c Peach
+475 301 0.407 c Peach
+475 397 0.582 c Peach
+475 447 0.734 c Peach
+475 494 0.594 c Peach
+476 14 0.669 c Mulberry
+476 64 0.669 c Mulberry
+476 221 0.52 c Mulberry
+476 393 0.475 c Mulberry
+476 435 0.669 c Mulberry
+477 124 0.346 c Gray40
+478 44 0.477 c Gray40
+478 226 0.458 c Peach
+478 510 0.264 c Gray40
+479 2 0.695 c Red
+479 7 0.695 c Red
+479 59 0.695 c Red
+479 139 0.695 c Red
+480 10 0.376 c Gray40
+481 66 0.526 c Lavender
+481 96 0.526 c Lavender
+481 121 0.526 c Lavender
+481 175 0.526 c Lavender
+481 330 0.44 c Lavender
+482 90 0.662 c SkyBlue
+482 396 0.644 c SkyBlue
+482 406 0.662 c SkyBlue
+482 465 0.662 c SkyBlue
+483 13 0.969 c Mulberry
+483 38 0.969 c Mulberry
+483 406 0.646 c Gray40
+483 463 0.926 c Mulberry
+484 65 0.625 c Lavender
+484 322 0.417 c Gray40
+484 385 0.592 c Lavender
+485 11 0.631 c Dandelion
+485 63 0.631 c Dandelion
+485 150 0.631 c Dandelion
+485 324 0.618 c Dandelion
+485 532 0.528 c Dandelion
+487 217 0.571 c OliveGreen
+487 524 0.473 c OliveGreen
+487 528 0.474 c OliveGreen
+488 182 0.593 c Canary
+488 379 0.614 c Canary
+488 502 0.617 c Canary
+489 5 0.696 c Lavender
+489 66 0.696 c Lavender
+489 118 0.528 c Lavender
+489 299 0.613 c Lavender
+489 400 0.696 c Lavender
+490 50 0.536 c Red
+490 251 0.536 c Red
+490 311 0.357 c Gray40
+490 422 0.536 c Red
+490 471 0.536 c Red
+490 534 0.536 c Red
+491 415 0.87 c Blue
+492 198 0.494 c Yellow
+492 281 0.478 c Yellow
+492 383 0.385 c Yellow
+492 403 0.554 c Yellow
+492 431 0.554 c Yellow
+493 97 0.497 c Mahogany
+493 254 0.497 c Mahogany
+493 293 0.497 c Mahogany
+494 15 0.594 c Peach
+494 93 0.563 c Peach
+494 100 0.588 c Peach
+494 282 0.49 c Peach
+495 112 0.638 c Canary
+495 214 0.702 c Canary
+495 348 0.936 c Canary
+496 134 0.452 c Yellow
+496 234 0.371 c Yellow
+496 290 0.452 c Yellow
+496 403 0.452 c Yellow
+496 444 0.452 c Yellow
+497 86 0.552 c SkyBlue
+497 242 0.552 c SkyBlue
+498 222 0.276 c Gray40
+498 250 0.414 c Yellow
+498 420 0.276 c Gray40
+499 45 0.44 c Gray40
+499 135 0.44 c Gray40
+500 415 0.764 c Blue
+500 491 0.764 c Blue
+501 108 0.705 c Mulberry
+501 228 0.51 c Mulberry
+501 256 0.387 c Gray40
+501 351 0.542 c Mulberry
+502 379 0.614 c Canary
+503 133 0.608 c BrickRed
+503 202 0.608 c BrickRed
+503 304 0.557 c BrickRed
+503 499 0.608 c BrickRed
+504 7 0.411 c Gray40
+504 139 0.411 c Gray40
+504 165 0.617 c Peach
+505 73 0.509 c Peach
+505 313 0.495 c Peach
+505 414 0.509 c Peach
+506 22 0.56 c Red
+506 51 0.56 c Red
+506 76 0.56 c Red
+506 77 0.56 c Red
+506 139 0.56 c Red
+507 34 0.676 c SkyBlue
+507 296 0.543 c SkyBlue
+507 459 0.676 c SkyBlue
+508 30 0.589 c OliveGreen
+508 109 0.541 c OliveGreen
+508 343 0.463 c OliveGreen
+508 369 0.462 c OliveGreen
+509 33 0.351 c Gray40
+509 117 0.351 c Gray40
+510 215 0.397 c Dandelion
+510 226 0.264 c Gray40
+511 181 0.411 c Yellow
+511 261 0.411 c Yellow
+511 403 0.411 c Yellow
+511 431 0.411 c Yellow
+511 492 0.411 c Yellow
+512 7 0.614 c Red
+512 139 0.614 c Red
+512 286 0.614 c Red
+512 399 0.543 c Red
+513 95 0.457 c Yellow
+514 21 0.384 c Gray40
+514 29 0.384 c Gray40
+514 49 0.576 c Blue
+514 163 0.384 c Gray40
+514 361 0.384 c Gray40
+514 456 0.384 c Gray40
+515 4 0.337 c Gray40
+515 29 0.337 c Gray40
+515 117 0.506 c Emerald
+515 274 0.489 c Emerald
+516 220 0.398 c Yellow
+516 434 0.398 c Yellow
+516 438 0.398 c Yellow
+517 38 0.531 c Gray40
+517 46 0.796 c Lavender
+517 175 0.652 c Lavender
+517 176 0.531 c Gray40
+517 219 0.421 c Gray40
+517 229 0.531 c Gray40
+517 232 0.528 c Gray40
+517 240 0.682 c Lavender
+518 90 0.443 c SkyBlue
+518 406 0.443 c SkyBlue
+519 104 0.374 c Gray40
+519 328 0.396 c Dandelion
+519 354 0.305 c Gray40
+520 113 0.438 c OliveGreen
+520 213 0.438 c OliveGreen
+520 325 0.438 c OliveGreen
+520 357 0.435 c OliveGreen
+520 423 0.438 c OliveGreen
+520 545 0.346 c OliveGreen
+521 90 0.593 c SkyBlue
+521 396 0.593 c SkyBlue
+521 406 0.593 c SkyBlue
+522 3 0.354 c Gray40
+522 74 0.531 c Yellow
+522 173 0.531 c Yellow
+523 1 0.411 c Gray40
+523 9 0.616 c BrickRed
+523 20 0.616 c BrickRed
+523 31 0.411 c Gray40
+523 48 0.616 c BrickRed
+524 180 0.473 c OliveGreen
+524 218 0.473 c OliveGreen
+524 401 0.473 c OliveGreen
+526 96 0.598 c Lavender
+526 433 0.598 c Lavender
+527 58 0.4 c Yellow
+527 434 0.4 c Yellow
+527 438 0.4 c Yellow
+527 486 0.4 c Yellow
+528 217 0.474 c OliveGreen
+529 87 0.36 c Mahogany
+529 364 0.36 c Mahogany
+530 39 0.493 c Red
+530 76 0.493 c Red
+530 204 0.493 c Red
+530 238 0.493 c Red
+530 285 0.493 c Red
+530 347 0.329 c Gray40
+531 469 0.516 c Peach
+531 473 0.516 c Peach
+532 11 0.528 c Dandelion
+532 69 0.528 c Dandelion
+532 150 0.528 c Dandelion
+533 11 0.479 c Dandelion
+533 69 0.479 c Dandelion
+533 104 0.319 c Gray40
+533 150 0.479 c Dandelion
+533 367 0.279 c Gray40
+534 7 0.69 c Red
+534 204 0.593 c Red
+534 251 0.561 c Red
+535 99 0.369 c Yellow
+536 58 0.431 c Yellow
+536 126 0.431 c Yellow
+536 145 0.431 c Yellow
+536 171 0.431 c Yellow
+536 411 0.431 c Yellow
+536 527 0.4 c Yellow
+537 414 0.35 c Gray40
+538 415 0.444 c Blue
+539 41 0.322 c Gray40
+539 68 0.483 c Peach
+539 210 0.483 c Peach
+540 421 0.38 c SkyBlue
+541 112 0.458 c Canary
+541 209 0.458 c Canary
+541 214 0.458 c Canary
+541 407 0.458 c Canary
+543 388 0.383 c Yellow
+543 431 0.383 c Yellow
+544 180 0.441 c OliveGreen
+544 401 0.441 c OliveGreen
+545 213 0.346 c OliveGreen
+545 423 0.346 c OliveGreen
+545 461 0.346 c OliveGreen
+546 10 0.43 c Blue
+547 207 0.381 c Peach
+548 53 0.359 c OliveGreen
+548 180 0.359 c OliveGreen
+548 217 0.359 c OliveGreen
+548 423 0.359 c OliveGreen
+549 68 0.465 c Peach
+549 194 0.465 c Peach
+550 417 0.345 c SkyBlue
+550 442 0.345 c SkyBlue
+551 113 0.291 c OliveGreen
+551 213 0.291 c OliveGreen
+551 325 0.291 c OliveGreen
+552 87 0.312 c Mahogany
+552 254 0.312 c Mahogany
+553 98 0.188 c Gray40
+554 55 0.272 c BrickRed
+554 190 0.182 c Gray40
